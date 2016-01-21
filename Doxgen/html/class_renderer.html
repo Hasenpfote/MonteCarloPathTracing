@@ -1,0 +1,399 @@
+<!-- This comment will put IE 6, 7 and 8 in quirks mode -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>Renderer: クラス Renderer</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javaScript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body onload='searchBox.OnSelectItem(0);'>
+<!-- 作成： Doxygen 1.6.3 -->
+<script type="text/javascript"><!--
+var searchBox = new SearchBox("searchBox", "search",false,'検索');
+--></script>
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="index.html"><span>メインページ</span></a></li>
+      <li><a href="namespaces.html"><span>ネームスペース</span></a></li>
+      <li class="current"><a href="annotated.html"><span>クラス</span></a></li>
+      <li><a href="files.html"><span>ファイル</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <img id="MSearchSelect" src="search/search.png"
+             onmouseover="return searchBox.OnSearchSelectShow()"
+             onmouseout="return searchBox.OnSearchSelectHide()"
+             alt=""/>
+        <input type="text" id="MSearchField" value="検索" accesskey="S"
+             onfocus="searchBox.OnSearchFieldFocus(true)" 
+             onblur="searchBox.OnSearchFieldFocus(false)" 
+             onkeyup="searchBox.OnSearchFieldChange(event)"/>
+        <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div class="tabs">
+    <ul>
+      <li><a href="annotated.html"><span>構成</span></a></li>
+      <li><a href="hierarchy.html"><span>クラス階層</span></a></li>
+      <li><a href="functions.html"><span>構成メンバ</span></a></li>
+    </ul>
+  </div>
+</div>
+<div class="contents">
+<h1>クラス Renderer</h1><!-- doxytag: class="Renderer" -->
+<p>レンダラ  
+<a href="#_details">[詳細]</a></p>
+
+<p><code>#include &lt;<a class="el" href="renderer_8h_source.html">renderer.h</a>&gt;</code></p>
+<div class="dynheader">
+Rendererのコラボレーション図</div>
+<div class="dynsection">
+<div class="center"><img src="class_renderer__coll__graph.png" border="0" usemap="#_renderer_coll__map" alt="Collaboration graph"/></div>
+<map name="_renderer_coll__map" id="_renderer_coll__map">
+<area shape="rect" id="node2" href="class_camera.html" title="Camera" alt="" coords="1011,64,1077,93"/><area shape="rect" id="node4" href="class_frame_buffer_f_p32.html" title="FrameBufferFP32" alt="" coords="777,9,900,39"/><area shape="rect" id="node6" href="class_frame_buffer.html" title="FrameBuffer\&lt; float, 3 \&gt;" alt="" coords="419,9,573,39"/><area shape="rect" id="node8" href="struct_frame_buffer_1_1_data.html" title="FrameBuffer\&lt; T, SIZE \&gt;::Data" alt="" coords="123,8,317,37"/><area shape="rect" id="node12" href="class_matrix44.html" title="4x4 Matrix" alt="" coords="803,64,875,93"/><area shape="rect" id="node14" href="class_scene.html" title="シーン" alt="" coords="1015,228,1073,257"/><area shape="rect" id="node16" href="class_a_a_b_b.html" title="Axis Aligned Bounding Box." alt="" coords="640,97,699,127"/><area shape="rect" id="node18" href="class_vector3.html" title="3d vector" alt="" coords="187,100,253,129"/><area shape="rect" id="node34" href="class_light.html" title="Light" alt="" coords="471,183,521,212"/><area shape="rect" id="node22" href="class_primitive.html" title="プリミティブ" alt="" coords="461,307,531,336"/><area shape="rect" id="node24" href="class_material.html" title="材質" alt="" coords="187,316,253,345"/><area shape="rect" id="node26" href="struct_color.html" title="色" alt="" coords="7,244,57,273"/></map>
+<center><span class="legend">[<a href="graph_legend.html">凡例</a>]</span></center></div>
+
+<p><a href="class_renderer-members.html">すべてのメンバ一覧</a></p>
+<table border="0" cellpadding="0" cellspacing="0">
+<tr><td colspan="2"><h2>Public メソッド</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_renderer.html#a7ebf46f54dab9905f79b80f7fddb76a6">Renderer</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_renderer.html#afeee408862d5bd6255a6882d47e6d5cd">~Renderer</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_renderer.html#a919dd3310b2427abe522ee40719dc37a">Init</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_renderer.html#a08183dd8feee4b43a9ad4a22e3d5b777">Release</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_renderer.html#adde94d3402b015b1fcd23c9a283cae2e">Render</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">描画メイン  <a href="#adde94d3402b015b1fcd23c9a283cae2e"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_renderer.html#a1abe79860f08ebccb3ce75d9f8e4e345">Render</a> (std::size_t bx, std::size_t by, std::size_t ex, std::size_t ey)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">描画メイン  <a href="#a1abe79860f08ebccb3ce75d9f8e4e345"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_scene.html">Scene</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_renderer.html#a5e027c73c35ad15c9566ef3f44c3cf0c">GetScene</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_camera.html">Camera</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_renderer.html#a9ea3fd4d04937fd357540af97fdee51c">GetCamera</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_renderer.html#a1991480c53b510baed419ef586f002bf">SetMaxSampling</a> (std::size_t sampling)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_renderer.html#ae72f4b6a944d18ca31f619cf39f03fdd">SetMaxDepth</a> (std::size_t depth)</td></tr>
+</table>
+<hr/><a name="_details"></a><h2>説明</h2>
+<p>レンダラ </p>
+<hr/><h2>コンストラクタとデストラクタ</h2>
+<a class="anchor" id="a7ebf46f54dab9905f79b80f7fddb76a6"></a><!-- doxytag: member="Renderer::Renderer" ref="a7ebf46f54dab9905f79b80f7fddb76a6" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Renderer::Renderer </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="afeee408862d5bd6255a6882d47e6d5cd"></a><!-- doxytag: member="Renderer::~Renderer" ref="afeee408862d5bd6255a6882d47e6d5cd" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Renderer::~Renderer </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<hr/><h2>関数</h2>
+<a class="anchor" id="a9ea3fd4d04937fd357540af97fdee51c"></a><!-- doxytag: member="Renderer::GetCamera" ref="a9ea3fd4d04937fd357540af97fdee51c" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_camera.html">Camera</a>* Renderer::GetCamera </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p><div class="dynheader">
+呼出しグラフ:</div>
+<div class="dynsection">
+<div class="center"><img src="class_renderer_a9ea3fd4d04937fd357540af97fdee51c_icgraph.png" border="0" usemap="#class_renderer_a9ea3fd4d04937fd357540af97fdee51c_icgraph_map" alt=""></div>
+<map name="class_renderer_a9ea3fd4d04937fd357540af97fdee51c_icgraph_map" id="class_renderer_a9ea3fd4d04937fd357540af97fdee51c_icgraph">
+<area shape="rect" id="node3" href="main_8cpp.html#aea350e147e9d27d97c595f69659a4dfd" title="シーンの初期化" alt="" coords="252,5,289,35"/><area shape="rect" id="node5" href="main_8cpp.html#ac0f2228420376f4db7e1274f2b41667c" title="エントリー" alt="" coords="387,57,437,87"/><area shape="rect" id="node7" href="main_8cpp.html#ab0f080e6accf9381e116c59e307a4822" title="リファレンスシーンの初期化" alt="" coords="204,109,337,139"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a5e027c73c35ad15c9566ef3f44c3cf0c"></a><!-- doxytag: member="Renderer::GetScene" ref="a5e027c73c35ad15c9566ef3f44c3cf0c" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_scene.html">Scene</a>* Renderer::GetScene </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p><div class="dynheader">
+呼出しグラフ:</div>
+<div class="dynsection">
+<div class="center"><img src="class_renderer_a5e027c73c35ad15c9566ef3f44c3cf0c_icgraph.png" border="0" usemap="#class_renderer_a5e027c73c35ad15c9566ef3f44c3cf0c_icgraph_map" alt=""></div>
+<map name="class_renderer_a5e027c73c35ad15c9566ef3f44c3cf0c_icgraph_map" id="class_renderer_a5e027c73c35ad15c9566ef3f44c3cf0c_icgraph">
+<area shape="rect" id="node3" href="main_8cpp.html#aea350e147e9d27d97c595f69659a4dfd" title="シーンの初期化" alt="" coords="244,5,281,35"/><area shape="rect" id="node5" href="main_8cpp.html#ac0f2228420376f4db7e1274f2b41667c" title="エントリー" alt="" coords="379,57,429,87"/><area shape="rect" id="node7" href="main_8cpp.html#ab0f080e6accf9381e116c59e307a4822" title="リファレンスシーンの初期化" alt="" coords="196,109,329,139"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a919dd3310b2427abe522ee40719dc37a"></a><!-- doxytag: member="Renderer::Init" ref="a919dd3310b2427abe522ee40719dc37a" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Renderer::Init </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p><div class="dynheader">
+関数の呼び出しグラフ:</div>
+<div class="dynsection">
+<div class="center"><img src="class_renderer_a919dd3310b2427abe522ee40719dc37a_cgraph.png" border="0" usemap="#class_renderer_a919dd3310b2427abe522ee40719dc37a_cgraph_map" alt=""></div>
+</div>
+</p>
+
+<p><div class="dynheader">
+呼出しグラフ:</div>
+<div class="dynsection">
+<div class="center"><img src="class_renderer_a919dd3310b2427abe522ee40719dc37a_icgraph.png" border="0" usemap="#class_renderer_a919dd3310b2427abe522ee40719dc37a_icgraph_map" alt=""></div>
+<map name="class_renderer_a919dd3310b2427abe522ee40719dc37a_icgraph_map" id="class_renderer_a919dd3310b2427abe522ee40719dc37a_icgraph">
+<area shape="rect" id="node3" href="main_8cpp.html#aea350e147e9d27d97c595f69659a4dfd" title="シーンの初期化" alt="" coords="201,5,239,35"/><area shape="rect" id="node7" href="main_8cpp.html#ab0f080e6accf9381e116c59e307a4822" title="リファレンスシーンの初期化" alt="" coords="153,59,287,88"/><area shape="rect" id="node5" href="main_8cpp.html#ac0f2228420376f4db7e1274f2b41667c" title="エントリー" alt="" coords="336,32,387,61"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a08183dd8feee4b43a9ad4a22e3d5b777"></a><!-- doxytag: member="Renderer::Release" ref="a08183dd8feee4b43a9ad4a22e3d5b777" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Renderer::Release </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p><div class="dynheader">
+呼出しグラフ:</div>
+<div class="dynsection">
+<div class="center"><img src="class_renderer_a08183dd8feee4b43a9ad4a22e3d5b777_icgraph.png" border="0" usemap="#class_renderer_a08183dd8feee4b43a9ad4a22e3d5b777_icgraph_map" alt=""></div>
+<map name="class_renderer_a08183dd8feee4b43a9ad4a22e3d5b777_icgraph_map" id="class_renderer_a08183dd8feee4b43a9ad4a22e3d5b777_icgraph">
+<area shape="rect" id="node3" href="class_renderer.html#a919dd3310b2427abe522ee40719dc37a" title="Renderer::Init" alt="" coords="184,59,283,88"/><area shape="rect" id="node7" href="main_8cpp.html#ac0f2228420376f4db7e1274f2b41667c" title="エントリー" alt="" coords="515,59,565,88"/><area shape="rect" id="node5" href="main_8cpp.html#aea350e147e9d27d97c595f69659a4dfd" title="シーンの初期化" alt="" coords="380,5,417,35"/><area shape="rect" id="node9" href="main_8cpp.html#ab0f080e6accf9381e116c59e307a4822" title="リファレンスシーンの初期化" alt="" coords="332,59,465,88"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a1abe79860f08ebccb3ce75d9f8e4e345"></a><!-- doxytag: member="Renderer::Render" ref="a1abe79860f08ebccb3ce75d9f8e4e345" args="(std::size_t bx, std::size_t by, std::size_t ex, std::size_t ey)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Renderer::Render </td>
+          <td>(</td>
+          <td class="paramtype">std::size_t&nbsp;</td>
+          <td class="paramname"> <em>bx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::size_t&nbsp;</td>
+          <td class="paramname"> <em>by</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::size_t&nbsp;</td>
+          <td class="paramname"> <em>ex</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::size_t&nbsp;</td>
+          <td class="paramname"> <em>ey</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>描画メイン </p>
+<dl><dt><b>引数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>i]</em>&nbsp;</td><td>bx: 開始座標 </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>i]</em>&nbsp;</td><td>by: 開始座標 </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>i]</em>&nbsp;</td><td>ex: 終了座標 </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>i]</em>&nbsp;</td><td>yx: 終了座標 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+関数の呼び出しグラフ:</div>
+<div class="dynsection">
+<div class="center"><img src="class_renderer_a1abe79860f08ebccb3ce75d9f8e4e345_cgraph.png" border="0" usemap="#class_renderer_a1abe79860f08ebccb3ce75d9f8e4e345_cgraph_map" alt=""></div>
+<map name="class_renderer_a1abe79860f08ebccb3ce75d9f8e4e345_cgraph_map" id="class_renderer_a1abe79860f08ebccb3ce75d9f8e4e345_cgraph">
+<area shape="rect" id="node3" href="color_8cpp.html#a0eca2497594ea1cd9b4aa50407b9de2c" title="ColorAdd3" alt="" coords="219,5,301,35"/><area shape="rect" id="node5" href="color_8cpp.html#afe6d0f652ed5342323957ad446457b09" title="ColorScale3" alt="" coords="215,59,305,88"/><area shape="rect" id="node7" href="color_8cpp.html#a5263a29993a2851166c488729b01ee85" title="ColorSet" alt="" coords="224,112,296,141"/><area shape="rect" id="node9" href="random_8cpp.html#ac94ab75771800274ed1a2bedeca86f04" title="genrand_real1" alt="" coords="209,165,311,195"/><area shape="rect" id="node15" href="class_camera.html#a25cf5e585ca32815e1a0c488fa83a58e" title="Camera::GetFrameBuffer" alt="" coords="177,219,343,248"/><area shape="rect" id="node17" href="class_camera.html#ac5368bc7c82f767c11da4be5434a7649" title="Camera::GetPosture" alt="" coords="189,272,331,301"/><area shape="rect" id="node19" href="class_frame_buffer.html#a41e580f01886c4cce863a2dcea0b855b" title="FrameBuffer::height" alt="" coords="193,325,327,355"/><area shape="rect" id="node21" href="class_frame_buffer.html#aaffd5950d35104848d4fe3e1f9cce3b4" title="FrameBuffer::ptr" alt="" coords="203,379,317,408"/><area shape="rect" id="node23" href="class_matrix44.html#ae611e3f1a71be9f3c0251ed03ad6a8e4" title="行ベクトル取得" alt="" coords="187,432,333,461"/><area shape="rect" id="node25" href="class_camera.html#a3503ee7791815761317dc2ea50f61559" title="光線を算出" alt="" coords="195,485,325,515"/><area shape="rect" id="node38" href="class_frame_buffer.html#acf3ed63cbf1343bb80d024a9130d0904" title="FrameBuffer::width" alt="" coords="195,539,325,568"/><area shape="rect" id="node11" href="random_8cpp.html#a2b30ec504bc40c51320d14da9dfab43b" title="genrand_int32" alt="" coords="427,165,528,195"/><area shape="rect" id="node13" href="random_8cpp.html#a57af1d02a3fb56a949fb4c258f0bc066" title="init_genrand" alt="" coords="612,165,703,195"/><area shape="rect" id="node27" href="class_frame_buffer.html#ab99fa45d88b50195c36533db7b98ec47" title="FrameBuffer::aspect_ratio" alt="" coords="392,405,563,435"/><area shape="rect" id="node29" href="vector_8cpp.html#adc5ae7e0d032629fdb67b79fffae7d17" title="正規化" alt="" coords="423,459,532,488"/><area shape="rect" id="node33" href="vector_8cpp.html#a91dc8d583a80dddafd26b502389fed39" title="スケール" alt="" coords="615,511,700,540"/><area shape="rect" id="node36" href="vector_8cpp.html#a323344562a00b05cc4b702961d472feb" title="減算" alt="" coords="427,563,528,592"/><area shape="rect" id="node31" href="vector_8cpp.html#a83bc74bf4b8af8671603a591ae2875d2" title="ベクトル長" alt="" coords="612,457,703,487"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="adde94d3402b015b1fcd23c9a283cae2e"></a><!-- doxytag: member="Renderer::Render" ref="adde94d3402b015b1fcd23c9a283cae2e" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Renderer::Render </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>描画メイン </p>
+
+<p><div class="dynheader">
+関数の呼び出しグラフ:</div>
+<div class="dynsection">
+<div class="center"><img src="class_renderer_adde94d3402b015b1fcd23c9a283cae2e_cgraph.png" border="0" usemap="#class_renderer_adde94d3402b015b1fcd23c9a283cae2e_cgraph_map" alt=""></div>
+<map name="class_renderer_adde94d3402b015b1fcd23c9a283cae2e_cgraph_map" id="class_renderer_adde94d3402b015b1fcd23c9a283cae2e_cgraph">
+<area shape="rect" id="node3" href="class_work_pile.html#a5e1040fe3aad18e46e78647baff6f09a" title="WorkPile::get_left_work" alt="" coords="181,5,339,35"/><area shape="rect" id="node5" href="class_camera.html#a25cf5e585ca32815e1a0c488fa83a58e" title="Camera::GetFrameBuffer" alt="" coords="177,59,343,88"/><area shape="rect" id="node7" href="class_frame_buffer.html#a41e580f01886c4cce863a2dcea0b855b" title="FrameBuffer::height" alt="" coords="193,112,327,141"/><area shape="rect" id="node9" href="class_work_pile.html#a87a09fcd0d898faea0930e10d7f98fcc" title="WorkPile::request" alt="" coords="197,165,323,195"/><area shape="rect" id="node11" href="class_work_pile.html#a0dc9ddba1fb798b0fa67a5d1ed80d6b3" title="WorkPile::start" alt="" coords="205,219,315,248"/><area shape="rect" id="node13" href="class_frame_buffer.html#acf3ed63cbf1343bb80d024a9130d0904" title="FrameBuffer::width" alt="" coords="195,272,325,301"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+呼出しグラフ:</div>
+<div class="dynsection">
+<div class="center"><img src="class_renderer_adde94d3402b015b1fcd23c9a283cae2e_icgraph.png" border="0" usemap="#class_renderer_adde94d3402b015b1fcd23c9a283cae2e_icgraph_map" alt=""></div>
+<map name="class_renderer_adde94d3402b015b1fcd23c9a283cae2e_icgraph_map" id="class_renderer_adde94d3402b015b1fcd23c9a283cae2e_icgraph">
+<area shape="rect" id="node3" href="main_8cpp.html#ac0f2228420376f4db7e1274f2b41667c" title="エントリー" alt="" coords="176,5,227,35"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ae72f4b6a944d18ca31f619cf39f03fdd"></a><!-- doxytag: member="Renderer::SetMaxDepth" ref="ae72f4b6a944d18ca31f619cf39f03fdd" args="(std::size_t depth)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Renderer::SetMaxDepth </td>
+          <td>(</td>
+          <td class="paramtype">std::size_t&nbsp;</td>
+          <td class="paramname"> <em>depth</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p><div class="dynheader">
+呼出しグラフ:</div>
+<div class="dynsection">
+<div class="center"><img src="class_renderer_ae72f4b6a944d18ca31f619cf39f03fdd_icgraph.png" border="0" usemap="#class_renderer_ae72f4b6a944d18ca31f619cf39f03fdd_icgraph_map" alt=""></div>
+<map name="class_renderer_ae72f4b6a944d18ca31f619cf39f03fdd_icgraph_map" id="class_renderer_ae72f4b6a944d18ca31f619cf39f03fdd_icgraph">
+<area shape="rect" id="node3" href="main_8cpp.html#aea350e147e9d27d97c595f69659a4dfd" title="シーンの初期化" alt="" coords="265,5,303,35"/><area shape="rect" id="node7" href="main_8cpp.html#ab0f080e6accf9381e116c59e307a4822" title="リファレンスシーンの初期化" alt="" coords="217,59,351,88"/><area shape="rect" id="node5" href="main_8cpp.html#ac0f2228420376f4db7e1274f2b41667c" title="エントリー" alt="" coords="400,32,451,61"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a1991480c53b510baed419ef586f002bf"></a><!-- doxytag: member="Renderer::SetMaxSampling" ref="a1991480c53b510baed419ef586f002bf" args="(std::size_t sampling)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Renderer::SetMaxSampling </td>
+          <td>(</td>
+          <td class="paramtype">std::size_t&nbsp;</td>
+          <td class="paramname"> <em>sampling</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p><div class="dynheader">
+呼出しグラフ:</div>
+<div class="dynsection">
+<div class="center"><img src="class_renderer_a1991480c53b510baed419ef586f002bf_icgraph.png" border="0" usemap="#class_renderer_a1991480c53b510baed419ef586f002bf_icgraph_map" alt=""></div>
+<map name="class_renderer_a1991480c53b510baed419ef586f002bf_icgraph_map" id="class_renderer_a1991480c53b510baed419ef586f002bf_icgraph">
+<area shape="rect" id="node3" href="main_8cpp.html#aea350e147e9d27d97c595f69659a4dfd" title="シーンの初期化" alt="" coords="284,5,321,35"/><area shape="rect" id="node7" href="main_8cpp.html#ab0f080e6accf9381e116c59e307a4822" title="リファレンスシーンの初期化" alt="" coords="236,59,369,88"/><area shape="rect" id="node5" href="main_8cpp.html#ac0f2228420376f4db7e1274f2b41667c" title="エントリー" alt="" coords="419,32,469,61"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<hr/>このクラスの説明は次のファイルから生成されました:<ul>
+<li>Renderer/<a class="el" href="renderer_8h_source.html">renderer.h</a></li>
+<li>Renderer/<a class="el" href="renderer_8cpp.html">renderer.cpp</a></li>
+</ul>
+</div>
+<!--- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&nbsp;</span>全て</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&nbsp;</span>クラス</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&nbsp;</span>ネームスペース</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&nbsp;</span>ファイル</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&nbsp;</span>関数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&nbsp;</span>変数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&nbsp;</span>型定義</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&nbsp;</span>列挙型</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&nbsp;</span>列挙型の値</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&nbsp;</span>フレンド</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&nbsp;</span>マクロ定義</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<hr class="footer"/><address style="text-align: right;"><small>Rendererに対してThu May 20 10:12:14 2010に生成されました。&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.6.3 </small></address>
+</body>
+</html>

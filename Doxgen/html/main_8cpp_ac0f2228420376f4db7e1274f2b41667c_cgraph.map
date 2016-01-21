@@ -1,0 +1,51 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$class_frame_buffer_f_p32.html#ae258f4f50802f415f4af44d2f7cac592" title="FrameBufferFP32::Exposure" alt="" coords="129,112,316,141"/>
+<area shape="rect" id="node13" href="$class_frame_buffer_f_p32.html#a0a98471b85678b4ed41f26d3b8298d76" title="FrameBufferFP32::GammaCorrection" alt="" coords="105,1557,340,1587"/>
+<area shape="rect" id="node15" href="$random_8cpp.html#a2b30ec504bc40c51320d14da9dfab43b" title="genrand_int32" alt="" coords="172,1611,273,1640"/>
+<area shape="rect" id="node19" href="$class_renderer.html#a9ea3fd4d04937fd357540af97fdee51c" title="Renderer::GetCamera" alt="" coords="415,1000,561,1029"/>
+<area shape="rect" id="node21" href="$class_camera.html#a25cf5e585ca32815e1a0c488fa83a58e" title="Camera::GetFrameBuffer" alt="" coords="405,691,571,720"/>
+<area shape="rect" id="node23" href="$class_renderer.html#a5e027c73c35ad15c9566ef3f44c3cf0c" title="Renderer::GetScene" alt="" coords="419,744,557,773"/>
+<area shape="rect" id="node25" href="$main_8cpp.html#aea350e147e9d27d97c595f69659a4dfd" title="シーンの初期化" alt="" coords="204,1504,241,1533"/>
+<area shape="rect" id="node49" href="$class_renderer.html#a08183dd8feee4b43a9ad4a22e3d5b777" title="Renderer::Release" alt="" coords="636,535,764,564"/>
+<area shape="rect" id="node87" href="$main_8cpp.html#a5d0a9f7b78068bab90a0e766000fcc7a" title="光源の初期化" alt="" coords="189,532,256,561"/>
+<area shape="rect" id="node99" href="$main_8cpp.html#ab0f080e6accf9381e116c59e307a4822" title="リファレンスシーンの初期化" alt="" coords="156,1211,289,1240"/>
+<area shape="rect" id="node127" href="$environment_8cpp.html#aee127a16aaf3050b15482ca6a9381bea" title="LoadEnvironmentFile" alt="" coords="152,1664,293,1693"/>
+<area shape="rect" id="node130" href="$class_renderer.html#adde94d3402b015b1fcd23c9a283cae2e" title="描画メイン" alt="" coords="161,219,284,248"/>
+<area shape="rect" id="node139" href="$class_frame_buffer_f_p32.html#a9689501b498029818c3ffaf87f418f52" title="FrameBufferFP32::Saturate" alt="" coords="133,1717,312,1747"/>
+<area shape="rect" id="node141" href="$class_frame_buffer_f_p32.html#ab72f15291b9cc943dfb991d9aba7e490" title="FrameBufferFP32::WriteBmpFile" alt="" coords="117,272,328,301"/>
+<area shape="rect" id="node5" href="$color_8cpp.html#ad79af7cb1cf408da936a06e63499f4ec" title="重みつき変換" alt="" coords="448,59,528,88"/>
+<area shape="rect" id="node7" href="$color_8cpp.html#ad6e95702c6dbceea39c4266431324401" title="XYZ から Yxy に変換." alt="" coords="420,112,556,141"/>
+<area shape="rect" id="node9" href="$color_8cpp.html#a8e3c5c2615e43854ed3dcb42118a8170" title="Yxy から XYZ に変換." alt="" coords="420,5,556,35"/>
+<area shape="rect" id="node11" href="$color_8cpp.html#a5263a29993a2851166c488729b01ee85" title="ColorSet" alt="" coords="452,637,524,667"/>
+<area shape="rect" id="node17" href="$random_8cpp.html#a57af1d02a3fb56a949fb4c258f0bc066" title="init_genrand" alt="" coords="443,2371,533,2400"/>
+<area shape="rect" id="node27" href="$class_scene.html#a390dae83545e99ada9f708ba972910de" title="Scene::Build" alt="" coords="440,1104,536,1133"/>
+<area shape="rect" id="node30" href="$class_scene.html#a82fa7a1c66af24e70eb21bbd69a8c3df" title="Scene::GetAABB" alt="" coords="427,1157,549,1187"/>
+<area shape="rect" id="node32" href="$class_scene.html#a2fbdfb998ad9a6d9ef044becd893aa29" title="Scene::GetBGColor" alt="" coords="420,1371,556,1400"/>
+<area shape="rect" id="node36" href="$class_scene.html#a3c69bd8810ac75cfc267c191ce77cea9" title="Scene::GetMaterialList" alt="" coords="411,1744,565,1773"/>
+<area shape="rect" id="node38" href="$class__3ds_1_1_geometry.html#a4bc73433f1d32d70710c2de98f14a57d" title="_3ds::Geometry::GetMaterials" alt="" coords="389,2317,587,2347"/>
+<area shape="rect" id="node40" href="$class__3ds_1_1_geometry.html#a3a7cda239bb6882e5d011636a51a5ba9" title="_3ds::Geometry::GetMeshes" alt="" coords="393,2160,583,2189"/>
+<area shape="rect" id="node42" href="$class_camera.html#ac5368bc7c82f767c11da4be5434a7649" title="Camera::GetPosture" alt="" coords="417,1424,559,1453"/>
+<area shape="rect" id="node44" href="$class_scene.html#a04e4e821dc4c43c13bfadc10d8d975c6" title="Scene::GetPrimitiveList" alt="" coords="409,1477,567,1507"/>
+<area shape="rect" id="node47" href="$class_renderer.html#a919dd3310b2427abe522ee40719dc37a" title="Renderer::Init" alt="" coords="439,1317,537,1347"/>
+<area shape="rect" id="node51" href="$class__3ds_1_1_geometry.html#ac630848b5dd9292103104acff953d149" title="_3ds::Geometry::Load" alt="" coords="413,2264,563,2293"/>
+<area shape="rect" id="node53" href="$vecmat_8cpp.html#aa89855bfb3632ddc38c5743869da65c7" title="注視点行列" alt="" coords="439,2005,537,2035"/>
+<area shape="rect" id="node55" href="$class_vector3.html#abf54c2ac867832e23a9afafe04142065" title="設定" alt="" coords="653,848,747,877"/>
+<area shape="rect" id="node57" href="$vector_8cpp.html#adc5ae7e0d032629fdb67b79fffae7d17" title="正規化" alt="" coords="645,1927,755,1956"/>
+<area shape="rect" id="node59" href="$vector_8cpp.html#a83bc74bf4b8af8671603a591ae2875d2" title="ベクトル長" alt="" coords="813,1927,904,1956"/>
+<area shape="rect" id="node61" href="$vector_8cpp.html#a91dc8d583a80dddafd26b502389fed39" title="スケール" alt="" coords="816,2007,901,2036"/>
+<area shape="rect" id="node64" href="$vector_8cpp.html#a323344562a00b05cc4b702961d472feb" title="減算" alt="" coords="649,1980,751,2009"/>
+<area shape="rect" id="node66" href="$class_frame_buffer.html#a151eb7692c545e2eb6cb7b360ca64f28" title="リサイズ" alt="" coords="421,1584,555,1613"/>
+<area shape="rect" id="node69" href="$class_camera.html#a1b0476e8c260af0792217804aa46f942" title="焦点距離の設定" alt="" coords="405,1691,571,1720"/>
+<area shape="rect" id="node71" href="$class_camera.html#a32ed57d60ef2ef96a5aa3ddf70591597" title="Camera::SetFocalPlane" alt="" coords="408,1211,568,1240"/>
+<area shape="rect" id="node73" href="$class_camera.html#abb2e9e7f4307493dabfa1829316bbed4" title="F 値の設定." alt="" coords="423,1264,553,1293"/>
+<area shape="rect" id="node75" href="$class_primitive.html#ae0673f4d4c7c3340f7f2fdb1f500550b" title="Primitive::SetMaterial" alt="" coords="416,1851,560,1880"/>
+<area shape="rect" id="node77" href="$class_renderer.html#ae72f4b6a944d18ca31f619cf39f03fdd" title="Renderer::SetMaxDepth" alt="" coords="408,1637,568,1667"/>
+<area shape="rect" id="node79" href="$class_renderer.html#a1991480c53b510baed419ef586f002bf" title="Renderer::SetMaxSampling" alt="" coords="397,1531,579,1560"/>
+<area shape="rect" id="node81" href="$vector_8cpp.html#a993e9e4648beb5dde25333fc6bea7774" title="加算" alt="" coords="451,1797,525,1827"/>
+<area shape="rect" id="node90" href="$class_scene.html#a19d6fd84da187af0ec9f067cd92ba042" title="Scene::GetLightList" alt="" coords="420,584,556,613"/>
+<area shape="rect" id="node92" href="$matrix_8cpp.html#ae0b78f8ee95945d9529b34e6065f3115" title="回転行列" alt="" coords="397,376,579,405"/>
+<area shape="rect" id="node96" href="$vecmat_8cpp.html#aaf5f83df748508afec0083978dc7bde6" title="平行移動変換" alt="" coords="433,480,543,509"/>
+<area shape="rect" id="node132" href="$class_work_pile.html#a5e1040fe3aad18e46e78647baff6f09a" title="WorkPile::get_left_work" alt="" coords="409,165,567,195"/>
+<area shape="rect" id="node135" href="$class_frame_buffer.html#a41e580f01886c4cce863a2dcea0b855b" title="FrameBuffer::height" alt="" coords="421,272,555,301"/>
+<area shape="rect" id="node137" href="$class_work_pile.html#a87a09fcd0d898faea0930e10d7f98fcc" title="WorkPile::request" alt="" coords="425,219,551,248"/>
+</map>

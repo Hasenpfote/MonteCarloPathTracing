@@ -1,0 +1,2215 @@
+<!-- This comment will put IE 6, 7 and 8 in quirks mode -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>Renderer: Renderer/lib/math/vector.cpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javaScript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body onload='searchBox.OnSelectItem(0);'>
+<!-- 作成： Doxygen 1.6.3 -->
+<script type="text/javascript"><!--
+var searchBox = new SearchBox("searchBox", "search",false,'検索');
+--></script>
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="index.html"><span>メインページ</span></a></li>
+      <li><a href="namespaces.html"><span>ネームスペース</span></a></li>
+      <li><a href="annotated.html"><span>クラス</span></a></li>
+      <li class="current"><a href="files.html"><span>ファイル</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <img id="MSearchSelect" src="search/search.png"
+             onmouseover="return searchBox.OnSearchSelectShow()"
+             onmouseout="return searchBox.OnSearchSelectHide()"
+             alt=""/>
+        <input type="text" id="MSearchField" value="検索" accesskey="S"
+             onfocus="searchBox.OnSearchFieldFocus(true)" 
+             onblur="searchBox.OnSearchFieldFocus(false)" 
+             onkeyup="searchBox.OnSearchFieldChange(event)"/>
+        <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div class="tabs">
+    <ul>
+      <li><a href="files.html"><span>ファイル一覧</span></a></li>
+      <li><a href="globals.html"><span>ファイルメンバ</span></a></li>
+    </ul>
+  </div>
+</div>
+<div class="contents">
+<h1>Renderer/lib/math/vector.cpp</h1>
+<p>Vector 操作.  
+<a href="#_details">[詳細]</a></p>
+<code>#include &lt;iostream&gt;</code><br/>
+<code>#include &lt;iomanip&gt;</code><br/>
+<code>#include &quot;<a class="el" href="vector_8h_source.html">vector.h</a>&quot;</code><br/>
+<div class="dynheader">
+vector.cppのインクルード依存関係図</div>
+<div class="dynsection">
+<div class="center"><img src="vector_8cpp__incl.png" border="0" usemap="#_renderer_2lib_2math_2vector_8cpp_map" alt=""/></div>
+<map name="_renderer_2lib_2math_2vector_8cpp_map" id="_renderer_2lib_2math_2vector_8cpp">
+<area shape="rect" id="node7" href="vector_8h.html" title="Vector 操作." alt="" coords="192,83,259,112"/><area shape="rect" id="node12" href="math_8h.html" title="数学全般" alt="" coords="195,160,256,189"/></map>
+</div>
+<table border="0" cellpadding="0" cellspacing="0">
+<tr><td colspan="2"><h2>関数</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_vector2.html">Vector2</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="vector_8cpp.html#aecfda46261e5482309c0af6072e8632c">operator*</a> (float s, const <a class="el" href="class_vector2.html">Vector2</a> &amp;v)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">スケールオペレータ  <a href="#aecfda46261e5482309c0af6072e8632c"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_vector2.html">Vector2</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="vector_8cpp.html#a976659b16c60fc19143421436bdca45f">Vec2Add</a> (<a class="el" href="class_vector2.html">Vector2</a> *out, const <a class="el" href="class_vector2.html">Vector2</a> *v1, const <a class="el" href="class_vector2.html">Vector2</a> *v2)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">加算  <a href="#a976659b16c60fc19143421436bdca45f"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_vector2.html">Vector2</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="vector_8cpp.html#a7e5b37c3d7a77a7fa49c437a20d05dd0">Vec2Subtract</a> (<a class="el" href="class_vector2.html">Vector2</a> *out, const <a class="el" href="class_vector2.html">Vector2</a> *v1, const <a class="el" href="class_vector2.html">Vector2</a> *v2)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">減算  <a href="#a7e5b37c3d7a77a7fa49c437a20d05dd0"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_vector2.html">Vector2</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="vector_8cpp.html#a1b19b5aa370c578737fcdfd2bb3eebcf">Vec2Scale</a> (<a class="el" href="class_vector2.html">Vector2</a> *out, const <a class="el" href="class_vector2.html">Vector2</a> *v, float s)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">スケール  <a href="#a1b19b5aa370c578737fcdfd2bb3eebcf"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_vector2.html">Vector2</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="vector_8cpp.html#a21654a0801f01663146439cda9f89945">Vec2Maximize</a> (<a class="el" href="class_vector2.html">Vector2</a> *out, const <a class="el" href="class_vector2.html">Vector2</a> *v1, const <a class="el" href="class_vector2.html">Vector2</a> *v2)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">成分毎の最大  <a href="#a21654a0801f01663146439cda9f89945"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_vector2.html">Vector2</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="vector_8cpp.html#a2ec820c88e0ed137a453ff17bcaf4f77">Vec2Minimize</a> (<a class="el" href="class_vector2.html">Vector2</a> *out, const <a class="el" href="class_vector2.html">Vector2</a> *v1, const <a class="el" href="class_vector2.html">Vector2</a> *v2)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">成分毎の最小  <a href="#a2ec820c88e0ed137a453ff17bcaf4f77"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">float&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="vector_8cpp.html#ad2b0224d28325324128d5e955d041f73">Vec2Length</a> (const <a class="el" href="class_vector2.html">Vector2</a> *v)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">ベクトル長  <a href="#ad2b0224d28325324128d5e955d041f73"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">float&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="vector_8cpp.html#ae57fcfcc7b1f2450842493ada55cd15b">Vec2LengthSq</a> (const <a class="el" href="class_vector2.html">Vector2</a> *v)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">ベクトル平方長  <a href="#ae57fcfcc7b1f2450842493ada55cd15b"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_vector2.html">Vector2</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="vector_8cpp.html#aae1600a21d4e7b81737f056375e582fc">Vec2Normalize</a> (<a class="el" href="class_vector2.html">Vector2</a> *out, const <a class="el" href="class_vector2.html">Vector2</a> *v)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">正規化  <a href="#aae1600a21d4e7b81737f056375e582fc"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">float&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="vector_8cpp.html#a5e4b1f9e5afd3a302b2ccdab445e7882">Vec2OuterProduct</a> (const <a class="el" href="class_vector2.html">Vector2</a> *v1, const <a class="el" href="class_vector2.html">Vector2</a> *v2)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">外積  <a href="#a5e4b1f9e5afd3a302b2ccdab445e7882"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">float&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="vector_8cpp.html#a990531ac2b8570fa97050ce245f17513">Vec2InnerProduct</a> (const <a class="el" href="class_vector2.html">Vector2</a> *v1, const <a class="el" href="class_vector2.html">Vector2</a> *v2)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">内積  <a href="#a990531ac2b8570fa97050ce245f17513"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_vector2.html">Vector2</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="vector_8cpp.html#aa1bc5c84d16ba4069e05354d7e607e04">Vec2Lerp</a> (<a class="el" href="class_vector2.html">Vector2</a> *out, const <a class="el" href="class_vector2.html">Vector2</a> *v1, const <a class="el" href="class_vector2.html">Vector2</a> *v2, float s)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">線形補間  <a href="#aa1bc5c84d16ba4069e05354d7e607e04"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_vector2.html">Vector2</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="vector_8cpp.html#a542455c3ef23c07f6114abf3914bcd06">Vec2BaryCentric</a> (<a class="el" href="class_vector2.html">Vector2</a> *out, const <a class="el" href="class_vector2.html">Vector2</a> *v1, const <a class="el" href="class_vector2.html">Vector2</a> *v2, const <a class="el" href="class_vector2.html">Vector2</a> *v3, float f, float g)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">重心座標計算  <a href="#a542455c3ef23c07f6114abf3914bcd06"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_vector3.html">Vector3</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="vector_8cpp.html#a5ef904158dbd7e18b822916fccd9dcab">operator*</a> (float s, const <a class="el" href="class_vector3.html">Vector3</a> &amp;v)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">スケールオペレータ  <a href="#a5ef904158dbd7e18b822916fccd9dcab"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_vector3.html">Vector3</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="vector_8cpp.html#a993e9e4648beb5dde25333fc6bea7774">Vec3Add</a> (<a class="el" href="class_vector3.html">Vector3</a> *out, const <a class="el" href="class_vector3.html">Vector3</a> *v1, const <a class="el" href="class_vector3.html">Vector3</a> *v2)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">加算  <a href="#a993e9e4648beb5dde25333fc6bea7774"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_vector3.html">Vector3</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="vector_8cpp.html#a323344562a00b05cc4b702961d472feb">Vec3Subtract</a> (<a class="el" href="class_vector3.html">Vector3</a> *out, const <a class="el" href="class_vector3.html">Vector3</a> *v1, const <a class="el" href="class_vector3.html">Vector3</a> *v2)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">減算  <a href="#a323344562a00b05cc4b702961d472feb"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_vector3.html">Vector3</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="vector_8cpp.html#a91dc8d583a80dddafd26b502389fed39">Vec3Scale</a> (<a class="el" href="class_vector3.html">Vector3</a> *out, const <a class="el" href="class_vector3.html">Vector3</a> *v, float s)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">スケール  <a href="#a91dc8d583a80dddafd26b502389fed39"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_vector3.html">Vector3</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="vector_8cpp.html#a0005f0d62dae5b7a39ecb45c5837e37a">Vec3Maximize</a> (<a class="el" href="class_vector3.html">Vector3</a> *out, const <a class="el" href="class_vector3.html">Vector3</a> *v1, const <a class="el" href="class_vector3.html">Vector3</a> *v2)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">成分毎の最大  <a href="#a0005f0d62dae5b7a39ecb45c5837e37a"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_vector3.html">Vector3</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="vector_8cpp.html#a6d3bd6c2bbfdae5ba9d3ed6302a5a679">Vec3Minimize</a> (<a class="el" href="class_vector3.html">Vector3</a> *out, const <a class="el" href="class_vector3.html">Vector3</a> *v1, const <a class="el" href="class_vector3.html">Vector3</a> *v2)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">成分毎の最小  <a href="#a6d3bd6c2bbfdae5ba9d3ed6302a5a679"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">float&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="vector_8cpp.html#a83bc74bf4b8af8671603a591ae2875d2">Vec3Length</a> (const <a class="el" href="class_vector3.html">Vector3</a> *v)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">ベクトル長  <a href="#a83bc74bf4b8af8671603a591ae2875d2"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">float&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="vector_8cpp.html#a216d13a5c8586a3a2e0ae50a156ca264">Vec3LengthSq</a> (const <a class="el" href="class_vector3.html">Vector3</a> *v)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">ベクトル平方長  <a href="#a216d13a5c8586a3a2e0ae50a156ca264"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_vector3.html">Vector3</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="vector_8cpp.html#adc5ae7e0d032629fdb67b79fffae7d17">Vec3Normalize</a> (<a class="el" href="class_vector3.html">Vector3</a> *out, const <a class="el" href="class_vector3.html">Vector3</a> *v)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">正規化  <a href="#adc5ae7e0d032629fdb67b79fffae7d17"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_vector3.html">Vector3</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="vector_8cpp.html#abb74def84e42dd52a51fe0f02f46b862">Vec3OuterProduct</a> (<a class="el" href="class_vector3.html">Vector3</a> *out, const <a class="el" href="class_vector3.html">Vector3</a> *v1, const <a class="el" href="class_vector3.html">Vector3</a> *v2)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">外積  <a href="#abb74def84e42dd52a51fe0f02f46b862"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">float&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="vector_8cpp.html#a09cb259aa244962bda0ba4b662e981d1">Vec3InnerProduct</a> (const <a class="el" href="class_vector3.html">Vector3</a> *v1, const <a class="el" href="class_vector3.html">Vector3</a> *v2)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">内積  <a href="#a09cb259aa244962bda0ba4b662e981d1"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_vector3.html">Vector3</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="vector_8cpp.html#a71c4479394b78f21879a57886b409987">Vec3Lerp</a> (<a class="el" href="class_vector3.html">Vector3</a> *out, const <a class="el" href="class_vector3.html">Vector3</a> *v1, const <a class="el" href="class_vector3.html">Vector3</a> *v2, float s)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">線形補間  <a href="#a71c4479394b78f21879a57886b409987"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_vector3.html">Vector3</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="vector_8cpp.html#a63652e818b46a9daa0f24739526ddc31">Vec3BaryCentric</a> (<a class="el" href="class_vector3.html">Vector3</a> *out, const <a class="el" href="class_vector3.html">Vector3</a> *v1, const <a class="el" href="class_vector3.html">Vector3</a> *v2, const <a class="el" href="class_vector3.html">Vector3</a> *v3, float f, float g)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">重心座標計算  <a href="#a63652e818b46a9daa0f24739526ddc31"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_vector3.html">Vector3</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="vector_8cpp.html#a60e94ca0a46059a76d0739bc39182dcf">Vec3OrthogonalTransform</a> (<a class="el" href="class_vector3.html">Vector3</a> *out, const <a class="el" href="class_vector3.html">Vector3</a> *v, const <a class="el" href="class_vector3.html">Vector3</a> *x, const <a class="el" href="class_vector3.html">Vector3</a> *y, const <a class="el" href="class_vector3.html">Vector3</a> *z)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">正規直行基底による直行変換  <a href="#a60e94ca0a46059a76d0739bc39182dcf"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_vector4.html">Vector4</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="vector_8cpp.html#a5bb3e92e4a4c7eddc1cbe2b8ae9ab758">operator*</a> (float s, const <a class="el" href="class_vector4.html">Vector4</a> &amp;v)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">スケールオペレータ  <a href="#a5bb3e92e4a4c7eddc1cbe2b8ae9ab758"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_vector4.html">Vector4</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="vector_8cpp.html#a1ccd3e753bde5cd1ca0e5e0392b23cb7">Vec4Add</a> (<a class="el" href="class_vector4.html">Vector4</a> *out, const <a class="el" href="class_vector4.html">Vector4</a> *v1, const <a class="el" href="class_vector4.html">Vector4</a> *v2)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">加算  <a href="#a1ccd3e753bde5cd1ca0e5e0392b23cb7"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_vector4.html">Vector4</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="vector_8cpp.html#a8b879903dafd63ef0f1e4c5a929650aa">Vec4Subtract</a> (<a class="el" href="class_vector4.html">Vector4</a> *out, const <a class="el" href="class_vector4.html">Vector4</a> *v1, const <a class="el" href="class_vector4.html">Vector4</a> *v2)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">減算  <a href="#a8b879903dafd63ef0f1e4c5a929650aa"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_vector4.html">Vector4</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="vector_8cpp.html#a889361fab6262c3a485e784d5c9eaaa0">Vec4Scale</a> (<a class="el" href="class_vector4.html">Vector4</a> *out, const <a class="el" href="class_vector4.html">Vector4</a> *v, float s)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">スケール  <a href="#a889361fab6262c3a485e784d5c9eaaa0"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_vector4.html">Vector4</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="vector_8cpp.html#a82323319580ede344102406ab29f7763">Vec4Maximize</a> (<a class="el" href="class_vector4.html">Vector4</a> *out, const <a class="el" href="class_vector4.html">Vector4</a> *v1, const <a class="el" href="class_vector4.html">Vector4</a> *v2)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">成分毎の最大  <a href="#a82323319580ede344102406ab29f7763"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_vector4.html">Vector4</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="vector_8cpp.html#af3d085dd20b1d87363920d6e3a4d4af7">Vec4Minimize</a> (<a class="el" href="class_vector4.html">Vector4</a> *out, const <a class="el" href="class_vector4.html">Vector4</a> *v1, const <a class="el" href="class_vector4.html">Vector4</a> *v2)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">成分毎の最小  <a href="#af3d085dd20b1d87363920d6e3a4d4af7"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">float&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="vector_8cpp.html#aa2f839623c38e8e2c2f5ba78232cca91">Vec4Length</a> (const <a class="el" href="class_vector4.html">Vector4</a> *v)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">ベクトル長  <a href="#aa2f839623c38e8e2c2f5ba78232cca91"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">float&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="vector_8cpp.html#a7b16c960df2f775a2be3314a24a96ae1">Vec4LengthSq</a> (const <a class="el" href="class_vector4.html">Vector4</a> *v)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">ベクトル平方長  <a href="#a7b16c960df2f775a2be3314a24a96ae1"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_vector4.html">Vector4</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="vector_8cpp.html#aff7c78554189b91f5d23cd3c0fc235c5">Vec4Normalize</a> (<a class="el" href="class_vector4.html">Vector4</a> *out, const <a class="el" href="class_vector4.html">Vector4</a> *v)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">正規化  <a href="#aff7c78554189b91f5d23cd3c0fc235c5"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">float&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="vector_8cpp.html#a1810e684728aad22a5e7c5a118d4932c">Vec4InnerProduct</a> (const <a class="el" href="class_vector4.html">Vector4</a> *v1, const <a class="el" href="class_vector4.html">Vector4</a> *v2)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">内積  <a href="#a1810e684728aad22a5e7c5a118d4932c"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_vector4.html">Vector4</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="vector_8cpp.html#a84f502ea173cc19172f5082b479765b2">Vec4Lerp</a> (<a class="el" href="class_vector4.html">Vector4</a> *out, const <a class="el" href="class_vector4.html">Vector4</a> *v1, const <a class="el" href="class_vector4.html">Vector4</a> *v2, float s)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">線形補間  <a href="#a84f502ea173cc19172f5082b479765b2"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_vector4.html">Vector4</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="vector_8cpp.html#af8e12e787012c4e925c0d40aca013fed">Vec4BaryCentric</a> (<a class="el" href="class_vector4.html">Vector4</a> *out, const <a class="el" href="class_vector4.html">Vector4</a> *v1, const <a class="el" href="class_vector4.html">Vector4</a> *v2, const <a class="el" href="class_vector4.html">Vector4</a> *v3, float f, float g)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">重心座標計算  <a href="#af8e12e787012c4e925c0d40aca013fed"></a><br/></td></tr>
+</table>
+<hr/><a name="_details"></a><h2>説明</h2>
+<p>Vector 操作. </p>
+<dl class="author"><dt><b>作者:</b></dt><dd>M.Morimoto </dd></dl>
+<dl class="date"><dt><b>日付:</b></dt><dd>2004/06/11 </dd></dl>
+<hr/><h2>関数</h2>
+<a class="anchor" id="a5bb3e92e4a4c7eddc1cbe2b8ae9ab758"></a><!-- doxytag: member="vector.cpp::operator*" ref="a5bb3e92e4a4c7eddc1cbe2b8ae9ab758" args="(float s, const Vector4 &amp;v)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="class_vector4.html">Vector4</a> operator* </td>
+          <td>(</td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>s</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_vector4.html">Vector4</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>v</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>スケールオペレータ </p>
+<dl><dt><b>引数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>i]</em>&nbsp;</td><td>s: スケール </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>i]</em>&nbsp;</td><td>v: 座標 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl><dt><b>戻り値:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>スケールの結果</em>&nbsp;</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="author"><dt><b>作者:</b></dt><dd>M.Morimoto </dd></dl>
+<dl class="date"><dt><b>日付:</b></dt><dd></dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a5ef904158dbd7e18b822916fccd9dcab"></a><!-- doxytag: member="vector.cpp::operator*" ref="a5ef904158dbd7e18b822916fccd9dcab" args="(float s, const Vector3 &amp;v)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="class_vector3.html">Vector3</a> operator* </td>
+          <td>(</td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>s</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_vector3.html">Vector3</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>v</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>スケールオペレータ </p>
+<dl><dt><b>引数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>i]</em>&nbsp;</td><td>s: スケール </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>i]</em>&nbsp;</td><td>v: 座標 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl><dt><b>戻り値:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>スケールの結果</em>&nbsp;</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="author"><dt><b>作者:</b></dt><dd>M.Morimoto </dd></dl>
+<dl class="date"><dt><b>日付:</b></dt><dd></dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="aecfda46261e5482309c0af6072e8632c"></a><!-- doxytag: member="vector.cpp::operator*" ref="aecfda46261e5482309c0af6072e8632c" args="(float s, const Vector2 &amp;v)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="class_vector2.html">Vector2</a> operator* </td>
+          <td>(</td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>s</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_vector2.html">Vector2</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>v</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>スケールオペレータ </p>
+<dl><dt><b>引数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>i]</em>&nbsp;</td><td>s: スケール </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>i]</em>&nbsp;</td><td>v: 座標 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl><dt><b>戻り値:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>スケールの結果</em>&nbsp;</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="author"><dt><b>作者:</b></dt><dd>M.Morimoto </dd></dl>
+<dl class="date"><dt><b>日付:</b></dt><dd></dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a976659b16c60fc19143421436bdca45f"></a><!-- doxytag: member="vector.cpp::Vec2Add" ref="a976659b16c60fc19143421436bdca45f" args="(Vector2 *out, const Vector2 *v1, const Vector2 *v2)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_vector2.html">Vector2</a>* Vec2Add </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_vector2.html">Vector2</a> *&nbsp;</td>
+          <td class="paramname"> <em>out</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_vector2.html">Vector2</a> *&nbsp;</td>
+          <td class="paramname"> <em>v1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_vector2.html">Vector2</a> *&nbsp;</td>
+          <td class="paramname"> <em>v2</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>加算 </p>
+<dl><dt><b>引数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>o]</em>&nbsp;</td><td>out: v1 + v2 の結果 </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>i]</em>&nbsp;</td><td>v1: </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>i]</em>&nbsp;</td><td>v2: </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl><dt><b>戻り値:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>out</em>&nbsp;</td><td>と同じ </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="author"><dt><b>作者:</b></dt><dd>M.Morimoto </dd></dl>
+<dl class="date"><dt><b>日付:</b></dt><dd></dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a542455c3ef23c07f6114abf3914bcd06"></a><!-- doxytag: member="vector.cpp::Vec2BaryCentric" ref="a542455c3ef23c07f6114abf3914bcd06" args="(Vector2 *out, const Vector2 *v1, const Vector2 *v2, const Vector2 *v3, float f, float g)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_vector2.html">Vector2</a>* Vec2BaryCentric </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_vector2.html">Vector2</a> *&nbsp;</td>
+          <td class="paramname"> <em>out</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_vector2.html">Vector2</a> *&nbsp;</td>
+          <td class="paramname"> <em>v1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_vector2.html">Vector2</a> *&nbsp;</td>
+          <td class="paramname"> <em>v2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_vector2.html">Vector2</a> *&nbsp;</td>
+          <td class="paramname"> <em>v3</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>f</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>g</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>重心座標計算 </p>
+<dl><dt><b>引数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>o]</em>&nbsp;</td><td>out: 結果 </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>i]</em>&nbsp;</td><td>v1: 頂点 1 </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>i]</em>&nbsp;</td><td>v2: 頂点 2 </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>i]</em>&nbsp;</td><td>v3: 頂点 3 </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>i]</em>&nbsp;</td><td>f: 重み係数 </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>i]</em>&nbsp;</td><td>g: 重み係数 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl><dt><b>戻り値:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>out</em>&nbsp;</td><td>と同じ </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="note"><dt><b>覚え書き:</b></dt><dd>D3DXVec3BaryCentric 関数は、三角形の実際の位置とは関係なく、 三角形の内部や周辺の点を理解する方法を提供する。 この関数は、次の式を使って結果である点を返す。V1 + f(V2-V1) + g(V3-V1) 平面 V1V2V3 の点はいずれも、重心座標 (f,g) で表すことができる。 パラメータ f は、V2 の結果に対する加重を制御し、 パラメータ g は、V3 の結果に対する加重を制御する。 最後に、1-f-g は V1 の結果に対する加重を制御する。 次の関係に注意すること。 (f&gt;=0 &amp;&amp; g&gt;=0 &amp;&amp; 1-f-g&gt;=0) の場合、点は三角形 V1V2V3 内にある。 (f==0 &amp;&amp; g&gt;=0 &amp;&amp; 1-f-g&gt;=0) の場合、点は線 V1V3 上にある。 (f&gt;=0 &amp;&amp; g==0 &amp;&amp; 1-f-g&gt;=0) の場合、点は線 V1V2 上にある。 (f&gt;=0 &amp;&amp; g&gt;=0 &amp;&amp; 1-f-g==0) の場合、点は線 V2V3 上にある。 重心座標は一般座標の 1 つの形式である。 このコンテキストで、重心座標を使うことは、座標系の変更を表している。 直交座標で真のものは、重心座標でも真である。 </dd></dl>
+<dl class="author"><dt><b>作者:</b></dt><dd>M.Morimoto </dd></dl>
+<dl class="date"><dt><b>日付:</b></dt><dd></dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a990531ac2b8570fa97050ce245f17513"></a><!-- doxytag: member="vector.cpp::Vec2InnerProduct" ref="a990531ac2b8570fa97050ce245f17513" args="(const Vector2 *v1, const Vector2 *v2)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float Vec2InnerProduct </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_vector2.html">Vector2</a> *&nbsp;</td>
+          <td class="paramname"> <em>v1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_vector2.html">Vector2</a> *&nbsp;</td>
+          <td class="paramname"> <em>v2</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>内積 </p>
+<dl><dt><b>引数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>i]</em>&nbsp;</td><td>v1: </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>i]</em>&nbsp;</td><td>v2: </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl><dt><b>戻り値:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>内積結果</em>&nbsp;</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="author"><dt><b>作者:</b></dt><dd>M.Morimoto </dd></dl>
+<dl class="date"><dt><b>日付:</b></dt><dd></dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ad2b0224d28325324128d5e955d041f73"></a><!-- doxytag: member="vector.cpp::Vec2Length" ref="ad2b0224d28325324128d5e955d041f73" args="(const Vector2 *v)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float Vec2Length </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_vector2.html">Vector2</a> *&nbsp;</td>
+          <td class="paramname"> <em>v</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>ベクトル長 </p>
+<dl><dt><b>引数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>i]</em>&nbsp;</td><td>v: </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl><dt><b>戻り値:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>ベクトル長</em>&nbsp;</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="author"><dt><b>作者:</b></dt><dd>M.Morimoto </dd></dl>
+<dl class="date"><dt><b>日付:</b></dt><dd></dd></dl>
+
+<p><div class="dynheader">
+呼出しグラフ:</div>
+<div class="dynsection">
+<div class="center"><img src="vector_8cpp_ad2b0224d28325324128d5e955d041f73_icgraph.png" border="0" usemap="#vector_8cpp_ad2b0224d28325324128d5e955d041f73_icgraph_map" alt=""></div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ae57fcfcc7b1f2450842493ada55cd15b"></a><!-- doxytag: member="vector.cpp::Vec2LengthSq" ref="ae57fcfcc7b1f2450842493ada55cd15b" args="(const Vector2 *v)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float Vec2LengthSq </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_vector2.html">Vector2</a> *&nbsp;</td>
+          <td class="paramname"> <em>v</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>ベクトル平方長 </p>
+<dl><dt><b>引数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>i]</em>&nbsp;</td><td>v: </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl><dt><b>戻り値:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>ベクトル平方長</em>&nbsp;</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="author"><dt><b>作者:</b></dt><dd>M.Morimoto </dd></dl>
+<dl class="date"><dt><b>日付:</b></dt><dd></dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="aa1bc5c84d16ba4069e05354d7e607e04"></a><!-- doxytag: member="vector.cpp::Vec2Lerp" ref="aa1bc5c84d16ba4069e05354d7e607e04" args="(Vector2 *out, const Vector2 *v1, const Vector2 *v2, float s)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_vector2.html">Vector2</a>* Vec2Lerp </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_vector2.html">Vector2</a> *&nbsp;</td>
+          <td class="paramname"> <em>out</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_vector2.html">Vector2</a> *&nbsp;</td>
+          <td class="paramname"> <em>v1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_vector2.html">Vector2</a> *&nbsp;</td>
+          <td class="paramname"> <em>v2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>s</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>線形補間 </p>
+<dl><dt><b>引数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>o]</em>&nbsp;</td><td>out: v1 + (v2 - v1) * s の結果 </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>i]</em>&nbsp;</td><td>v1: </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>i]</em>&nbsp;</td><td>v2: </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>i]</em>&nbsp;</td><td>s: 重み係数 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl><dt><b>戻り値:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>out</em>&nbsp;</td><td>と同じ </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="author"><dt><b>作者:</b></dt><dd>M.Morimoto </dd></dl>
+<dl class="date"><dt><b>日付:</b></dt><dd></dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a21654a0801f01663146439cda9f89945"></a><!-- doxytag: member="vector.cpp::Vec2Maximize" ref="a21654a0801f01663146439cda9f89945" args="(Vector2 *out, const Vector2 *v1, const Vector2 *v2)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_vector2.html">Vector2</a>* Vec2Maximize </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_vector2.html">Vector2</a> *&nbsp;</td>
+          <td class="paramname"> <em>out</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_vector2.html">Vector2</a> *&nbsp;</td>
+          <td class="paramname"> <em>v1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_vector2.html">Vector2</a> *&nbsp;</td>
+          <td class="paramname"> <em>v2</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>成分毎の最大 </p>
+<dl><dt><b>引数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>o]</em>&nbsp;</td><td>out: </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>i]</em>&nbsp;</td><td>v1: </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>i]</em>&nbsp;</td><td>v2: </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl><dt><b>戻り値:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>out</em>&nbsp;</td><td>と同じ </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="author"><dt><b>作者:</b></dt><dd>M.Morimoto </dd></dl>
+<dl class="date"><dt><b>日付:</b></dt><dd></dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a2ec820c88e0ed137a453ff17bcaf4f77"></a><!-- doxytag: member="vector.cpp::Vec2Minimize" ref="a2ec820c88e0ed137a453ff17bcaf4f77" args="(Vector2 *out, const Vector2 *v1, const Vector2 *v2)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_vector2.html">Vector2</a>* Vec2Minimize </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_vector2.html">Vector2</a> *&nbsp;</td>
+          <td class="paramname"> <em>out</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_vector2.html">Vector2</a> *&nbsp;</td>
+          <td class="paramname"> <em>v1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_vector2.html">Vector2</a> *&nbsp;</td>
+          <td class="paramname"> <em>v2</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>成分毎の最小 </p>
+<dl><dt><b>引数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>o]</em>&nbsp;</td><td>out: </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>i]</em>&nbsp;</td><td>v1: </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>i]</em>&nbsp;</td><td>v2: </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl><dt><b>戻り値:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>out</em>&nbsp;</td><td>と同じ </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="author"><dt><b>作者:</b></dt><dd>M.Morimoto </dd></dl>
+<dl class="date"><dt><b>日付:</b></dt><dd></dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="aae1600a21d4e7b81737f056375e582fc"></a><!-- doxytag: member="vector.cpp::Vec2Normalize" ref="aae1600a21d4e7b81737f056375e582fc" args="(Vector2 *out, const Vector2 *v)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_vector2.html">Vector2</a>* Vec2Normalize </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_vector2.html">Vector2</a> *&nbsp;</td>
+          <td class="paramname"> <em>out</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_vector2.html">Vector2</a> *&nbsp;</td>
+          <td class="paramname"> <em>v</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>正規化 </p>
+<dl><dt><b>引数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>o]</em>&nbsp;</td><td>out: 正規化ベクトル </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>i]</em>&nbsp;</td><td>v: 元ベクトル </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl><dt><b>戻り値:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>out</em>&nbsp;</td><td>と同じ </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="author"><dt><b>作者:</b></dt><dd>M.Morimoto </dd></dl>
+<dl class="date"><dt><b>日付:</b></dt><dd></dd></dl>
+
+<p><div class="dynheader">
+関数の呼び出しグラフ:</div>
+<div class="dynsection">
+<div class="center"><img src="vector_8cpp_aae1600a21d4e7b81737f056375e582fc_cgraph.png" border="0" usemap="#vector_8cpp_aae1600a21d4e7b81737f056375e582fc_cgraph_map" alt=""></div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a5e4b1f9e5afd3a302b2ccdab445e7882"></a><!-- doxytag: member="vector.cpp::Vec2OuterProduct" ref="a5e4b1f9e5afd3a302b2ccdab445e7882" args="(const Vector2 *v1, const Vector2 *v2)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float Vec2OuterProduct </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_vector2.html">Vector2</a> *&nbsp;</td>
+          <td class="paramname"> <em>v1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_vector2.html">Vector2</a> *&nbsp;</td>
+          <td class="paramname"> <em>v2</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>外積 </p>
+<dl><dt><b>引数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>i]</em>&nbsp;</td><td>v1: </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>i]</em>&nbsp;</td><td>v2: </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl><dt><b>戻り値:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>外積結果</em>&nbsp;</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="author"><dt><b>作者:</b></dt><dd>M.Morimoto </dd></dl>
+<dl class="date"><dt><b>日付:</b></dt><dd></dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a1b19b5aa370c578737fcdfd2bb3eebcf"></a><!-- doxytag: member="vector.cpp::Vec2Scale" ref="a1b19b5aa370c578737fcdfd2bb3eebcf" args="(Vector2 *out, const Vector2 *v, float s)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_vector2.html">Vector2</a>* Vec2Scale </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_vector2.html">Vector2</a> *&nbsp;</td>
+          <td class="paramname"> <em>out</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_vector2.html">Vector2</a> *&nbsp;</td>
+          <td class="paramname"> <em>v</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>s</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>スケール </p>
+<dl><dt><b>引数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>o]</em>&nbsp;</td><td>out: v * s の結果 </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>i]</em>&nbsp;</td><td>v: </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>i]</em>&nbsp;</td><td>s: </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl><dt><b>戻り値:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>out</em>&nbsp;</td><td>と同じ </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="author"><dt><b>作者:</b></dt><dd>M.Morimoto </dd></dl>
+<dl class="date"><dt><b>日付:</b></dt><dd></dd></dl>
+
+<p><div class="dynheader">
+呼出しグラフ:</div>
+<div class="dynsection">
+<div class="center"><img src="vector_8cpp_a1b19b5aa370c578737fcdfd2bb3eebcf_icgraph.png" border="0" usemap="#vector_8cpp_a1b19b5aa370c578737fcdfd2bb3eebcf_icgraph_map" alt=""></div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a7e5b37c3d7a77a7fa49c437a20d05dd0"></a><!-- doxytag: member="vector.cpp::Vec2Subtract" ref="a7e5b37c3d7a77a7fa49c437a20d05dd0" args="(Vector2 *out, const Vector2 *v1, const Vector2 *v2)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_vector2.html">Vector2</a>* Vec2Subtract </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_vector2.html">Vector2</a> *&nbsp;</td>
+          <td class="paramname"> <em>out</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_vector2.html">Vector2</a> *&nbsp;</td>
+          <td class="paramname"> <em>v1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_vector2.html">Vector2</a> *&nbsp;</td>
+          <td class="paramname"> <em>v2</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>減算 </p>
+<dl><dt><b>引数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>o]</em>&nbsp;</td><td>out: v1 - v2 の結果 </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>i]</em>&nbsp;</td><td>v1: </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>i]</em>&nbsp;</td><td>v2: </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl><dt><b>戻り値:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>out</em>&nbsp;</td><td>と同じ </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="author"><dt><b>作者:</b></dt><dd>M.Morimoto </dd></dl>
+<dl class="date"><dt><b>日付:</b></dt><dd></dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a993e9e4648beb5dde25333fc6bea7774"></a><!-- doxytag: member="vector.cpp::Vec3Add" ref="a993e9e4648beb5dde25333fc6bea7774" args="(Vector3 *out, const Vector3 *v1, const Vector3 *v2)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_vector3.html">Vector3</a>* Vec3Add </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_vector3.html">Vector3</a> *&nbsp;</td>
+          <td class="paramname"> <em>out</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_vector3.html">Vector3</a> *&nbsp;</td>
+          <td class="paramname"> <em>v1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_vector3.html">Vector3</a> *&nbsp;</td>
+          <td class="paramname"> <em>v2</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>加算 </p>
+<dl><dt><b>引数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>o]</em>&nbsp;</td><td>out: v1 + v2 の結果 </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>i]</em>&nbsp;</td><td>v1: </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>i]</em>&nbsp;</td><td>v2: </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl><dt><b>戻り値:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>out</em>&nbsp;</td><td>と同じ </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="author"><dt><b>作者:</b></dt><dd>M.Morimoto </dd></dl>
+<dl class="date"><dt><b>日付:</b></dt><dd></dd></dl>
+
+<p><div class="dynheader">
+呼出しグラフ:</div>
+<div class="dynsection">
+<div class="center"><img src="vector_8cpp_a993e9e4648beb5dde25333fc6bea7774_icgraph.png" border="0" usemap="#vector_8cpp_a993e9e4648beb5dde25333fc6bea7774_icgraph_map" alt=""></div>
+<map name="vector_8cpp_a993e9e4648beb5dde25333fc6bea7774_icgraph_map" id="vector_8cpp_a993e9e4648beb5dde25333fc6bea7774_icgraph">
+<area shape="rect" id="node3" href="class_triangle.html#a5177145f3f2ff46660b4d6e3a1de4a29" title="Triangle::CalcVertex" alt="" coords="128,5,267,35"/><area shape="rect" id="node5" href="class_sphere.html#a22351ab191ed71446c361dc3ddaeb1da" title="Sphere::CalcVertex" alt="" coords="131,59,264,88"/><area shape="rect" id="node7" href="main_8cpp.html#aea350e147e9d27d97c595f69659a4dfd" title="シーンの初期化" alt="" coords="179,112,216,141"/><area shape="rect" id="node11" href="main_8cpp.html#ab0f080e6accf9381e116c59e307a4822" title="リファレンスシーンの初期化" alt="" coords="131,165,264,195"/><area shape="rect" id="node14" href="class_triangle.html#a5e90bcc3edac7159c84eceee8e082a6e" title="Triangle::Intersect" alt="" coords="135,219,260,248"/><area shape="rect" id="node16" href="class_kd_tree.html#acddd76fb3e40c259c70a9c87fd27fca1" title="KdTree::Traverse" alt="" coords="139,272,256,301"/><area shape="rect" id="node9" href="main_8cpp.html#ac0f2228420376f4db7e1274f2b41667c" title="エントリー" alt="" coords="315,139,365,168"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a63652e818b46a9daa0f24739526ddc31"></a><!-- doxytag: member="vector.cpp::Vec3BaryCentric" ref="a63652e818b46a9daa0f24739526ddc31" args="(Vector3 *out, const Vector3 *v1, const Vector3 *v2, const Vector3 *v3, float f, float g)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_vector3.html">Vector3</a>* Vec3BaryCentric </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_vector3.html">Vector3</a> *&nbsp;</td>
+          <td class="paramname"> <em>out</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_vector3.html">Vector3</a> *&nbsp;</td>
+          <td class="paramname"> <em>v1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_vector3.html">Vector3</a> *&nbsp;</td>
+          <td class="paramname"> <em>v2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_vector3.html">Vector3</a> *&nbsp;</td>
+          <td class="paramname"> <em>v3</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>f</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>g</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>重心座標計算 </p>
+<dl><dt><b>引数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>o]</em>&nbsp;</td><td>out: 結果 </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>i]</em>&nbsp;</td><td>v1: 頂点 1 </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>i]</em>&nbsp;</td><td>v2: 頂点 2 </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>i]</em>&nbsp;</td><td>v3: 頂点 3 </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>i]</em>&nbsp;</td><td>f: 重み係数 </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>i]</em>&nbsp;</td><td>g: 重み係数 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl><dt><b>戻り値:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>out</em>&nbsp;</td><td>と同じ </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="author"><dt><b>作者:</b></dt><dd>M.Morimoto </dd></dl>
+<dl class="date"><dt><b>日付:</b></dt><dd></dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a09cb259aa244962bda0ba4b662e981d1"></a><!-- doxytag: member="vector.cpp::Vec3InnerProduct" ref="a09cb259aa244962bda0ba4b662e981d1" args="(const Vector3 *v1, const Vector3 *v2)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float Vec3InnerProduct </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_vector3.html">Vector3</a> *&nbsp;</td>
+          <td class="paramname"> <em>v1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_vector3.html">Vector3</a> *&nbsp;</td>
+          <td class="paramname"> <em>v2</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>内積 </p>
+<dl><dt><b>引数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>i]</em>&nbsp;</td><td>v1: </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>i]</em>&nbsp;</td><td>v2: </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl><dt><b>戻り値:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>内積結果</em>&nbsp;</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="author"><dt><b>作者:</b></dt><dd>M.Morimoto </dd></dl>
+<dl class="date"><dt><b>日付:</b></dt><dd></dd></dl>
+
+<p><div class="dynheader">
+呼出しグラフ:</div>
+<div class="dynsection">
+<div class="center"><img src="vector_8cpp_a09cb259aa244962bda0ba4b662e981d1_icgraph.png" border="0" usemap="#vector_8cpp_a09cb259aa244962bda0ba4b662e981d1_icgraph_map" alt=""></div>
+<map name="vector_8cpp_a09cb259aa244962bda0ba4b662e981d1_icgraph_map" id="vector_8cpp_a09cb259aa244962bda0ba4b662e981d1_icgraph">
+<area shape="rect" id="node3" href="reflection_8h.html#a814a27a238ed6469d63c762fde5fad3e" title="正反射ベクトルを求める" alt="" coords="180,59,284,88"/><area shape="rect" id="node5" href="class_light.html#aebb6f284c267659bf4ed609d1014041b" title="Light::Lighting" alt="" coords="368,5,469,35"/><area shape="rect" id="node10" href="vecmat_8h.html#aa89855bfb3632ddc38c5743869da65c7" title="注視点行列" alt="" coords="183,139,281,168"/><area shape="rect" id="node21" href="primitive_8cpp.html#a072199438464a0367399cfe4c3e87889" title="球と光線の交差判定" alt="" coords="183,219,281,248"/><area shape="rect" id="node7" href="reflection_8h.html#a45559e6b4db8cf5acf1022852483a187" title="ランダム反射ベクトル" alt="" coords="333,59,504,88"/><area shape="rect" id="node12" href="main_8cpp.html#aea350e147e9d27d97c595f69659a4dfd" title="シーンの初期化" alt="" coords="400,112,437,141"/><area shape="rect" id="node16" href="main_8cpp.html#ab0f080e6accf9381e116c59e307a4822" title="リファレンスシーンの初期化" alt="" coords="352,165,485,195"/><area shape="rect" id="node19" href="vecmat_8h.html#ad9e1aa28dc51c2df9f20c10074877534" title="視点行列" alt="" coords="376,219,461,248"/><area shape="rect" id="node14" href="main_8cpp.html#ac0f2228420376f4db7e1274f2b41667c" title="エントリー" alt="" coords="552,139,603,168"/><area shape="rect" id="node23" href="class_sphere.html#a2654021b2789829e5ae1d1c3b59a0d51" title="Sphere::Intersect" alt="" coords="359,272,479,301"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a83bc74bf4b8af8671603a591ae2875d2"></a><!-- doxytag: member="vector.cpp::Vec3Length" ref="a83bc74bf4b8af8671603a591ae2875d2" args="(const Vector3 *v)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float Vec3Length </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_vector3.html">Vector3</a> *&nbsp;</td>
+          <td class="paramname"> <em>v</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>ベクトル長 </p>
+<dl><dt><b>引数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>i]</em>&nbsp;</td><td>v: </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl><dt><b>戻り値:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>ベクトル長</em>&nbsp;</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="author"><dt><b>作者:</b></dt><dd>M.Morimoto </dd></dl>
+<dl class="date"><dt><b>日付:</b></dt><dd></dd></dl>
+
+<p><div class="dynheader">
+呼出しグラフ:</div>
+<div class="dynsection">
+<div class="center"><img src="vector_8cpp_a83bc74bf4b8af8671603a591ae2875d2_icgraph.png" border="0" usemap="#vector_8cpp_a83bc74bf4b8af8671603a591ae2875d2_icgraph_map" alt=""></div>
+<map name="vector_8cpp_a83bc74bf4b8af8671603a591ae2875d2_icgraph_map" id="vector_8cpp_a83bc74bf4b8af8671603a591ae2875d2_icgraph">
+<area shape="rect" id="node3" href="main_8cpp.html#aea350e147e9d27d97c595f69659a4dfd" title="シーンの初期化" alt="" coords="571,13,608,42"/><area shape="rect" id="node7" href="main_8cpp.html#ab0f080e6accf9381e116c59e307a4822" title="リファレンスシーンの初期化" alt="" coords="523,119,656,149"/><area shape="rect" id="node10" href="vector_8h.html#adc5ae7e0d032629fdb67b79fffae7d17" title="正規化" alt="" coords="145,219,255,249"/><area shape="rect" id="node5" href="main_8cpp.html#ac0f2228420376f4db7e1274f2b41667c" title="エントリー" alt="" coords="723,119,773,149"/><area shape="rect" id="node12" href="reflection_8h.html#ad97e756ced24485d23868f6f661c0c44" title="正接、従法線ベクトルを求める" alt="" coords="304,273,456,302"/><area shape="rect" id="node16" href="class_sphere.html#a22351ab191ed71446c361dc3ddaeb1da" title="Sphere::CalcVertex" alt="" coords="313,326,447,355"/><area shape="rect" id="node19" href="main_8cpp.html#a5d0a9f7b78068bab90a0e766000fcc7a" title="光源の初期化" alt="" coords="556,351,623,381"/><area shape="rect" id="node23" href="class_light.html#aebb6f284c267659bf4ed609d1014041b" title="Light::Lighting" alt="" coords="329,430,431,459"/><area shape="rect" id="node25" href="vecmat_8h.html#aa89855bfb3632ddc38c5743869da65c7" title="注視点行列" alt="" coords="331,65,429,94"/><area shape="rect" id="node31" href="class_camera.html#a3503ee7791815761317dc2ea50f61559" title="光線を算出" alt="" coords="315,219,445,249"/><area shape="rect" id="node14" href="reflection_8h.html#ad07ea616cdea0b00164a074e8a8234ee" title="半球内のランダムベクトル" alt="" coords="504,273,675,302"/><area shape="rect" id="node29" href="vecmat_8h.html#ad9e1aa28dc51c2df9f20c10074877534" title="視点行列" alt="" coords="547,66,632,95"/><area shape="rect" id="node33" href="class_renderer.html#a1abe79860f08ebccb3ce75d9f8e4e345" title="描画メイン" alt="" coords="528,219,651,249"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a216d13a5c8586a3a2e0ae50a156ca264"></a><!-- doxytag: member="vector.cpp::Vec3LengthSq" ref="a216d13a5c8586a3a2e0ae50a156ca264" args="(const Vector3 *v)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float Vec3LengthSq </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_vector3.html">Vector3</a> *&nbsp;</td>
+          <td class="paramname"> <em>v</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>ベクトル平方長 </p>
+<dl><dt><b>引数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>i]</em>&nbsp;</td><td>v: </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl><dt><b>戻り値:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>ベクトル平方長</em>&nbsp;</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="author"><dt><b>作者:</b></dt><dd>M.Morimoto </dd></dl>
+<dl class="date"><dt><b>日付:</b></dt><dd></dd></dl>
+
+<p><div class="dynheader">
+呼出しグラフ:</div>
+<div class="dynsection">
+<div class="center"><img src="vector_8cpp_a216d13a5c8586a3a2e0ae50a156ca264_icgraph.png" border="0" usemap="#vector_8cpp_a216d13a5c8586a3a2e0ae50a156ca264_icgraph_map" alt=""></div>
+<map name="vector_8cpp_a216d13a5c8586a3a2e0ae50a156ca264_icgraph_map" id="vector_8cpp_a216d13a5c8586a3a2e0ae50a156ca264_icgraph">
+<area shape="rect" id="node3" href="class_light.html#aebb6f284c267659bf4ed609d1014041b" title="Light::Lighting" alt="" coords="161,5,263,35"/><area shape="rect" id="node5" href="vecmat_8h.html#aa89855bfb3632ddc38c5743869da65c7" title="注視点行列" alt="" coords="163,59,261,88"/><area shape="rect" id="node7" href="main_8cpp.html#aea350e147e9d27d97c595f69659a4dfd" title="シーンの初期化" alt="" coords="361,5,399,35"/><area shape="rect" id="node11" href="main_8cpp.html#ab0f080e6accf9381e116c59e307a4822" title="リファレンスシーンの初期化" alt="" coords="313,59,447,88"/><area shape="rect" id="node14" href="vecmat_8h.html#ad9e1aa28dc51c2df9f20c10074877534" title="視点行列" alt="" coords="337,112,423,141"/><area shape="rect" id="node9" href="main_8cpp.html#ac0f2228420376f4db7e1274f2b41667c" title="エントリー" alt="" coords="496,32,547,61"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a71c4479394b78f21879a57886b409987"></a><!-- doxytag: member="vector.cpp::Vec3Lerp" ref="a71c4479394b78f21879a57886b409987" args="(Vector3 *out, const Vector3 *v1, const Vector3 *v2, float s)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_vector3.html">Vector3</a>* Vec3Lerp </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_vector3.html">Vector3</a> *&nbsp;</td>
+          <td class="paramname"> <em>out</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_vector3.html">Vector3</a> *&nbsp;</td>
+          <td class="paramname"> <em>v1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_vector3.html">Vector3</a> *&nbsp;</td>
+          <td class="paramname"> <em>v2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>s</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>線形補間 </p>
+<dl><dt><b>引数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>o]</em>&nbsp;</td><td>out: v1 + (v2 - v1) * s の結果 </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>i]</em>&nbsp;</td><td>v1: </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>i]</em>&nbsp;</td><td>v2: </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>i]</em>&nbsp;</td><td>s: 重み係数 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl><dt><b>戻り値:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>out</em>&nbsp;</td><td>と同じ </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="author"><dt><b>作者:</b></dt><dd>M.Morimoto </dd></dl>
+<dl class="date"><dt><b>日付:</b></dt><dd></dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a0005f0d62dae5b7a39ecb45c5837e37a"></a><!-- doxytag: member="vector.cpp::Vec3Maximize" ref="a0005f0d62dae5b7a39ecb45c5837e37a" args="(Vector3 *out, const Vector3 *v1, const Vector3 *v2)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_vector3.html">Vector3</a>* Vec3Maximize </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_vector3.html">Vector3</a> *&nbsp;</td>
+          <td class="paramname"> <em>out</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_vector3.html">Vector3</a> *&nbsp;</td>
+          <td class="paramname"> <em>v1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_vector3.html">Vector3</a> *&nbsp;</td>
+          <td class="paramname"> <em>v2</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>成分毎の最大 </p>
+<dl><dt><b>引数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>o]</em>&nbsp;</td><td>out: </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>i]</em>&nbsp;</td><td>v1: </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>i]</em>&nbsp;</td><td>v2: </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl><dt><b>戻り値:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>out</em>&nbsp;</td><td>と同じ </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="author"><dt><b>作者:</b></dt><dd>M.Morimoto </dd></dl>
+<dl class="date"><dt><b>日付:</b></dt><dd></dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a6d3bd6c2bbfdae5ba9d3ed6302a5a679"></a><!-- doxytag: member="vector.cpp::Vec3Minimize" ref="a6d3bd6c2bbfdae5ba9d3ed6302a5a679" args="(Vector3 *out, const Vector3 *v1, const Vector3 *v2)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_vector3.html">Vector3</a>* Vec3Minimize </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_vector3.html">Vector3</a> *&nbsp;</td>
+          <td class="paramname"> <em>out</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_vector3.html">Vector3</a> *&nbsp;</td>
+          <td class="paramname"> <em>v1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_vector3.html">Vector3</a> *&nbsp;</td>
+          <td class="paramname"> <em>v2</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>成分毎の最小 </p>
+<dl><dt><b>引数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>o]</em>&nbsp;</td><td>out: </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>i]</em>&nbsp;</td><td>v1: </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>i]</em>&nbsp;</td><td>v2: </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl><dt><b>戻り値:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>out</em>&nbsp;</td><td>と同じ </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="author"><dt><b>作者:</b></dt><dd>M.Morimoto </dd></dl>
+<dl class="date"><dt><b>日付:</b></dt><dd></dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="adc5ae7e0d032629fdb67b79fffae7d17"></a><!-- doxytag: member="vector.cpp::Vec3Normalize" ref="adc5ae7e0d032629fdb67b79fffae7d17" args="(Vector3 *out, const Vector3 *v)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_vector3.html">Vector3</a>* Vec3Normalize </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_vector3.html">Vector3</a> *&nbsp;</td>
+          <td class="paramname"> <em>out</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_vector3.html">Vector3</a> *&nbsp;</td>
+          <td class="paramname"> <em>v</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>正規化 </p>
+<dl><dt><b>引数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>o]</em>&nbsp;</td><td>out: 正規化ベクトル </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>i]</em>&nbsp;</td><td>v: 元ベクトル </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl><dt><b>戻り値:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>out</em>&nbsp;</td><td>と同じ </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="author"><dt><b>作者:</b></dt><dd>M.Morimoto </dd></dl>
+<dl class="date"><dt><b>日付:</b></dt><dd></dd></dl>
+
+<p><div class="dynheader">
+関数の呼び出しグラフ:</div>
+<div class="dynsection">
+<div class="center"><img src="vector_8cpp_adc5ae7e0d032629fdb67b79fffae7d17_cgraph.png" border="0" usemap="#vector_8cpp_adc5ae7e0d032629fdb67b79fffae7d17_cgraph_map" alt=""></div>
+</div>
+</p>
+
+<p><div class="dynheader">
+呼出しグラフ:</div>
+<div class="dynsection">
+<div class="center"><img src="vector_8cpp_adc5ae7e0d032629fdb67b79fffae7d17_icgraph.png" border="0" usemap="#vector_8cpp_adc5ae7e0d032629fdb67b79fffae7d17_icgraph_map" alt=""></div>
+<map name="vector_8cpp_adc5ae7e0d032629fdb67b79fffae7d17_icgraph_map" id="vector_8cpp_adc5ae7e0d032629fdb67b79fffae7d17_icgraph">
+<area shape="rect" id="node3" href="reflection_8h.html#ad97e756ced24485d23868f6f661c0c44" title="正接、従法線ベクトルを求める" alt="" coords="165,5,317,35"/><area shape="rect" id="node7" href="class_sphere.html#a22351ab191ed71446c361dc3ddaeb1da" title="Sphere::CalcVertex" alt="" coords="175,59,308,88"/><area shape="rect" id="node9" href="main_8cpp.html#aea350e147e9d27d97c595f69659a4dfd" title="シーンの初期化" alt="" coords="432,161,469,191"/><area shape="rect" id="node13" href="main_8cpp.html#a5d0a9f7b78068bab90a0e766000fcc7a" title="光源の初期化" alt="" coords="417,108,484,137"/><area shape="rect" id="node16" href="main_8cpp.html#ab0f080e6accf9381e116c59e307a4822" title="リファレンスシーンの初期化" alt="" coords="384,268,517,297"/><area shape="rect" id="node19" href="class_light.html#aebb6f284c267659bf4ed609d1014041b" title="Light::Lighting" alt="" coords="191,317,292,347"/><area shape="rect" id="node21" href="vecmat_8h.html#aa89855bfb3632ddc38c5743869da65c7" title="注視点行列" alt="" coords="192,213,291,243"/><area shape="rect" id="node27" href="class_camera.html#a3503ee7791815761317dc2ea50f61559" title="光線を算出" alt="" coords="176,371,307,400"/><area shape="rect" id="node5" href="reflection_8h.html#ad07ea616cdea0b00164a074e8a8234ee" title="半球内のランダムベクトル" alt="" coords="365,5,536,35"/><area shape="rect" id="node11" href="main_8cpp.html#ac0f2228420376f4db7e1274f2b41667c" title="エントリー" alt="" coords="584,161,635,191"/><area shape="rect" id="node25" href="vecmat_8h.html#ad9e1aa28dc51c2df9f20c10074877534" title="視点行列" alt="" coords="408,215,493,244"/><area shape="rect" id="node29" href="class_renderer.html#a1abe79860f08ebccb3ce75d9f8e4e345" title="描画メイン" alt="" coords="389,371,512,400"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a60e94ca0a46059a76d0739bc39182dcf"></a><!-- doxytag: member="vector.cpp::Vec3OrthogonalTransform" ref="a60e94ca0a46059a76d0739bc39182dcf" args="(Vector3 *out, const Vector3 *v, const Vector3 *x, const Vector3 *y, const Vector3 *z)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_vector3.html">Vector3</a>* Vec3OrthogonalTransform </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_vector3.html">Vector3</a> *&nbsp;</td>
+          <td class="paramname"> <em>out</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_vector3.html">Vector3</a> *&nbsp;</td>
+          <td class="paramname"> <em>v</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_vector3.html">Vector3</a> *&nbsp;</td>
+          <td class="paramname"> <em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_vector3.html">Vector3</a> *&nbsp;</td>
+          <td class="paramname"> <em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_vector3.html">Vector3</a> *&nbsp;</td>
+          <td class="paramname"> <em>z</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>正規直行基底による直行変換 </p>
+<dl><dt><b>引数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>o]</em>&nbsp;</td><td>out: 変換後の v </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>i]</em>&nbsp;</td><td>v: 変換前 </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>i]</em>&nbsp;</td><td>x: 基底 x 軸 </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>i]</em>&nbsp;</td><td>y: 基底 y 軸 </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>i]</em>&nbsp;</td><td>z: 基底 z 軸 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+呼出しグラフ:</div>
+<div class="dynsection">
+<div class="center"><img src="vector_8cpp_a60e94ca0a46059a76d0739bc39182dcf_icgraph.png" border="0" usemap="#vector_8cpp_a60e94ca0a46059a76d0739bc39182dcf_icgraph_map" alt=""></div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="abb74def84e42dd52a51fe0f02f46b862"></a><!-- doxytag: member="vector.cpp::Vec3OuterProduct" ref="abb74def84e42dd52a51fe0f02f46b862" args="(Vector3 *out, const Vector3 *v1, const Vector3 *v2)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_vector3.html">Vector3</a>* Vec3OuterProduct </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_vector3.html">Vector3</a> *&nbsp;</td>
+          <td class="paramname"> <em>out</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_vector3.html">Vector3</a> *&nbsp;</td>
+          <td class="paramname"> <em>v1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_vector3.html">Vector3</a> *&nbsp;</td>
+          <td class="paramname"> <em>v2</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>外積 </p>
+<dl><dt><b>引数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>o]</em>&nbsp;</td><td>out: 外積結果 </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>i]</em>&nbsp;</td><td>v1: </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>i]</em>&nbsp;</td><td>v2: </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl><dt><b>戻り値:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>out</em>&nbsp;</td><td>と同じ </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="author"><dt><b>作者:</b></dt><dd>M.Morimoto </dd></dl>
+<dl class="date"><dt><b>日付:</b></dt><dd></dd></dl>
+
+<p><div class="dynheader">
+関数の呼び出しグラフ:</div>
+<div class="dynsection">
+<div class="center"><img src="vector_8cpp_abb74def84e42dd52a51fe0f02f46b862_cgraph.png" border="0" usemap="#vector_8cpp_abb74def84e42dd52a51fe0f02f46b862_cgraph_map" alt=""></div>
+</div>
+</p>
+
+<p><div class="dynheader">
+呼出しグラフ:</div>
+<div class="dynsection">
+<div class="center"><img src="vector_8cpp_abb74def84e42dd52a51fe0f02f46b862_icgraph.png" border="0" usemap="#vector_8cpp_abb74def84e42dd52a51fe0f02f46b862_icgraph_map" alt=""></div>
+<map name="vector_8cpp_abb74def84e42dd52a51fe0f02f46b862_icgraph_map" id="vector_8cpp_abb74def84e42dd52a51fe0f02f46b862_icgraph">
+<area shape="rect" id="node3" href="reflection_8h.html#ad97e756ced24485d23868f6f661c0c44" title="正接、従法線ベクトルを求める" alt="" coords="184,19,336,48"/><area shape="rect" id="node7" href="vecmat_8h.html#aa89855bfb3632ddc38c5743869da65c7" title="注視点行列" alt="" coords="211,99,309,128"/><area shape="rect" id="node5" href="reflection_8h.html#ad07ea616cdea0b00164a074e8a8234ee" title="半球内のランダムベクトル" alt="" coords="384,5,555,35"/><area shape="rect" id="node9" href="main_8cpp.html#aea350e147e9d27d97c595f69659a4dfd" title="シーンの初期化" alt="" coords="451,59,488,88"/><area shape="rect" id="node13" href="main_8cpp.html#ab0f080e6accf9381e116c59e307a4822" title="リファレンスシーンの初期化" alt="" coords="403,112,536,141"/><area shape="rect" id="node16" href="vecmat_8h.html#ad9e1aa28dc51c2df9f20c10074877534" title="視点行列" alt="" coords="427,165,512,195"/><area shape="rect" id="node11" href="main_8cpp.html#ac0f2228420376f4db7e1274f2b41667c" title="エントリー" alt="" coords="603,85,653,115"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a91dc8d583a80dddafd26b502389fed39"></a><!-- doxytag: member="vector.cpp::Vec3Scale" ref="a91dc8d583a80dddafd26b502389fed39" args="(Vector3 *out, const Vector3 *v, float s)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_vector3.html">Vector3</a>* Vec3Scale </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_vector3.html">Vector3</a> *&nbsp;</td>
+          <td class="paramname"> <em>out</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_vector3.html">Vector3</a> *&nbsp;</td>
+          <td class="paramname"> <em>v</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>s</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>スケール </p>
+<dl><dt><b>引数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>o]</em>&nbsp;</td><td>out: v * s の結果 </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>i]</em>&nbsp;</td><td>v: </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>i]</em>&nbsp;</td><td>s: </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl><dt><b>戻り値:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>out</em>&nbsp;</td><td>と同じ </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="author"><dt><b>作者:</b></dt><dd>M.Morimoto </dd></dl>
+<dl class="date"><dt><b>日付:</b></dt><dd></dd></dl>
+
+<p><div class="dynheader">
+呼出しグラフ:</div>
+<div class="dynsection">
+<div class="center"><img src="vector_8cpp_a91dc8d583a80dddafd26b502389fed39_icgraph.png" border="0" usemap="#vector_8cpp_a91dc8d583a80dddafd26b502389fed39_icgraph_map" alt=""></div>
+<map name="vector_8cpp_a91dc8d583a80dddafd26b502389fed39_icgraph_map" id="vector_8cpp_a91dc8d583a80dddafd26b502389fed39_icgraph">
+<area shape="rect" id="node3" href="reflection_8h.html#a814a27a238ed6469d63c762fde5fad3e" title="正反射ベクトルを求める" alt="" coords="156,89,260,118"/><area shape="rect" id="node9" href="class_triangle.html#a5177145f3f2ff46660b4d6e3a1de4a29" title="Triangle::CalcVertex" alt="" coords="139,477,277,506"/><area shape="rect" id="node11" href="class_sphere.html#a22351ab191ed71446c361dc3ddaeb1da" title="Sphere::CalcVertex" alt="" coords="344,142,477,172"/><area shape="rect" id="node13" href="main_8cpp.html#aea350e147e9d27d97c595f69659a4dfd" title="シーンの初期化" alt="" coords="611,193,648,222"/><area shape="rect" id="node17" href="main_8cpp.html#ab0f080e6accf9381e116c59e307a4822" title="リファレンスシーンの初期化" alt="" coords="563,300,696,329"/><area shape="rect" id="node20" href="class_triangle.html#a5e90bcc3edac7159c84eceee8e082a6e" title="Triangle::Intersect" alt="" coords="145,530,271,560"/><area shape="rect" id="node22" href="vecmat_8h.html#aa89855bfb3632ddc38c5743869da65c7" title="注視点行列" alt="" coords="361,246,460,276"/><area shape="rect" id="node28" href="class_camera.html#a3503ee7791815761317dc2ea50f61559" title="光線を算出" alt="" coords="345,505,476,534"/><area shape="rect" id="node32" href="class_kd_tree.html#acddd76fb3e40c259c70a9c87fd27fca1" title="KdTree::Traverse" alt="" coords="149,584,267,613"/><area shape="rect" id="node34" href="vector_8h.html#adc5ae7e0d032629fdb67b79fffae7d17" title="正規化" alt="" coords="153,298,263,328"/><area shape="rect" id="node5" href="class_light.html#aebb6f284c267659bf4ed609d1014041b" title="Light::Lighting" alt="" coords="360,89,461,118"/><area shape="rect" id="node7" href="reflection_8h.html#a45559e6b4db8cf5acf1022852483a187" title="ランダム反射ベクトル" alt="" coords="325,36,496,65"/><area shape="rect" id="node15" href="main_8cpp.html#ac0f2228420376f4db7e1274f2b41667c" title="エントリー" alt="" coords="763,300,813,329"/><area shape="rect" id="node26" href="vecmat_8h.html#ad9e1aa28dc51c2df9f20c10074877534" title="視点行列" alt="" coords="587,246,672,276"/><area shape="rect" id="node30" href="class_renderer.html#a1abe79860f08ebccb3ce75d9f8e4e345" title="描画メイン" alt="" coords="568,505,691,534"/><area shape="rect" id="node36" href="reflection_8h.html#ad97e756ced24485d23868f6f661c0c44" title="正接、従法線ベクトルを求める" alt="" coords="335,452,487,481"/><area shape="rect" id="node42" href="main_8cpp.html#a5d0a9f7b78068bab90a0e766000fcc7a" title="光源の初期化" alt="" coords="596,353,663,382"/><area shape="rect" id="node38" href="reflection_8h.html#ad07ea616cdea0b00164a074e8a8234ee" title="半球内のランダムベクトル" alt="" coords="544,452,715,481"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a323344562a00b05cc4b702961d472feb"></a><!-- doxytag: member="vector.cpp::Vec3Subtract" ref="a323344562a00b05cc4b702961d472feb" args="(Vector3 *out, const Vector3 *v1, const Vector3 *v2)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_vector3.html">Vector3</a>* Vec3Subtract </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_vector3.html">Vector3</a> *&nbsp;</td>
+          <td class="paramname"> <em>out</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_vector3.html">Vector3</a> *&nbsp;</td>
+          <td class="paramname"> <em>v1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_vector3.html">Vector3</a> *&nbsp;</td>
+          <td class="paramname"> <em>v2</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>減算 </p>
+<dl><dt><b>引数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>o]</em>&nbsp;</td><td>out: v1 - v2 の結果 </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>i]</em>&nbsp;</td><td>v1: </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>i]</em>&nbsp;</td><td>v2: </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl><dt><b>戻り値:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>out</em>&nbsp;</td><td>と同じ </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="author"><dt><b>作者:</b></dt><dd>M.Morimoto </dd></dl>
+<dl class="date"><dt><b>日付:</b></dt><dd></dd></dl>
+
+<p><div class="dynheader">
+呼出しグラフ:</div>
+<div class="dynsection">
+<div class="center"><img src="vector_8cpp_a323344562a00b05cc4b702961d472feb_icgraph.png" border="0" usemap="#vector_8cpp_a323344562a00b05cc4b702961d472feb_icgraph_map" alt=""></div>
+<map name="vector_8cpp_a323344562a00b05cc4b702961d472feb_icgraph_map" id="vector_8cpp_a323344562a00b05cc4b702961d472feb_icgraph">
+<area shape="rect" id="node3" href="reflection_8h.html#a814a27a238ed6469d63c762fde5fad3e" title="正反射ベクトルを求める" alt="" coords="171,32,275,61"/><area shape="rect" id="node9" href="class_sphere.html#a22351ab191ed71446c361dc3ddaeb1da" title="Sphere::CalcVertex" alt="" coords="156,85,289,115"/><area shape="rect" id="node11" href="main_8cpp.html#aea350e147e9d27d97c595f69659a4dfd" title="シーンの初期化" alt="" coords="405,244,443,273"/><area shape="rect" id="node15" href="main_8cpp.html#ab0f080e6accf9381e116c59e307a4822" title="リファレンスシーンの初期化" alt="" coords="357,137,491,167"/><area shape="rect" id="node18" href="class_triangle.html#a5e90bcc3edac7159c84eceee8e082a6e" title="Triangle::Intersect" alt="" coords="160,243,285,272"/><area shape="rect" id="node20" href="vecmat_8h.html#aa89855bfb3632ddc38c5743869da65c7" title="注視点行列" alt="" coords="173,189,272,219"/><area shape="rect" id="node26" href="class_camera.html#a3503ee7791815761317dc2ea50f61559" title="光線を算出" alt="" coords="157,347,288,376"/><area shape="rect" id="node30" href="primitive_8cpp.html#a072199438464a0367399cfe4c3e87889" title="球と光線の交差判定" alt="" coords="173,400,272,429"/><area shape="rect" id="node5" href="class_light.html#aebb6f284c267659bf4ed609d1014041b" title="Light::Lighting" alt="" coords="373,59,475,88"/><area shape="rect" id="node7" href="reflection_8h.html#a45559e6b4db8cf5acf1022852483a187" title="ランダム反射ベクトル" alt="" coords="339,5,509,35"/><area shape="rect" id="node13" href="main_8cpp.html#ac0f2228420376f4db7e1274f2b41667c" title="エントリー" alt="" coords="557,191,608,220"/><area shape="rect" id="node24" href="vecmat_8h.html#ad9e1aa28dc51c2df9f20c10074877534" title="視点行列" alt="" coords="381,191,467,220"/><area shape="rect" id="node28" href="class_renderer.html#a1abe79860f08ebccb3ce75d9f8e4e345" title="描画メイン" alt="" coords="363,347,485,376"/><area shape="rect" id="node32" href="class_sphere.html#a2654021b2789829e5ae1d1c3b59a0d51" title="Sphere::Intersect" alt="" coords="364,400,484,429"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a1ccd3e753bde5cd1ca0e5e0392b23cb7"></a><!-- doxytag: member="vector.cpp::Vec4Add" ref="a1ccd3e753bde5cd1ca0e5e0392b23cb7" args="(Vector4 *out, const Vector4 *v1, const Vector4 *v2)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_vector4.html">Vector4</a>* Vec4Add </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_vector4.html">Vector4</a> *&nbsp;</td>
+          <td class="paramname"> <em>out</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_vector4.html">Vector4</a> *&nbsp;</td>
+          <td class="paramname"> <em>v1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_vector4.html">Vector4</a> *&nbsp;</td>
+          <td class="paramname"> <em>v2</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>加算 </p>
+<dl><dt><b>引数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>o]</em>&nbsp;</td><td>out: v1 + v2 の結果 </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>i]</em>&nbsp;</td><td>v1: </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>i]</em>&nbsp;</td><td>v2: </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl><dt><b>戻り値:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>out</em>&nbsp;</td><td>と同じ </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="author"><dt><b>作者:</b></dt><dd>M.Morimoto </dd></dl>
+<dl class="date"><dt><b>日付:</b></dt><dd></dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="af8e12e787012c4e925c0d40aca013fed"></a><!-- doxytag: member="vector.cpp::Vec4BaryCentric" ref="af8e12e787012c4e925c0d40aca013fed" args="(Vector4 *out, const Vector4 *v1, const Vector4 *v2, const Vector4 *v3, float f, float g)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_vector4.html">Vector4</a>* Vec4BaryCentric </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_vector4.html">Vector4</a> *&nbsp;</td>
+          <td class="paramname"> <em>out</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_vector4.html">Vector4</a> *&nbsp;</td>
+          <td class="paramname"> <em>v1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_vector4.html">Vector4</a> *&nbsp;</td>
+          <td class="paramname"> <em>v2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_vector4.html">Vector4</a> *&nbsp;</td>
+          <td class="paramname"> <em>v3</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>f</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>g</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>重心座標計算 </p>
+<dl><dt><b>引数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>o]</em>&nbsp;</td><td>out: 結果 </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>i]</em>&nbsp;</td><td>v1: 頂点 1 </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>i]</em>&nbsp;</td><td>v2: 頂点 2 </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>i]</em>&nbsp;</td><td>v3: 頂点 3 </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>i]</em>&nbsp;</td><td>f: 重み係数 </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>i]</em>&nbsp;</td><td>g: 重み係数 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl><dt><b>戻り値:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>out</em>&nbsp;</td><td>と同じ </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="author"><dt><b>作者:</b></dt><dd>M.Morimoto </dd></dl>
+<dl class="date"><dt><b>日付:</b></dt><dd></dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a1810e684728aad22a5e7c5a118d4932c"></a><!-- doxytag: member="vector.cpp::Vec4InnerProduct" ref="a1810e684728aad22a5e7c5a118d4932c" args="(const Vector4 *v1, const Vector4 *v2)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float Vec4InnerProduct </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_vector4.html">Vector4</a> *&nbsp;</td>
+          <td class="paramname"> <em>v1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_vector4.html">Vector4</a> *&nbsp;</td>
+          <td class="paramname"> <em>v2</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>内積 </p>
+<dl><dt><b>引数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>i]</em>&nbsp;</td><td>v1: </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>i]</em>&nbsp;</td><td>v2: </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl><dt><b>戻り値:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>内積結果</em>&nbsp;</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="author"><dt><b>作者:</b></dt><dd>M.Morimoto </dd></dl>
+<dl class="date"><dt><b>日付:</b></dt><dd></dd></dl>
+
+<p><div class="dynheader">
+呼出しグラフ:</div>
+<div class="dynsection">
+<div class="center"><img src="vector_8cpp_a1810e684728aad22a5e7c5a118d4932c_icgraph.png" border="0" usemap="#vector_8cpp_a1810e684728aad22a5e7c5a118d4932c_icgraph_map" alt=""></div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="aa2f839623c38e8e2c2f5ba78232cca91"></a><!-- doxytag: member="vector.cpp::Vec4Length" ref="aa2f839623c38e8e2c2f5ba78232cca91" args="(const Vector4 *v)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float Vec4Length </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_vector4.html">Vector4</a> *&nbsp;</td>
+          <td class="paramname"> <em>v</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>ベクトル長 </p>
+<dl><dt><b>引数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>i]</em>&nbsp;</td><td>v: </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl><dt><b>戻り値:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>ベクトル長</em>&nbsp;</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="author"><dt><b>作者:</b></dt><dd>M.Morimoto </dd></dl>
+<dl class="date"><dt><b>日付:</b></dt><dd></dd></dl>
+
+<p><div class="dynheader">
+呼出しグラフ:</div>
+<div class="dynsection">
+<div class="center"><img src="vector_8cpp_aa2f839623c38e8e2c2f5ba78232cca91_icgraph.png" border="0" usemap="#vector_8cpp_aa2f839623c38e8e2c2f5ba78232cca91_icgraph_map" alt=""></div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a7b16c960df2f775a2be3314a24a96ae1"></a><!-- doxytag: member="vector.cpp::Vec4LengthSq" ref="a7b16c960df2f775a2be3314a24a96ae1" args="(const Vector4 *v)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float Vec4LengthSq </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_vector4.html">Vector4</a> *&nbsp;</td>
+          <td class="paramname"> <em>v</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>ベクトル平方長 </p>
+<dl><dt><b>引数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>i]</em>&nbsp;</td><td>v: </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl><dt><b>戻り値:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>ベクトル平方長</em>&nbsp;</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="author"><dt><b>作者:</b></dt><dd>M.Morimoto </dd></dl>
+<dl class="date"><dt><b>日付:</b></dt><dd></dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a84f502ea173cc19172f5082b479765b2"></a><!-- doxytag: member="vector.cpp::Vec4Lerp" ref="a84f502ea173cc19172f5082b479765b2" args="(Vector4 *out, const Vector4 *v1, const Vector4 *v2, float s)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_vector4.html">Vector4</a>* Vec4Lerp </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_vector4.html">Vector4</a> *&nbsp;</td>
+          <td class="paramname"> <em>out</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_vector4.html">Vector4</a> *&nbsp;</td>
+          <td class="paramname"> <em>v1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_vector4.html">Vector4</a> *&nbsp;</td>
+          <td class="paramname"> <em>v2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>s</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>線形補間 </p>
+<dl><dt><b>引数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>o]</em>&nbsp;</td><td>out: v1 + (v2 - v1) * s の結果 </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>i]</em>&nbsp;</td><td>v1: </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>i]</em>&nbsp;</td><td>v2: </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>i]</em>&nbsp;</td><td>s: 重み係数 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl><dt><b>戻り値:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>out</em>&nbsp;</td><td>と同じ </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="author"><dt><b>作者:</b></dt><dd>M.Morimoto </dd></dl>
+<dl class="date"><dt><b>日付:</b></dt><dd></dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a82323319580ede344102406ab29f7763"></a><!-- doxytag: member="vector.cpp::Vec4Maximize" ref="a82323319580ede344102406ab29f7763" args="(Vector4 *out, const Vector4 *v1, const Vector4 *v2)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_vector4.html">Vector4</a>* Vec4Maximize </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_vector4.html">Vector4</a> *&nbsp;</td>
+          <td class="paramname"> <em>out</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_vector4.html">Vector4</a> *&nbsp;</td>
+          <td class="paramname"> <em>v1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_vector4.html">Vector4</a> *&nbsp;</td>
+          <td class="paramname"> <em>v2</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>成分毎の最大 </p>
+<dl><dt><b>引数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>o]</em>&nbsp;</td><td>out: </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>i]</em>&nbsp;</td><td>v1: </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>i]</em>&nbsp;</td><td>v2: </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl><dt><b>戻り値:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>out</em>&nbsp;</td><td>と同じ </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="author"><dt><b>作者:</b></dt><dd>M.Morimoto </dd></dl>
+<dl class="date"><dt><b>日付:</b></dt><dd></dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="af3d085dd20b1d87363920d6e3a4d4af7"></a><!-- doxytag: member="vector.cpp::Vec4Minimize" ref="af3d085dd20b1d87363920d6e3a4d4af7" args="(Vector4 *out, const Vector4 *v1, const Vector4 *v2)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_vector4.html">Vector4</a>* Vec4Minimize </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_vector4.html">Vector4</a> *&nbsp;</td>
+          <td class="paramname"> <em>out</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_vector4.html">Vector4</a> *&nbsp;</td>
+          <td class="paramname"> <em>v1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_vector4.html">Vector4</a> *&nbsp;</td>
+          <td class="paramname"> <em>v2</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>成分毎の最小 </p>
+<dl><dt><b>引数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>o]</em>&nbsp;</td><td>out: </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>i]</em>&nbsp;</td><td>v1: </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>i]</em>&nbsp;</td><td>v2: </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl><dt><b>戻り値:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>out</em>&nbsp;</td><td>と同じ </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="author"><dt><b>作者:</b></dt><dd>M.Morimoto </dd></dl>
+<dl class="date"><dt><b>日付:</b></dt><dd></dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="aff7c78554189b91f5d23cd3c0fc235c5"></a><!-- doxytag: member="vector.cpp::Vec4Normalize" ref="aff7c78554189b91f5d23cd3c0fc235c5" args="(Vector4 *out, const Vector4 *v)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_vector4.html">Vector4</a>* Vec4Normalize </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_vector4.html">Vector4</a> *&nbsp;</td>
+          <td class="paramname"> <em>out</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_vector4.html">Vector4</a> *&nbsp;</td>
+          <td class="paramname"> <em>v</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>正規化 </p>
+<dl><dt><b>引数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>o]</em>&nbsp;</td><td>out: 正規化ベクトル </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>i]</em>&nbsp;</td><td>v: 元ベクトル </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl><dt><b>戻り値:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>out</em>&nbsp;</td><td>と同じ </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="author"><dt><b>作者:</b></dt><dd>M.Morimoto </dd></dl>
+<dl class="date"><dt><b>日付:</b></dt><dd></dd></dl>
+
+<p><div class="dynheader">
+関数の呼び出しグラフ:</div>
+<div class="dynsection">
+<div class="center"><img src="vector_8cpp_aff7c78554189b91f5d23cd3c0fc235c5_cgraph.png" border="0" usemap="#vector_8cpp_aff7c78554189b91f5d23cd3c0fc235c5_cgraph_map" alt=""></div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a889361fab6262c3a485e784d5c9eaaa0"></a><!-- doxytag: member="vector.cpp::Vec4Scale" ref="a889361fab6262c3a485e784d5c9eaaa0" args="(Vector4 *out, const Vector4 *v, float s)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_vector4.html">Vector4</a>* Vec4Scale </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_vector4.html">Vector4</a> *&nbsp;</td>
+          <td class="paramname"> <em>out</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_vector4.html">Vector4</a> *&nbsp;</td>
+          <td class="paramname"> <em>v</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>s</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>スケール </p>
+<dl><dt><b>引数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>o]</em>&nbsp;</td><td>out: v * s の結果 </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>i]</em>&nbsp;</td><td>v: </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>i]</em>&nbsp;</td><td>s: </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl><dt><b>戻り値:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>out</em>&nbsp;</td><td>と同じ </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="author"><dt><b>作者:</b></dt><dd>M.Morimoto </dd></dl>
+<dl class="date"><dt><b>日付:</b></dt><dd></dd></dl>
+
+<p><div class="dynheader">
+呼出しグラフ:</div>
+<div class="dynsection">
+<div class="center"><img src="vector_8cpp_a889361fab6262c3a485e784d5c9eaaa0_icgraph.png" border="0" usemap="#vector_8cpp_a889361fab6262c3a485e784d5c9eaaa0_icgraph_map" alt=""></div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a8b879903dafd63ef0f1e4c5a929650aa"></a><!-- doxytag: member="vector.cpp::Vec4Subtract" ref="a8b879903dafd63ef0f1e4c5a929650aa" args="(Vector4 *out, const Vector4 *v1, const Vector4 *v2)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_vector4.html">Vector4</a>* Vec4Subtract </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_vector4.html">Vector4</a> *&nbsp;</td>
+          <td class="paramname"> <em>out</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_vector4.html">Vector4</a> *&nbsp;</td>
+          <td class="paramname"> <em>v1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_vector4.html">Vector4</a> *&nbsp;</td>
+          <td class="paramname"> <em>v2</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>減算 </p>
+<dl><dt><b>引数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>o]</em>&nbsp;</td><td>out: v1 - v2 の結果 </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>i]</em>&nbsp;</td><td>v1: </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>i]</em>&nbsp;</td><td>v2: </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl><dt><b>戻り値:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>out</em>&nbsp;</td><td>と同じ </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="author"><dt><b>作者:</b></dt><dd>M.Morimoto </dd></dl>
+<dl class="date"><dt><b>日付:</b></dt><dd></dd></dl>
+
+</div>
+</div>
+</div>
+<!--- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&nbsp;</span>全て</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&nbsp;</span>クラス</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&nbsp;</span>ネームスペース</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&nbsp;</span>ファイル</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&nbsp;</span>関数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&nbsp;</span>変数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&nbsp;</span>型定義</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&nbsp;</span>列挙型</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&nbsp;</span>列挙型の値</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&nbsp;</span>フレンド</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&nbsp;</span>マクロ定義</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<hr class="footer"/><address style="text-align: right;"><small>Rendererに対してThu May 20 10:12:01 2010に生成されました。&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.6.3 </small></address>
+</body>
+</html>

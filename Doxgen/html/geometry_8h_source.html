@@ -1,0 +1,114 @@
+<!-- This comment will put IE 6, 7 and 8 in quirks mode -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>Renderer: Renderer/geometry.h ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javaScript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body onload='searchBox.OnSelectItem(0);'>
+<!-- 作成： Doxygen 1.6.3 -->
+<script type="text/javascript"><!--
+var searchBox = new SearchBox("searchBox", "search",false,'検索');
+--></script>
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="index.html"><span>メインページ</span></a></li>
+      <li><a href="namespaces.html"><span>ネームスペース</span></a></li>
+      <li><a href="annotated.html"><span>クラス</span></a></li>
+      <li class="current"><a href="files.html"><span>ファイル</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <img id="MSearchSelect" src="search/search.png"
+             onmouseover="return searchBox.OnSearchSelectShow()"
+             onmouseout="return searchBox.OnSearchSelectHide()"
+             alt=""/>
+        <input type="text" id="MSearchField" value="検索" accesskey="S"
+             onfocus="searchBox.OnSearchFieldFocus(true)" 
+             onblur="searchBox.OnSearchFieldFocus(false)" 
+             onkeyup="searchBox.OnSearchFieldChange(event)"/>
+        <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div class="tabs">
+    <ul>
+      <li><a href="files.html"><span>ファイル一覧</span></a></li>
+      <li><a href="globals.html"><span>ファイルメンバ</span></a></li>
+    </ul>
+  </div>
+<h1>Renderer/geometry.h</h1><a href="geometry_8h.html">説明を見る。</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 
+<a name="l00002"></a>00002 <span class="preprocessor">#ifndef __GEOMETRY_H_</span>
+<a name="l00003"></a>00003 <span class="preprocessor"></span><span class="preprocessor">#define __GEOMETRY_H_</span>
+<a name="l00004"></a>00004 <span class="preprocessor"></span>
+<a name="l00005"></a>00005 <span class="preprocessor">#include &quot;<a class="code" href="vector_8h.html" title="Vector 操作.">lib/math/vector.h</a>&quot;</span>
+<a name="l00006"></a>00006 
+<a name="l00011"></a><a class="code" href="geometry_8h.html#ae3996976d8ffb3e58d88f58227473f8e">00011</a> <span class="keyword">enum</span> <a class="code" href="geometry_8h.html#ae3996976d8ffb3e58d88f58227473f8e" title="軸">Axis</a>
+<a name="l00012"></a>00012 {
+<a name="l00013"></a><a class="code" href="geometry_8h.html#ae3996976d8ffb3e58d88f58227473f8eac2bed3391112d643838f7cd2650bf24c">00013</a>     <a class="code" href="geometry_8h.html#ae3996976d8ffb3e58d88f58227473f8eac2bed3391112d643838f7cd2650bf24c" title="x-axis">Axis_X</a>,     
+<a name="l00014"></a><a class="code" href="geometry_8h.html#ae3996976d8ffb3e58d88f58227473f8ea4538e20d678dc40e180dc98e243d6a8e">00014</a>     <a class="code" href="geometry_8h.html#ae3996976d8ffb3e58d88f58227473f8ea4538e20d678dc40e180dc98e243d6a8e" title="y-axis">Axis_Y</a>,     
+<a name="l00015"></a><a class="code" href="geometry_8h.html#ae3996976d8ffb3e58d88f58227473f8ea5a012e7e06858fe8813a0cb1e6f7b480">00015</a>     <a class="code" href="geometry_8h.html#ae3996976d8ffb3e58d88f58227473f8ea5a012e7e06858fe8813a0cb1e6f7b480" title="z-axis">Axis_Z</a>,     
+<a name="l00016"></a><a class="code" href="geometry_8h.html#ae3996976d8ffb3e58d88f58227473f8ead80e88699bc57cc2457ade9a630bbd6f">00016</a>     <a class="code" href="geometry_8h.html#ae3996976d8ffb3e58d88f58227473f8ead80e88699bc57cc2457ade9a630bbd6f">Axis_Max</a>
+<a name="l00017"></a>00017 };
+<a name="l00018"></a>00018 
+<a name="l00023"></a><a class="code" href="class_vertex.html">00023</a> <span class="keyword">class </span><a class="code" href="class_vertex.html">Vertex</a>
+<a name="l00024"></a>00024 {
+<a name="l00025"></a>00025 <span class="keyword">public</span>:
+<a name="l00026"></a><a class="code" href="class_vertex.html#a5ecef1eb55b75dd3ec9227fc8f527314">00026</a>     <a class="code" href="class_vector3.html" title="3d vector">Vector3</a> <a class="code" href="class_vertex.html#a5ecef1eb55b75dd3ec9227fc8f527314" title="position">p</a>;  
+<a name="l00027"></a><a class="code" href="class_vertex.html#a63e19b98dcaccfd296fdfcaae4130cd0">00027</a>     <a class="code" href="class_vector3.html" title="3d vector">Vector3</a> <a class="code" href="class_vertex.html#a63e19b98dcaccfd296fdfcaae4130cd0" title="normal">n</a>;  
+<a name="l00028"></a>00028 };
+<a name="l00029"></a>00029 
+<a name="l00034"></a><a class="code" href="class_a_a_b_b.html">00034</a> <span class="keyword">class </span><a class="code" href="class_a_a_b_b.html" title="Axis Aligned Bounding Box.">AABB</a>
+<a name="l00035"></a>00035 {
+<a name="l00036"></a>00036 <span class="keyword">public</span>:
+<a name="l00037"></a>00037     <span class="keywordtype">bool</span> <a class="code" href="class_a_a_b_b.html#a5fa0b0ef8e37c7cd7aacc4967fa7ecc6">Intersect</a>(<span class="keyword">const</span> <a class="code" href="class_a_a_b_b.html" title="Axis Aligned Bounding Box.">AABB</a>&amp; aabb) <span class="keyword">const</span>;
+<a name="l00038"></a>00038     <span class="keywordtype">bool</span> <a class="code" href="class_a_a_b_b.html#a5fa0b0ef8e37c7cd7aacc4967fa7ecc6">Intersect</a>(<a class="code" href="class_vector3.html" title="3d vector">Vector3</a>&amp; out, <span class="keyword">const</span> <a class="code" href="class_vector3.html" title="3d vector">Vector3</a>&amp; org, <span class="keyword">const</span> <a class="code" href="class_vector3.html" title="3d vector">Vector3</a>&amp; dir) <span class="keyword">const</span>;
+<a name="l00039"></a>00039     <span class="keywordtype">bool</span> <a class="code" href="class_a_a_b_b.html#a5fa0b0ef8e37c7cd7aacc4967fa7ecc6">Intersect</a>(<span class="keywordtype">float</span>&amp; t_near, <span class="keywordtype">float</span>&amp; t_far, <span class="keyword">const</span> <a class="code" href="class_vector3.html" title="3d vector">Vector3</a>&amp; org, <span class="keyword">const</span> <a class="code" href="class_vector3.html" title="3d vector">Vector3</a>&amp; dir) <span class="keyword">const</span>;
+<a name="l00040"></a>00040     <span class="keywordtype">bool</span> <a class="code" href="class_a_a_b_b.html#af02e30d26b5e377ec26e561fb0771fb4">Contains</a>(<span class="keyword">const</span> <a class="code" href="class_vector3.html" title="3d vector">Vector3</a>&amp; pos) <span class="keyword">const</span>;
+<a name="l00041"></a><a class="code" href="class_a_a_b_b.html#a54a910dabdc284b0ab9890a70d8fada2">00041</a>     <a class="code" href="class_vector3.html" title="3d vector">Vector3</a> <a class="code" href="class_a_a_b_b.html#a54a910dabdc284b0ab9890a70d8fada2">GetSize</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code" href="class_a_a_b_b.html#a03346b3f6a57bab432a14ff2cd7f600e">max</a> - <a class="code" href="class_a_a_b_b.html#ab17ac6643c3b4071727a0c38bcaf9a01">min</a>; }
+<a name="l00042"></a>00042 
+<a name="l00043"></a>00043 <span class="keyword">public</span>:
+<a name="l00044"></a><a class="code" href="class_a_a_b_b.html#ab17ac6643c3b4071727a0c38bcaf9a01">00044</a>     <a class="code" href="class_vector3.html" title="3d vector">Vector3</a> <a class="code" href="class_a_a_b_b.html#ab17ac6643c3b4071727a0c38bcaf9a01">min</a>;
+<a name="l00045"></a><a class="code" href="class_a_a_b_b.html#a03346b3f6a57bab432a14ff2cd7f600e">00045</a>     <a class="code" href="class_vector3.html" title="3d vector">Vector3</a> <a class="code" href="class_a_a_b_b.html#a03346b3f6a57bab432a14ff2cd7f600e">max</a>;
+<a name="l00046"></a>00046 };
+<a name="l00047"></a>00047 
+<a name="l00052"></a><a class="code" href="class_plane.html">00052</a> <span class="keyword">class </span><a class="code" href="class_plane.html" title="平面">Plane</a>
+<a name="l00053"></a>00053 {
+<a name="l00054"></a>00054 <span class="keyword">public</span>:
+<a name="l00055"></a>00055     <span class="keyword">union</span>
+<a name="l00056"></a>00056     {
+<a name="l00057"></a>00057         <span class="keyword">struct</span>
+<a name="l00058"></a>00058         {
+<a name="l00059"></a><a class="code" href="class_plane.html#af0c2aba6e7e163310c8f9466ff9a2128">00059</a>             <a class="code" href="class_vector3.html" title="3d vector">Vector3</a> <a class="code" href="class_plane.html#af0c2aba6e7e163310c8f9466ff9a2128">n</a>;
+<a name="l00060"></a><a class="code" href="class_plane.html#a61fc789fce8fbe72914f5397f1bbed44">00060</a>             <span class="keywordtype">float</span>   <a class="code" href="class_plane.html#a61fc789fce8fbe72914f5397f1bbed44">d</a>;
+<a name="l00061"></a>00061         };
+<a name="l00062"></a><a class="code" href="class_plane.html#aa8e1545ab1a627744e9ad0a4124a30ca">00062</a>         <span class="keywordtype">float</span> <a class="code" href="class_plane.html#aa8e1545ab1a627744e9ad0a4124a30ca">v</a>[4];
+<a name="l00063"></a>00063     };
+<a name="l00064"></a>00064 };
+<a name="l00065"></a>00065 
+<a name="l00066"></a>00066 <span class="preprocessor">#endif // !__GEOMETRY_H_</span>
+</pre></div></div>
+<!--- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&nbsp;</span>全て</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&nbsp;</span>クラス</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&nbsp;</span>ネームスペース</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&nbsp;</span>ファイル</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&nbsp;</span>関数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&nbsp;</span>変数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&nbsp;</span>型定義</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&nbsp;</span>列挙型</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&nbsp;</span>列挙型の値</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&nbsp;</span>フレンド</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&nbsp;</span>マクロ定義</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<hr class="footer"/><address style="text-align: right;"><small>Rendererに対してThu May 20 10:11:51 2010に生成されました。&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.6.3 </small></address>
+</body>
+</html>

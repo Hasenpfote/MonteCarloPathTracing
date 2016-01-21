@@ -1,0 +1,257 @@
+<!-- This comment will put IE 6, 7 and 8 in quirks mode -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>Renderer: クラス WorkPile</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javaScript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body onload='searchBox.OnSelectItem(0);'>
+<!-- 作成： Doxygen 1.6.3 -->
+<script type="text/javascript"><!--
+var searchBox = new SearchBox("searchBox", "search",false,'検索');
+--></script>
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="index.html"><span>メインページ</span></a></li>
+      <li><a href="namespaces.html"><span>ネームスペース</span></a></li>
+      <li class="current"><a href="annotated.html"><span>クラス</span></a></li>
+      <li><a href="files.html"><span>ファイル</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <img id="MSearchSelect" src="search/search.png"
+             onmouseover="return searchBox.OnSearchSelectShow()"
+             onmouseout="return searchBox.OnSearchSelectHide()"
+             alt=""/>
+        <input type="text" id="MSearchField" value="検索" accesskey="S"
+             onfocus="searchBox.OnSearchFieldFocus(true)" 
+             onblur="searchBox.OnSearchFieldFocus(false)" 
+             onkeyup="searchBox.OnSearchFieldChange(event)"/>
+        <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div class="tabs">
+    <ul>
+      <li><a href="annotated.html"><span>構成</span></a></li>
+      <li><a href="hierarchy.html"><span>クラス階層</span></a></li>
+      <li><a href="functions.html"><span>構成メンバ</span></a></li>
+    </ul>
+  </div>
+</div>
+<div class="contents">
+<h1>クラス WorkPile</h1><!-- doxytag: class="WorkPile" -->
+<p><a class="el" href="class_work_pile.html" title="WorkPile アルゴリズムによるスレッド.">WorkPile</a> アルゴリズムによるスレッド.  
+<a href="#_details">[詳細]</a></p>
+
+<p><code>#include &lt;<a class="el" href="thread_8h_source.html">thread.h</a>&gt;</code></p>
+<div class="dynheader">
+WorkPileのコラボレーション図</div>
+<div class="dynsection">
+<div class="center"><img src="class_work_pile__coll__graph.png" border="0" usemap="#_work_pile_coll__map" alt="Collaboration graph"/></div>
+<map name="_work_pile_coll__map" id="_work_pile_coll__map">
+<area shape="rect" id="node4" href="class_work.html" title="WorkPile 用作業クラス." alt="" coords="141,5,195,35"/><area shape="rect" id="node11" href="class_thread.html" title="単純なスレッドラッパークラス" alt="" coords="365,5,427,35"/></map>
+<center><span class="legend">[<a href="graph_legend.html">凡例</a>]</span></center></div>
+
+<p><a href="class_work_pile-members.html">すべてのメンバ一覧</a></p>
+<table border="0" cellpadding="0" cellspacing="0">
+<tr><td colspan="2"><h2>Public メソッド</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_work_pile.html#acb1b7f7c6c52b0cc63369f31f1f069de">WorkPile</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_work_pile.html#ac54581e40cc58cb132c6a1cc97db4822">~WorkPile</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_work_pile.html#a0dc9ddba1fb798b0fa67a5d1ed80d6b3">start</a> (unsigned(__stdcall *func)(void *), std::size_t max_thread)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_work_pile.html#a87a09fcd0d898faea0930e10d7f98fcc">request</a> (<a class="el" href="class_work.html">Work</a> *work)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_work_pile.html#a7da57bfc8215c961513a83d4f77f923e">is_enable</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_work.html">Work</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_work_pile.html#a00813340c3a3bbf40e279d4b1313dcf2">get_work</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">std::size_t&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_work_pile.html#a5e1040fe3aad18e46e78647baff6f09a">get_left_work</a> ()</td></tr>
+</table>
+<hr/><a name="_details"></a><h2>説明</h2>
+<p><a class="el" href="class_work_pile.html" title="WorkPile アルゴリズムによるスレッド.">WorkPile</a> アルゴリズムによるスレッド. </p>
+<dl class="note"><dt><b>覚え書き:</b></dt><dd>基本的に走りっぱなし </dd></dl>
+<hr/><h2>コンストラクタとデストラクタ</h2>
+<a class="anchor" id="acb1b7f7c6c52b0cc63369f31f1f069de"></a><!-- doxytag: member="WorkPile::WorkPile" ref="acb1b7f7c6c52b0cc63369f31f1f069de" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">WorkPile::WorkPile </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ac54581e40cc58cb132c6a1cc97db4822"></a><!-- doxytag: member="WorkPile::~WorkPile" ref="ac54581e40cc58cb132c6a1cc97db4822" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">WorkPile::~WorkPile </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<hr/><h2>関数</h2>
+<a class="anchor" id="a5e1040fe3aad18e46e78647baff6f09a"></a><!-- doxytag: member="WorkPile::get_left_work" ref="a5e1040fe3aad18e46e78647baff6f09a" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::size_t WorkPile::get_left_work </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p><div class="dynheader">
+呼出しグラフ:</div>
+<div class="dynsection">
+<div class="center"><img src="class_work_pile_a5e1040fe3aad18e46e78647baff6f09a_icgraph.png" border="0" usemap="#class_work_pile_a5e1040fe3aad18e46e78647baff6f09a_icgraph_map" alt=""></div>
+<map name="class_work_pile_a5e1040fe3aad18e46e78647baff6f09a_icgraph_map" id="class_work_pile_a5e1040fe3aad18e46e78647baff6f09a_icgraph">
+<area shape="rect" id="node3" href="class_renderer.html#adde94d3402b015b1fcd23c9a283cae2e" title="描画メイン" alt="" coords="213,5,336,35"/><area shape="rect" id="node5" href="main_8cpp.html#ac0f2228420376f4db7e1274f2b41667c" title="エントリー" alt="" coords="384,5,435,35"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a00813340c3a3bbf40e279d4b1313dcf2"></a><!-- doxytag: member="WorkPile::get_work" ref="a00813340c3a3bbf40e279d4b1313dcf2" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_work.html">Work</a> * WorkPile::get_work </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a7da57bfc8215c961513a83d4f77f923e"></a><!-- doxytag: member="WorkPile::is_enable" ref="a7da57bfc8215c961513a83d4f77f923e" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool WorkPile::is_enable </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a87a09fcd0d898faea0930e10d7f98fcc"></a><!-- doxytag: member="WorkPile::request" ref="a87a09fcd0d898faea0930e10d7f98fcc" args="(Work *work)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void WorkPile::request </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_work.html">Work</a> *&nbsp;</td>
+          <td class="paramname"> <em>work</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p><div class="dynheader">
+呼出しグラフ:</div>
+<div class="dynsection">
+<div class="center"><img src="class_work_pile_a87a09fcd0d898faea0930e10d7f98fcc_icgraph.png" border="0" usemap="#class_work_pile_a87a09fcd0d898faea0930e10d7f98fcc_icgraph_map" alt=""></div>
+<map name="class_work_pile_a87a09fcd0d898faea0930e10d7f98fcc_icgraph_map" id="class_work_pile_a87a09fcd0d898faea0930e10d7f98fcc_icgraph">
+<area shape="rect" id="node3" href="class_renderer.html#adde94d3402b015b1fcd23c9a283cae2e" title="描画メイン" alt="" coords="181,5,304,35"/><area shape="rect" id="node5" href="main_8cpp.html#ac0f2228420376f4db7e1274f2b41667c" title="エントリー" alt="" coords="352,5,403,35"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a0dc9ddba1fb798b0fa67a5d1ed80d6b3"></a><!-- doxytag: member="WorkPile::start" ref="a0dc9ddba1fb798b0fa67a5d1ed80d6b3" args="(unsigned(__stdcall *func)(void *), std::size_t max_thread)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void WorkPile::start </td>
+          <td>(</td>
+          <td class="paramtype">unsigned(__stdcall *func)(void *)&nbsp;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::size_t&nbsp;</td>
+          <td class="paramname"> <em>max_thread</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p><div class="dynheader">
+呼出しグラフ:</div>
+<div class="dynsection">
+<div class="center"><img src="class_work_pile_a0dc9ddba1fb798b0fa67a5d1ed80d6b3_icgraph.png" border="0" usemap="#class_work_pile_a0dc9ddba1fb798b0fa67a5d1ed80d6b3_icgraph_map" alt=""></div>
+<map name="class_work_pile_a0dc9ddba1fb798b0fa67a5d1ed80d6b3_icgraph_map" id="class_work_pile_a0dc9ddba1fb798b0fa67a5d1ed80d6b3_icgraph">
+<area shape="rect" id="node3" href="class_renderer.html#adde94d3402b015b1fcd23c9a283cae2e" title="描画メイン" alt="" coords="163,5,285,35"/><area shape="rect" id="node5" href="main_8cpp.html#ac0f2228420376f4db7e1274f2b41667c" title="エントリー" alt="" coords="333,5,384,35"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<hr/>このクラスの説明は次のファイルから生成されました:<ul>
+<li>Renderer/lib/system/<a class="el" href="thread_8h_source.html">thread.h</a></li>
+<li>Renderer/lib/system/<a class="el" href="thread_8cpp.html">thread.cpp</a></li>
+</ul>
+</div>
+<!--- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&nbsp;</span>全て</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&nbsp;</span>クラス</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&nbsp;</span>ネームスペース</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&nbsp;</span>ファイル</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&nbsp;</span>関数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&nbsp;</span>変数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&nbsp;</span>型定義</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&nbsp;</span>列挙型</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&nbsp;</span>列挙型の値</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&nbsp;</span>フレンド</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&nbsp;</span>マクロ定義</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<hr class="footer"/><address style="text-align: right;"><small>Rendererに対してThu May 20 10:12:16 2010に生成されました。&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.6.3 </small></address>
+</body>
+</html>

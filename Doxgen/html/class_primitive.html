@@ -1,0 +1,314 @@
+<!-- This comment will put IE 6, 7 and 8 in quirks mode -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>Renderer: クラス Primitive</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javaScript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body onload='searchBox.OnSelectItem(0);'>
+<!-- 作成： Doxygen 1.6.3 -->
+<script type="text/javascript"><!--
+var searchBox = new SearchBox("searchBox", "search",false,'検索');
+--></script>
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="index.html"><span>メインページ</span></a></li>
+      <li><a href="namespaces.html"><span>ネームスペース</span></a></li>
+      <li class="current"><a href="annotated.html"><span>クラス</span></a></li>
+      <li><a href="files.html"><span>ファイル</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <img id="MSearchSelect" src="search/search.png"
+             onmouseover="return searchBox.OnSearchSelectShow()"
+             onmouseout="return searchBox.OnSearchSelectHide()"
+             alt=""/>
+        <input type="text" id="MSearchField" value="検索" accesskey="S"
+             onfocus="searchBox.OnSearchFieldFocus(true)" 
+             onblur="searchBox.OnSearchFieldFocus(false)" 
+             onkeyup="searchBox.OnSearchFieldChange(event)"/>
+        <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div class="tabs">
+    <ul>
+      <li><a href="annotated.html"><span>構成</span></a></li>
+      <li><a href="hierarchy.html"><span>クラス階層</span></a></li>
+      <li><a href="functions.html"><span>構成メンバ</span></a></li>
+    </ul>
+  </div>
+</div>
+<div class="contents">
+<h1>クラス Primitive</h1><!-- doxytag: class="Primitive" -->
+<p>プリミティブ  
+<a href="#_details">[詳細]</a></p>
+
+<p><code>#include &lt;<a class="el" href="primitive_8h_source.html">primitive.h</a>&gt;</code></p>
+
+<p><a class="el" href="class_sphere.html">Sphere</a>, と <a class="el" href="class_triangle.html">Triangle</a>に継承されています。</p>
+<div class="dynheader">
+Primitiveのコラボレーション図</div>
+<div class="dynsection">
+<div class="center"><img src="class_primitive__coll__graph.png" border="0" usemap="#_primitive_coll__map" alt="Collaboration graph"/></div>
+<map name="_primitive_coll__map" id="_primitive_coll__map">
+<area shape="rect" id="node2" href="class_material.html" title="材質" alt="" coords="7,136,73,165"/><area shape="rect" id="node4" href="struct_color.html" title="色" alt="" coords="15,5,65,35"/></map>
+<center><span class="legend">[<a href="graph_legend.html">凡例</a>]</span></center></div>
+
+<p><a href="class_primitive-members.html">すべてのメンバ一覧</a></p>
+<table border="0" cellpadding="0" cellspacing="0">
+<tr><td colspan="2"><h2>構成</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">struct &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_primitive_1_1_param.html">Param</a></td></tr>
+<tr><td colspan="2"><h2>Public メソッド</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_primitive.html#a623798934fca32cda0343ece8ae6d653">Intersect</a> (const <a class="el" href="class_a_a_b_b.html">AABB</a> &amp;aabb)=0</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_primitive.html#a3ce4c4c312983b5b2bc31e9e9c376517">Intersect</a> (<a class="el" href="struct_primitive_1_1_param.html">Param</a> &amp;param, const <a class="el" href="class_ray.html">Ray</a> &amp;ray)=0</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_primitive.html#a891b2666c4a46381d7ecd070f7fc3028">CalcVertex</a> (<a class="el" href="class_vertex.html">Vertex</a> &amp;v, const <a class="el" href="struct_primitive_1_1_param.html">Param</a> &amp;param, const <a class="el" href="class_ray.html">Ray</a> &amp;ray)=0</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_primitive.html#a159989e8e9ab7ba6e7ed9f1ab55f8ee6">CalcRange</a> (float &amp;min, float &amp;max, <a class="el" href="geometry_8h.html#ae3996976d8ffb3e58d88f58227473f8e">Axis</a> axis)=0</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_primitive.html#ae0673f4d4c7c3340f7f2fdb1f500550b">SetMaterial</a> (<a class="el" href="class_material.html">Material</a> *mtrl)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_material.html">Material</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_primitive.html#a1b6cb7d1695402919b3997daf15bd0dd">GetMaterial</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual std::size_t&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_primitive.html#a98422b932644e1418631a821d190f5a4">GetNumPoints</a> ()=0</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual float&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_primitive.html#aff4411cd542876cde57849d3b5e5077e">GetPoint</a> (<a class="el" href="geometry_8h.html#ae3996976d8ffb3e58d88f58227473f8e">Axis</a> axis, std::size_t idx)=0</td></tr>
+</table>
+<hr/><a name="_details"></a><h2>説明</h2>
+<p>プリミティブ </p>
+<dl class="note"><dt><b>覚え書き:</b></dt><dd>abstract class </dd></dl>
+<hr/><h2>関数</h2>
+<a class="anchor" id="a159989e8e9ab7ba6e7ed9f1ab55f8ee6"></a><!-- doxytag: member="Primitive::CalcRange" ref="a159989e8e9ab7ba6e7ed9f1ab55f8ee6" args="(float &amp;min, float &amp;max, Axis axis)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void Primitive::CalcRange </td>
+          <td>(</td>
+          <td class="paramtype">float &amp;&nbsp;</td>
+          <td class="paramname"> <em>min</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float &amp;&nbsp;</td>
+          <td class="paramname"> <em>max</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="geometry_8h.html#ae3996976d8ffb3e58d88f58227473f8e">Axis</a>&nbsp;</td>
+          <td class="paramname"> <em>axis</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p><a class="el" href="class_sphere.html#a2c4ed5a31166c5c4d187a61f1967d089">Sphere</a>, と <a class="el" href="class_triangle.html#aef62d389bc612753ce1c0b7f95256976">Triangle</a>で実装されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="a891b2666c4a46381d7ecd070f7fc3028"></a><!-- doxytag: member="Primitive::CalcVertex" ref="a891b2666c4a46381d7ecd070f7fc3028" args="(Vertex &amp;v, const Param &amp;param, const Ray &amp;ray)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void Primitive::CalcVertex </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_vertex.html">Vertex</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>v</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="struct_primitive_1_1_param.html">Param</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>param</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_ray.html">Ray</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>ray</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p><a class="el" href="class_sphere.html#a22351ab191ed71446c361dc3ddaeb1da">Sphere</a>, と <a class="el" href="class_triangle.html#a5177145f3f2ff46660b4d6e3a1de4a29">Triangle</a>で実装されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="a1b6cb7d1695402919b3997daf15bd0dd"></a><!-- doxytag: member="Primitive::GetMaterial" ref="a1b6cb7d1695402919b3997daf15bd0dd" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_material.html">Material</a>* Primitive::GetMaterial </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a98422b932644e1418631a821d190f5a4"></a><!-- doxytag: member="Primitive::GetNumPoints" ref="a98422b932644e1418631a821d190f5a4" args="()=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual std::size_t Primitive::GetNumPoints </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p><a class="el" href="class_sphere.html#a9f645fba6a4665bf69a72b2624a5416e">Sphere</a>, と <a class="el" href="class_triangle.html#a41297596c09cecaa7ff88d02e9355486">Triangle</a>で実装されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="aff4411cd542876cde57849d3b5e5077e"></a><!-- doxytag: member="Primitive::GetPoint" ref="aff4411cd542876cde57849d3b5e5077e" args="(Axis axis, std::size_t idx)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual float Primitive::GetPoint </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="geometry_8h.html#ae3996976d8ffb3e58d88f58227473f8e">Axis</a>&nbsp;</td>
+          <td class="paramname"> <em>axis</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::size_t&nbsp;</td>
+          <td class="paramname"> <em>idx</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p><a class="el" href="class_sphere.html#a562780aa17e143deb7aa803755f6bd34">Sphere</a>, と <a class="el" href="class_triangle.html#a166334137f80217c68f8f3dfe36f8506">Triangle</a>で実装されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="a3ce4c4c312983b5b2bc31e9e9c376517"></a><!-- doxytag: member="Primitive::Intersect" ref="a3ce4c4c312983b5b2bc31e9e9c376517" args="(Param &amp;param, const Ray &amp;ray)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool Primitive::Intersect </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_primitive_1_1_param.html">Param</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>param</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_ray.html">Ray</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>ray</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p><a class="el" href="class_sphere.html#a2654021b2789829e5ae1d1c3b59a0d51">Sphere</a>, と <a class="el" href="class_triangle.html#ab1d83874cc93464cb4da4071fc13a236">Triangle</a>で実装されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="a623798934fca32cda0343ece8ae6d653"></a><!-- doxytag: member="Primitive::Intersect" ref="a623798934fca32cda0343ece8ae6d653" args="(const AABB &amp;aabb)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool Primitive::Intersect </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_a_a_b_b.html">AABB</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>aabb</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p><a class="el" href="class_sphere.html#ac0aff23c1c48f448daebafd30106a7b6">Sphere</a>, と <a class="el" href="class_triangle.html#a5e90bcc3edac7159c84eceee8e082a6e">Triangle</a>で実装されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="ae0673f4d4c7c3340f7f2fdb1f500550b"></a><!-- doxytag: member="Primitive::SetMaterial" ref="ae0673f4d4c7c3340f7f2fdb1f500550b" args="(Material *mtrl)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Primitive::SetMaterial </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_material.html">Material</a> *&nbsp;</td>
+          <td class="paramname"> <em>mtrl</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p><div class="dynheader">
+呼出しグラフ:</div>
+<div class="dynsection">
+<div class="center"><img src="class_primitive_ae0673f4d4c7c3340f7f2fdb1f500550b_icgraph.png" border="0" usemap="#class_primitive_ae0673f4d4c7c3340f7f2fdb1f500550b_icgraph_map" alt=""></div>
+<map name="class_primitive_ae0673f4d4c7c3340f7f2fdb1f500550b_icgraph_map" id="class_primitive_ae0673f4d4c7c3340f7f2fdb1f500550b_icgraph">
+<area shape="rect" id="node3" href="main_8cpp.html#aea350e147e9d27d97c595f69659a4dfd" title="シーンの初期化" alt="" coords="249,5,287,35"/><area shape="rect" id="node7" href="main_8cpp.html#ab0f080e6accf9381e116c59e307a4822" title="リファレンスシーンの初期化" alt="" coords="201,59,335,88"/><area shape="rect" id="node5" href="main_8cpp.html#ac0f2228420376f4db7e1274f2b41667c" title="エントリー" alt="" coords="384,32,435,61"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<hr/>このクラスの説明は次のファイルから生成されました:<ul>
+<li>Renderer/<a class="el" href="primitive_8h_source.html">primitive.h</a></li>
+</ul>
+</div>
+<!--- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&nbsp;</span>全て</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&nbsp;</span>クラス</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&nbsp;</span>ネームスペース</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&nbsp;</span>ファイル</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&nbsp;</span>関数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&nbsp;</span>変数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&nbsp;</span>型定義</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&nbsp;</span>列挙型</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&nbsp;</span>列挙型の値</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&nbsp;</span>フレンド</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&nbsp;</span>マクロ定義</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<hr class="footer"/><address style="text-align: right;"><small>Rendererに対してThu May 20 10:12:12 2010に生成されました。&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.6.3 </small></address>
+</body>
+</html>

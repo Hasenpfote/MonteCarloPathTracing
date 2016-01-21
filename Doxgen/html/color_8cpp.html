@@ -1,0 +1,500 @@
+<!-- This comment will put IE 6, 7 and 8 in quirks mode -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>Renderer: Renderer/lib/color/color.cpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javaScript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body onload='searchBox.OnSelectItem(0);'>
+<!-- 作成： Doxygen 1.6.3 -->
+<script type="text/javascript"><!--
+var searchBox = new SearchBox("searchBox", "search",false,'検索');
+--></script>
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="index.html"><span>メインページ</span></a></li>
+      <li><a href="namespaces.html"><span>ネームスペース</span></a></li>
+      <li><a href="annotated.html"><span>クラス</span></a></li>
+      <li class="current"><a href="files.html"><span>ファイル</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <img id="MSearchSelect" src="search/search.png"
+             onmouseover="return searchBox.OnSearchSelectShow()"
+             onmouseout="return searchBox.OnSearchSelectHide()"
+             alt=""/>
+        <input type="text" id="MSearchField" value="検索" accesskey="S"
+             onfocus="searchBox.OnSearchFieldFocus(true)" 
+             onblur="searchBox.OnSearchFieldFocus(false)" 
+             onkeyup="searchBox.OnSearchFieldChange(event)"/>
+        <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div class="tabs">
+    <ul>
+      <li><a href="files.html"><span>ファイル一覧</span></a></li>
+      <li><a href="globals.html"><span>ファイルメンバ</span></a></li>
+    </ul>
+  </div>
+</div>
+<div class="contents">
+<h1>Renderer/lib/color/color.cpp</h1><code>#include &quot;<a class="el" href="color_8cpp.html">Color.h</a>&quot;</code><br/>
+<div class="dynheader">
+color.cppのインクルード依存関係図</div>
+<div class="dynsection">
+<div class="center"><img src="color_8cpp__incl.png" border="0" usemap="#_renderer_2lib_2color_2color_8cpp_map" alt=""/></div>
+</div>
+<div class="dynheader">
+このグラフは、どのファイルから直接、間接的にインクルードされているかを示しています。</div>
+<div class="dynsection">
+<div class="center"><img src="color_8cpp__dep__incl.png" border="0" usemap="#_renderer_2lib_2color_2color_8cppdep_map" alt=""/></div>
+</div>
+<table border="0" cellpadding="0" cellspacing="0">
+<tr><td colspan="2"><h2>関数</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_color.html">Color</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="color_8cpp.html#a5263a29993a2851166c488729b01ee85">ColorSet</a> (<a class="el" href="struct_color.html">Color</a> *out, float r, float g, float b, float a)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_color.html">Color</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="color_8cpp.html#aadf1b03fe319aa13bf95fd031181e8bb">ColorSaturate</a> (<a class="el" href="struct_color.html">Color</a> *c)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_color.html">Color</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="color_8cpp.html#a0eca2497594ea1cd9b4aa50407b9de2c">ColorAdd3</a> (<a class="el" href="struct_color.html">Color</a> *out, const <a class="el" href="struct_color.html">Color</a> *c0, const <a class="el" href="struct_color.html">Color</a> *c1)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_color.html">Color</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="color_8cpp.html#aff02c89f8ed6c7d51bf2272bab14b9ce">ColorSubtract3</a> (<a class="el" href="struct_color.html">Color</a> *out, const <a class="el" href="struct_color.html">Color</a> *c0, const <a class="el" href="struct_color.html">Color</a> *c1)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_color.html">Color</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="color_8cpp.html#ad294e663e2733057c956db4129b9b9de">ColorLerp3</a> (<a class="el" href="struct_color.html">Color</a> *out, const <a class="el" href="struct_color.html">Color</a> *c0, const <a class="el" href="struct_color.html">Color</a> *c1, float s)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_color.html">Color</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="color_8cpp.html#a61cf9f33d4436f8a9f2ed66504d31ef1">ColorModulate3</a> (<a class="el" href="struct_color.html">Color</a> *out, const <a class="el" href="struct_color.html">Color</a> *c0, const <a class="el" href="struct_color.html">Color</a> *c1)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_color.html">Color</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="color_8cpp.html#afe6d0f652ed5342323957ad446457b09">ColorScale3</a> (<a class="el" href="struct_color.html">Color</a> *out, const <a class="el" href="struct_color.html">Color</a> *c, float s)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="color_8cpp.html#ad79af7cb1cf408da936a06e63499f4ec">ColorConv</a> (<a class="el" href="struct_color.html">Color</a> *out, const <a class="el" href="struct_color.html">Color</a> *c, const float weights[3][3])</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">重みつき変換  <a href="#ad79af7cb1cf408da936a06e63499f4ec"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="color_8cpp.html#ad6e95702c6dbceea39c4266431324401">ColorConvXYZtoYxy</a> (<a class="el" href="struct_color.html">Color</a> *out, const <a class="el" href="struct_color.html">Color</a> *c)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">XYZ から Yxy に変換.  <a href="#ad6e95702c6dbceea39c4266431324401"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="color_8cpp.html#a8e3c5c2615e43854ed3dcb42118a8170">ColorConvYxytoXYZ</a> (<a class="el" href="struct_color.html">Color</a> *out, const <a class="el" href="struct_color.html">Color</a> *c)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Yxy から XYZ に変換.  <a href="#a8e3c5c2615e43854ed3dcb42118a8170"></a><br/></td></tr>
+</table>
+<hr/><h2>関数</h2>
+<a class="anchor" id="a0eca2497594ea1cd9b4aa50407b9de2c"></a><!-- doxytag: member="color.cpp::ColorAdd3" ref="a0eca2497594ea1cd9b4aa50407b9de2c" args="(Color *out, const Color *c0, const Color *c1)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_color.html">Color</a>* ColorAdd3 </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_color.html">Color</a> *&nbsp;</td>
+          <td class="paramname"> <em>out</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="struct_color.html">Color</a> *&nbsp;</td>
+          <td class="paramname"> <em>c0</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="struct_color.html">Color</a> *&nbsp;</td>
+          <td class="paramname"> <em>c1</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p><div class="dynheader">
+呼出しグラフ:</div>
+<div class="dynsection">
+<div class="center"><img src="color_8cpp_a0eca2497594ea1cd9b4aa50407b9de2c_icgraph.png" border="0" usemap="#color_8cpp_a0eca2497594ea1cd9b4aa50407b9de2c_icgraph_map" alt=""></div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ad79af7cb1cf408da936a06e63499f4ec"></a><!-- doxytag: member="color.cpp::ColorConv" ref="ad79af7cb1cf408da936a06e63499f4ec" args="(Color *out, const Color *c, const float weights[3][3])" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ColorConv </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_color.html">Color</a> *&nbsp;</td>
+          <td class="paramname"> <em>out</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="struct_color.html">Color</a> *&nbsp;</td>
+          <td class="paramname"> <em>c</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const float&nbsp;</td>
+          <td class="paramname"> <em>weights</em>[3][3]</td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>重みつき変換 </p>
+<dl><dt><b>引数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>o]</em>&nbsp;</td><td>out: 出力 </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>i]</em>&nbsp;</td><td>c: 入力 </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>i]</em>&nbsp;</td><td>weights: 重み </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+呼出しグラフ:</div>
+<div class="dynsection">
+<div class="center"><img src="color_8cpp_ad79af7cb1cf408da936a06e63499f4ec_icgraph.png" border="0" usemap="#color_8cpp_ad79af7cb1cf408da936a06e63499f4ec_icgraph_map" alt=""></div>
+<map name="color_8cpp_ad79af7cb1cf408da936a06e63499f4ec_icgraph_map" id="color_8cpp_ad79af7cb1cf408da936a06e63499f4ec_icgraph">
+<area shape="rect" id="node3" href="class_frame_buffer_f_p32.html#ae258f4f50802f415f4af44d2f7cac592" title="FrameBufferFP32::Exposure" alt="" coords="133,5,320,35"/><area shape="rect" id="node5" href="main_8cpp.html#ac0f2228420376f4db7e1274f2b41667c" title="エントリー" alt="" coords="368,5,419,35"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ad6e95702c6dbceea39c4266431324401"></a><!-- doxytag: member="color.cpp::ColorConvXYZtoYxy" ref="ad6e95702c6dbceea39c4266431324401" args="(Color *out, const Color *c)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ColorConvXYZtoYxy </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_color.html">Color</a> *&nbsp;</td>
+          <td class="paramname"> <em>out</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="struct_color.html">Color</a> *&nbsp;</td>
+          <td class="paramname"> <em>c</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>XYZ から Yxy に変換. </p>
+<dl><dt><b>引数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>o]</em>&nbsp;</td><td>out: Yxy </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>i]</em>&nbsp;</td><td>c: XYZ </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+呼出しグラフ:</div>
+<div class="dynsection">
+<div class="center"><img src="color_8cpp_ad6e95702c6dbceea39c4266431324401_icgraph.png" border="0" usemap="#color_8cpp_ad6e95702c6dbceea39c4266431324401_icgraph_map" alt=""></div>
+<map name="color_8cpp_ad6e95702c6dbceea39c4266431324401_icgraph_map" id="color_8cpp_ad6e95702c6dbceea39c4266431324401_icgraph">
+<area shape="rect" id="node3" href="class_frame_buffer_f_p32.html#ae258f4f50802f415f4af44d2f7cac592" title="FrameBufferFP32::Exposure" alt="" coords="192,5,379,35"/><area shape="rect" id="node5" href="main_8cpp.html#ac0f2228420376f4db7e1274f2b41667c" title="エントリー" alt="" coords="427,5,477,35"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a8e3c5c2615e43854ed3dcb42118a8170"></a><!-- doxytag: member="color.cpp::ColorConvYxytoXYZ" ref="a8e3c5c2615e43854ed3dcb42118a8170" args="(Color *out, const Color *c)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ColorConvYxytoXYZ </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_color.html">Color</a> *&nbsp;</td>
+          <td class="paramname"> <em>out</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="struct_color.html">Color</a> *&nbsp;</td>
+          <td class="paramname"> <em>c</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Yxy から XYZ に変換. </p>
+<dl><dt><b>引数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>o]</em>&nbsp;</td><td>out: XYZ </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>i]</em>&nbsp;</td><td>c: Yxy </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+呼出しグラフ:</div>
+<div class="dynsection">
+<div class="center"><img src="color_8cpp_a8e3c5c2615e43854ed3dcb42118a8170_icgraph.png" border="0" usemap="#color_8cpp_a8e3c5c2615e43854ed3dcb42118a8170_icgraph_map" alt=""></div>
+<map name="color_8cpp_a8e3c5c2615e43854ed3dcb42118a8170_icgraph_map" id="color_8cpp_a8e3c5c2615e43854ed3dcb42118a8170_icgraph">
+<area shape="rect" id="node3" href="class_frame_buffer_f_p32.html#ae258f4f50802f415f4af44d2f7cac592" title="FrameBufferFP32::Exposure" alt="" coords="192,5,379,35"/><area shape="rect" id="node5" href="main_8cpp.html#ac0f2228420376f4db7e1274f2b41667c" title="エントリー" alt="" coords="427,5,477,35"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ad294e663e2733057c956db4129b9b9de"></a><!-- doxytag: member="color.cpp::ColorLerp3" ref="ad294e663e2733057c956db4129b9b9de" args="(Color *out, const Color *c0, const Color *c1, float s)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_color.html">Color</a>* ColorLerp3 </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_color.html">Color</a> *&nbsp;</td>
+          <td class="paramname"> <em>out</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="struct_color.html">Color</a> *&nbsp;</td>
+          <td class="paramname"> <em>c0</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="struct_color.html">Color</a> *&nbsp;</td>
+          <td class="paramname"> <em>c1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>s</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a61cf9f33d4436f8a9f2ed66504d31ef1"></a><!-- doxytag: member="color.cpp::ColorModulate3" ref="a61cf9f33d4436f8a9f2ed66504d31ef1" args="(Color *out, const Color *c0, const Color *c1)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_color.html">Color</a>* ColorModulate3 </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_color.html">Color</a> *&nbsp;</td>
+          <td class="paramname"> <em>out</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="struct_color.html">Color</a> *&nbsp;</td>
+          <td class="paramname"> <em>c0</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="struct_color.html">Color</a> *&nbsp;</td>
+          <td class="paramname"> <em>c1</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p><div class="dynheader">
+呼出しグラフ:</div>
+<div class="dynsection">
+<div class="center"><img src="color_8cpp_a61cf9f33d4436f8a9f2ed66504d31ef1_icgraph.png" border="0" usemap="#color_8cpp_a61cf9f33d4436f8a9f2ed66504d31ef1_icgraph_map" alt=""></div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="aadf1b03fe319aa13bf95fd031181e8bb"></a><!-- doxytag: member="color.cpp::ColorSaturate" ref="aadf1b03fe319aa13bf95fd031181e8bb" args="(Color *c)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_color.html">Color</a>* ColorSaturate </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_color.html">Color</a> *&nbsp;</td>
+          <td class="paramname"> <em>c</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="afe6d0f652ed5342323957ad446457b09"></a><!-- doxytag: member="color.cpp::ColorScale3" ref="afe6d0f652ed5342323957ad446457b09" args="(Color *out, const Color *c, float s)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_color.html">Color</a>* ColorScale3 </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_color.html">Color</a> *&nbsp;</td>
+          <td class="paramname"> <em>out</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="struct_color.html">Color</a> *&nbsp;</td>
+          <td class="paramname"> <em>c</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>s</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p><div class="dynheader">
+呼出しグラフ:</div>
+<div class="dynsection">
+<div class="center"><img src="color_8cpp_afe6d0f652ed5342323957ad446457b09_icgraph.png" border="0" usemap="#color_8cpp_afe6d0f652ed5342323957ad446457b09_icgraph_map" alt=""></div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a5263a29993a2851166c488729b01ee85"></a><!-- doxytag: member="color.cpp::ColorSet" ref="a5263a29993a2851166c488729b01ee85" args="(Color *out, float r, float g, float b, float a)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_color.html">Color</a>* ColorSet </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_color.html">Color</a> *&nbsp;</td>
+          <td class="paramname"> <em>out</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>r</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>g</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>b</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>a</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p><div class="dynheader">
+呼出しグラフ:</div>
+<div class="dynsection">
+<div class="center"><img src="color_8cpp_a5263a29993a2851166c488729b01ee85_icgraph.png" border="0" usemap="#color_8cpp_a5263a29993a2851166c488729b01ee85_icgraph_map" alt=""></div>
+<map name="color_8cpp_a5263a29993a2851166c488729b01ee85_icgraph_map" id="color_8cpp_a5263a29993a2851166c488729b01ee85_icgraph">
+<area shape="rect" id="node3" href="class_frame_buffer_f_p32.html#ae258f4f50802f415f4af44d2f7cac592" title="FrameBufferFP32::Exposure" alt="" coords="125,5,312,35"/><area shape="rect" id="node7" href="main_8cpp.html#aea350e147e9d27d97c595f69659a4dfd" title="シーンの初期化" alt="" coords="200,59,237,88"/><area shape="rect" id="node10" href="main_8cpp.html#a5d0a9f7b78068bab90a0e766000fcc7a" title="光源の初期化" alt="" coords="185,112,252,141"/><area shape="rect" id="node13" href="main_8cpp.html#ab0f080e6accf9381e116c59e307a4822" title="リファレンスシーンの初期化" alt="" coords="152,165,285,195"/><area shape="rect" id="node16" href="class_light.html#aebb6f284c267659bf4ed609d1014041b" title="Light::Lighting" alt="" coords="168,219,269,248"/><area shape="rect" id="node18" href="class_renderer.html#a1abe79860f08ebccb3ce75d9f8e4e345" title="描画メイン" alt="" coords="157,272,280,301"/><area shape="rect" id="node20" href="class_scene.html#ad10176d75a9cc0da56626f682d083507" title="Scene::Scene" alt="" coords="167,325,271,355"/><area shape="rect" id="node5" href="main_8cpp.html#ac0f2228420376f4db7e1274f2b41667c" title="エントリー" alt="" coords="360,85,411,115"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="aff02c89f8ed6c7d51bf2272bab14b9ce"></a><!-- doxytag: member="color.cpp::ColorSubtract3" ref="aff02c89f8ed6c7d51bf2272bab14b9ce" args="(Color *out, const Color *c0, const Color *c1)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_color.html">Color</a>* ColorSubtract3 </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_color.html">Color</a> *&nbsp;</td>
+          <td class="paramname"> <em>out</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="struct_color.html">Color</a> *&nbsp;</td>
+          <td class="paramname"> <em>c0</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="struct_color.html">Color</a> *&nbsp;</td>
+          <td class="paramname"> <em>c1</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+</div>
+<!--- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&nbsp;</span>全て</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&nbsp;</span>クラス</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&nbsp;</span>ネームスペース</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&nbsp;</span>ファイル</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&nbsp;</span>関数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&nbsp;</span>変数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&nbsp;</span>型定義</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&nbsp;</span>列挙型</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&nbsp;</span>列挙型の値</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&nbsp;</span>フレンド</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&nbsp;</span>マクロ定義</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<hr class="footer"/><address style="text-align: right;"><small>Rendererに対してThu May 20 10:11:56 2010に生成されました。&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.6.3 </small></address>
+</body>
+</html>

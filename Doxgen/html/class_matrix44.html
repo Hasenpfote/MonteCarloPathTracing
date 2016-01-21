@@ -1,0 +1,1358 @@
+<!-- This comment will put IE 6, 7 and 8 in quirks mode -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>Renderer: クラス Matrix44</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javaScript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body onload='searchBox.OnSelectItem(0);'>
+<!-- 作成： Doxygen 1.6.3 -->
+<script type="text/javascript"><!--
+var searchBox = new SearchBox("searchBox", "search",false,'検索');
+--></script>
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="index.html"><span>メインページ</span></a></li>
+      <li><a href="namespaces.html"><span>ネームスペース</span></a></li>
+      <li class="current"><a href="annotated.html"><span>クラス</span></a></li>
+      <li><a href="files.html"><span>ファイル</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <img id="MSearchSelect" src="search/search.png"
+             onmouseover="return searchBox.OnSearchSelectShow()"
+             onmouseout="return searchBox.OnSearchSelectHide()"
+             alt=""/>
+        <input type="text" id="MSearchField" value="検索" accesskey="S"
+             onfocus="searchBox.OnSearchFieldFocus(true)" 
+             onblur="searchBox.OnSearchFieldFocus(false)" 
+             onkeyup="searchBox.OnSearchFieldChange(event)"/>
+        <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div class="tabs">
+    <ul>
+      <li><a href="annotated.html"><span>構成</span></a></li>
+      <li><a href="hierarchy.html"><span>クラス階層</span></a></li>
+      <li><a href="functions.html"><span>構成メンバ</span></a></li>
+    </ul>
+  </div>
+</div>
+<div class="contents">
+<h1>クラス Matrix44</h1><!-- doxytag: class="Matrix44" -->
+<p>4x4 Matrix  
+<a href="#_details">[詳細]</a></p>
+
+<p><code>#include &lt;<a class="el" href="matrix_8h_source.html">matrix.h</a>&gt;</code></p>
+
+<p><a href="class_matrix44-members.html">すべてのメンバ一覧</a></p>
+<table border="0" cellpadding="0" cellspacing="0">
+<tr><td colspan="2"><h2>Public メソッド</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_matrix44.html#a2a050c95193997c7c6322151eb60e25b">Matrix44</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_matrix44.html#a293c00c27fc602b9961cb63196bb5717">Matrix44</a> (const <a class="el" href="class_matrix44.html">Matrix44</a> &amp;m)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">コピーコンストラクタ  <a href="#a293c00c27fc602b9961cb63196bb5717"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_matrix44.html#ad72b97bbdcf4e64416a0caa43585c958">Matrix44</a> (const float *m)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">コピーコンストラクタ  <a href="#ad72b97bbdcf4e64416a0caa43585c958"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_matrix44.html#a3216d22c37a824afca27cc1d356ab0fa">Matrix44</a> (float <a class="el" href="class_matrix44.html#acc63826a8934b4f745ee89361afdc368">_11</a>, float <a class="el" href="class_matrix44.html#a90c228222f2d72764c50ff74cf2cc379">_12</a>, float <a class="el" href="class_matrix44.html#a16f39fdfc28ac62b2b692c2640162f5e">_13</a>, float <a class="el" href="class_matrix44.html#a09f46703a897ddfcaed7235e15697aad">_14</a>, float <a class="el" href="class_matrix44.html#a22948eafbce68cc4039e5ec4786a658e">_21</a>, float <a class="el" href="class_matrix44.html#abe8391ed23d0f4f9553b88f5daaa41df">_22</a>, float <a class="el" href="class_matrix44.html#ae0a608fcaccfa1eab4b5f770b7b43d13">_23</a>, float <a class="el" href="class_matrix44.html#aa0665a92a9e44a12e93cc78a171ac2c0">_24</a>, float <a class="el" href="class_matrix44.html#ac2d73a105c59a1c02e237dad2e00bfc9">_31</a>, float <a class="el" href="class_matrix44.html#a38b5b235183fdf521d0a22b07b0fe786">_32</a>, float <a class="el" href="class_matrix44.html#acb9a9f55082e3b22adc20b9548758f90">_33</a>, float <a class="el" href="class_matrix44.html#a04d8d123e1da99922f2ab28e5bb4c790">_34</a>, float <a class="el" href="class_matrix44.html#a27fc6daeb0ed31359797ebdf2983bbb0">_41</a>, float <a class="el" href="class_matrix44.html#ac36a4a39b4907f5dd90aa46e36719bd4">_42</a>, float <a class="el" href="class_matrix44.html#a98300064775db7796833bd36775917ae">_43</a>, float <a class="el" href="class_matrix44.html#a46fc2529ae5f40fafcfdedc258553178">_44</a>)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">コピーコンストラクタ  <a href="#a3216d22c37a824afca27cc1d356ab0fa"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">float &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_matrix44.html#a754e35fb4c9fa6cd8e3c5f23037897dd">operator()</a> (unsigned int row, unsigned int col)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">行列成分取得  <a href="#a754e35fb4c9fa6cd8e3c5f23037897dd"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">float&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_matrix44.html#ab05621f2e75857f6aa523d0e98ffe950">operator()</a> (unsigned int row, unsigned int col) const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">行列成分取得(READ ONLY)  <a href="#ab05621f2e75857f6aa523d0e98ffe950"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_vector3.html">Vector3</a> &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_matrix44.html#ae611e3f1a71be9f3c0251ed03ad6a8e4">row_vector3</a> (unsigned int row)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">行ベクトル取得  <a href="#ae611e3f1a71be9f3c0251ed03ad6a8e4"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_vector3.html">Vector3</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_matrix44.html#ad67d74ce5f887c7c95d08cda92346c08">row_vector3</a> (unsigned int row) const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">行ベクトル取得(READ ONLY)  <a href="#ad67d74ce5f887c7c95d08cda92346c08"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_vector4.html">Vector4</a> &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_matrix44.html#a467c25e4300847217311f778b13abcc5">row_vector4</a> (unsigned int row)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">行ベクトル取得  <a href="#a467c25e4300847217311f778b13abcc5"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_vector4.html">Vector4</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_matrix44.html#a1b06c5b67711b0fa4b5935b6f2323f8e">row_vector4</a> (unsigned int row) const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">行ベクトル取得[READ ONLY]  <a href="#a1b06c5b67711b0fa4b5935b6f2323f8e"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_matrix44.html#a48b94a16caac5ce7be998e20f3efd295">operator float *</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">float 型ポインタにキャスト  <a href="#a48b94a16caac5ce7be998e20f3efd295"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_matrix44.html#a41615e0723dbc4becd4a36c368011b33">operator const float *</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">float 型ポインタにキャスト[READ ONLY]  <a href="#a41615e0723dbc4becd4a36c368011b33"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_matrix44.html">Matrix44</a> &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_matrix44.html#a3efb4de6889e1b12244bd4745e9f3795">operator=</a> (const <a class="el" href="class_matrix44.html">Matrix44</a> &amp;m)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">代入オペレータ  <a href="#a3efb4de6889e1b12244bd4745e9f3795"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_matrix44.html">Matrix44</a> &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_matrix44.html#a6b1c417aab9c4e0510448a9af557b9c7">operator+=</a> (const <a class="el" href="class_matrix44.html">Matrix44</a> &amp;m)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">加算代入オペレータ  <a href="#a6b1c417aab9c4e0510448a9af557b9c7"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_matrix44.html">Matrix44</a> &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_matrix44.html#a9b2368d3e631edeeadb95d63a0a8f1a4">operator-=</a> (const <a class="el" href="class_matrix44.html">Matrix44</a> &amp;m)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">減算代入オペレータ  <a href="#a9b2368d3e631edeeadb95d63a0a8f1a4"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_matrix44.html">Matrix44</a> &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_matrix44.html#a2bc4927948cbfb7422d05e1d8f0e797a">operator*=</a> (const <a class="el" href="class_matrix44.html">Matrix44</a> &amp;m)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">積算代入オペレータ  <a href="#a2bc4927948cbfb7422d05e1d8f0e797a"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_matrix44.html">Matrix44</a> &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_matrix44.html#ab0f754d070f64152ed2f1f5ab5368d7c">operator*=</a> (float s)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">スケール代入オペレータ  <a href="#ab0f754d070f64152ed2f1f5ab5368d7c"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_matrix44.html">Matrix44</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_matrix44.html#a96a3a3c497abd4e56171d1079ba70dc6">operator+</a> (const <a class="el" href="class_matrix44.html">Matrix44</a> &amp;m) const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">加算オペレータ  <a href="#a96a3a3c497abd4e56171d1079ba70dc6"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_matrix44.html">Matrix44</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_matrix44.html#a4a3479cce84301149c135c0c59ed509a">operator-</a> (const <a class="el" href="class_matrix44.html">Matrix44</a> &amp;m) const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">減算オペレータ  <a href="#a4a3479cce84301149c135c0c59ed509a"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_matrix44.html">Matrix44</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_matrix44.html#a9e28d1e2b283a9fe91729c5cdb7f554a">operator*</a> (const <a class="el" href="class_matrix44.html">Matrix44</a> &amp;m) const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">積算オペレータ  <a href="#a9e28d1e2b283a9fe91729c5cdb7f554a"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_matrix44.html">Matrix44</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_matrix44.html#a90b634233c87d78baf70092de0858547">operator*</a> (float s) const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">スケールオペレータ  <a href="#a90b634233c87d78baf70092de0858547"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_matrix44.html#ae37604e57044080f7ac115eb85c80ed2">operator==</a> (const <a class="el" href="class_matrix44.html">Matrix44</a> &amp;m) const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">比較オペレータ  <a href="#ae37604e57044080f7ac115eb85c80ed2"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_matrix44.html#a78a34d7ddf8e7fb983808fb9970cab32">operator!=</a> (const <a class="el" href="class_matrix44.html">Matrix44</a> &amp;m) const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">比較オペレータ  <a href="#a78a34d7ddf8e7fb983808fb9970cab32"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_matrix44.html#a5308f6050876cc05a2bcddd54dc40a9d">debug_print</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">デバッグ出力  <a href="#a5308f6050876cc05a2bcddd54dc40a9d"></a><br/></td></tr>
+<tr><td colspan="2"><h2>Public 変数</h2></td></tr>
+<tr><td class="memItemLeft" >union {</td></tr>
+<tr><td class="memItemLeft" >&nbsp;&nbsp;&nbsp;struct {</td></tr>
+<tr><td class="memItemLeft" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;float&nbsp;&nbsp;&nbsp;<a class="el" href="class_matrix44.html#acc63826a8934b4f745ee89361afdc368">_11</a></td></tr>
+<tr><td class="memItemLeft" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;float&nbsp;&nbsp;&nbsp;<a class="el" href="class_matrix44.html#a90c228222f2d72764c50ff74cf2cc379">_12</a></td></tr>
+<tr><td class="memItemLeft" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;float&nbsp;&nbsp;&nbsp;<a class="el" href="class_matrix44.html#a16f39fdfc28ac62b2b692c2640162f5e">_13</a></td></tr>
+<tr><td class="memItemLeft" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;float&nbsp;&nbsp;&nbsp;<a class="el" href="class_matrix44.html#a09f46703a897ddfcaed7235e15697aad">_14</a></td></tr>
+<tr><td class="memItemLeft" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;float&nbsp;&nbsp;&nbsp;<a class="el" href="class_matrix44.html#a22948eafbce68cc4039e5ec4786a658e">_21</a></td></tr>
+<tr><td class="memItemLeft" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;float&nbsp;&nbsp;&nbsp;<a class="el" href="class_matrix44.html#abe8391ed23d0f4f9553b88f5daaa41df">_22</a></td></tr>
+<tr><td class="memItemLeft" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;float&nbsp;&nbsp;&nbsp;<a class="el" href="class_matrix44.html#ae0a608fcaccfa1eab4b5f770b7b43d13">_23</a></td></tr>
+<tr><td class="memItemLeft" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;float&nbsp;&nbsp;&nbsp;<a class="el" href="class_matrix44.html#aa0665a92a9e44a12e93cc78a171ac2c0">_24</a></td></tr>
+<tr><td class="memItemLeft" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;float&nbsp;&nbsp;&nbsp;<a class="el" href="class_matrix44.html#ac2d73a105c59a1c02e237dad2e00bfc9">_31</a></td></tr>
+<tr><td class="memItemLeft" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;float&nbsp;&nbsp;&nbsp;<a class="el" href="class_matrix44.html#a38b5b235183fdf521d0a22b07b0fe786">_32</a></td></tr>
+<tr><td class="memItemLeft" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;float&nbsp;&nbsp;&nbsp;<a class="el" href="class_matrix44.html#acb9a9f55082e3b22adc20b9548758f90">_33</a></td></tr>
+<tr><td class="memItemLeft" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;float&nbsp;&nbsp;&nbsp;<a class="el" href="class_matrix44.html#a04d8d123e1da99922f2ab28e5bb4c790">_34</a></td></tr>
+<tr><td class="memItemLeft" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;float&nbsp;&nbsp;&nbsp;<a class="el" href="class_matrix44.html#a27fc6daeb0ed31359797ebdf2983bbb0">_41</a></td></tr>
+<tr><td class="memItemLeft" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;float&nbsp;&nbsp;&nbsp;<a class="el" href="class_matrix44.html#ac36a4a39b4907f5dd90aa46e36719bd4">_42</a></td></tr>
+<tr><td class="memItemLeft" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;float&nbsp;&nbsp;&nbsp;<a class="el" href="class_matrix44.html#a98300064775db7796833bd36775917ae">_43</a></td></tr>
+<tr><td class="memItemLeft" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;float&nbsp;&nbsp;&nbsp;<a class="el" href="class_matrix44.html#a46fc2529ae5f40fafcfdedc258553178">_44</a></td></tr>
+<tr><td class="memItemLeft" valign="top">&nbsp;&nbsp;&nbsp;}&nbsp;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr><td class="memItemLeft" >&nbsp;&nbsp;&nbsp;float&nbsp;&nbsp;&nbsp;<a class="el" href="class_matrix44.html#a665e7e86c634aace64df7485d815af9b">m1</a> [16]</td></tr>
+<tr><td class="memItemLeft" >&nbsp;&nbsp;&nbsp;float&nbsp;&nbsp;&nbsp;<a class="el" href="class_matrix44.html#addead5ffc58dc0b04abaa8df4d681684">m2</a> [4][4]</td></tr>
+<tr><td class="memItemLeft" valign="top">};&nbsp;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr><td colspan="2"><h2>フレンド</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_matrix44.html">Matrix44</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_matrix44.html#adc5ac86fe7aaa62155a9bce25841b77e">operator*</a> (float s, const <a class="el" href="class_matrix44.html">Matrix44</a> &amp;m)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">スケールオペレータ  <a href="#adc5ac86fe7aaa62155a9bce25841b77e"></a><br/></td></tr>
+</table>
+<hr/><a name="_details"></a><h2>説明</h2>
+<p>4x4 Matrix </p>
+<dl class="author"><dt><b>作者:</b></dt><dd>M.Morimoto </dd></dl>
+<dl class="date"><dt><b>日付:</b></dt><dd>2004/06/11 </dd></dl>
+<hr/><h2>コンストラクタとデストラクタ</h2>
+<a class="anchor" id="a2a050c95193997c7c6322151eb60e25b"></a><!-- doxytag: member="Matrix44::Matrix44" ref="a2a050c95193997c7c6322151eb60e25b" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Matrix44::Matrix44 </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a293c00c27fc602b9961cb63196bb5717"></a><!-- doxytag: member="Matrix44::Matrix44" ref="a293c00c27fc602b9961cb63196bb5717" args="(const Matrix44 &amp;m)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Matrix44::Matrix44 </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_matrix44.html">Matrix44</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>m</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>コピーコンストラクタ </p>
+<dl><dt><b>引数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>i]</em>&nbsp;</td><td>m: </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="author"><dt><b>作者:</b></dt><dd>M.Morimoto </dd></dl>
+<dl class="date"><dt><b>日付:</b></dt><dd></dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ad72b97bbdcf4e64416a0caa43585c958"></a><!-- doxytag: member="Matrix44::Matrix44" ref="ad72b97bbdcf4e64416a0caa43585c958" args="(const float *m)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Matrix44::Matrix44 </td>
+          <td>(</td>
+          <td class="paramtype">const float *&nbsp;</td>
+          <td class="paramname"> <em>m</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>コピーコンストラクタ </p>
+<dl><dt><b>引数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>i]</em>&nbsp;</td><td>m: </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="author"><dt><b>作者:</b></dt><dd>M.Morimoto </dd></dl>
+<dl class="date"><dt><b>日付:</b></dt><dd></dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a3216d22c37a824afca27cc1d356ab0fa"></a><!-- doxytag: member="Matrix44::Matrix44" ref="a3216d22c37a824afca27cc1d356ab0fa" args="(float _11, float _12, float _13, float _14, float _21, float _22, float _23, float _24, float _31, float _32, float _33, float _34, float _41, float _42, float _43, float _44)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Matrix44::Matrix44 </td>
+          <td>(</td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>_11</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>_12</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>_13</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>_14</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>_21</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>_22</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>_23</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>_24</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>_31</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>_32</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>_33</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>_34</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>_41</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>_42</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>_43</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>_44</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>コピーコンストラクタ </p>
+<dl><dt><b>引数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>i]</em>&nbsp;</td><td>_11 : </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>i]</em>&nbsp;</td><td>_12 : </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>i]</em>&nbsp;</td><td>_13 : </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>i]</em>&nbsp;</td><td>_14 : </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>i]</em>&nbsp;</td><td>_21 : </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>i]</em>&nbsp;</td><td>_22 : </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>i]</em>&nbsp;</td><td>_23 : </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>i]</em>&nbsp;</td><td>_24 : </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>i]</em>&nbsp;</td><td>_31 : </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>i]</em>&nbsp;</td><td>_32 : </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>i]</em>&nbsp;</td><td>_33 : </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>i]</em>&nbsp;</td><td>_34 : </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>i]</em>&nbsp;</td><td>_41 : </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>i]</em>&nbsp;</td><td>_42 : </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>i]</em>&nbsp;</td><td>_43 : </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>i]</em>&nbsp;</td><td>_44 : </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="author"><dt><b>作者:</b></dt><dd>M.Morimoto </dd></dl>
+<dl class="date"><dt><b>日付:</b></dt><dd></dd></dl>
+
+</div>
+</div>
+<hr/><h2>関数</h2>
+<a class="anchor" id="a5308f6050876cc05a2bcddd54dc40a9d"></a><!-- doxytag: member="Matrix44::debug_print" ref="a5308f6050876cc05a2bcddd54dc40a9d" args="() const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Matrix44::debug_print </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>デバッグ出力 </p>
+<dl class="note"><dt><b>覚え書き:</b></dt><dd></dd></dl>
+<dl class="author"><dt><b>作者:</b></dt><dd>M.Morimoto </dd></dl>
+<dl class="date"><dt><b>日付:</b></dt><dd></dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a41615e0723dbc4becd4a36c368011b33"></a><!-- doxytag: member="Matrix44::operator const float *" ref="a41615e0723dbc4becd4a36c368011b33" args="() const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Matrix44::operator const float * </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td> const<code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>float 型ポインタにキャスト[READ ONLY] </p>
+<dl><dt><b>戻り値:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>mtx[0][0]</em>&nbsp;</td><td>への float 型ポインタ </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="author"><dt><b>作者:</b></dt><dd>M.Morimoto </dd></dl>
+<dl class="date"><dt><b>日付:</b></dt><dd>2004/06/11 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a48b94a16caac5ce7be998e20f3efd295"></a><!-- doxytag: member="Matrix44::operator float *" ref="a48b94a16caac5ce7be998e20f3efd295" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Matrix44::operator float * </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>float 型ポインタにキャスト </p>
+<dl><dt><b>戻り値:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>mtx[0][0]</em>&nbsp;</td><td>への float 型ポインタ </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="author"><dt><b>作者:</b></dt><dd>M.Morimoto </dd></dl>
+<dl class="date"><dt><b>日付:</b></dt><dd>2004/06/11 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a78a34d7ddf8e7fb983808fb9970cab32"></a><!-- doxytag: member="Matrix44::operator!=" ref="a78a34d7ddf8e7fb983808fb9970cab32" args="(const Matrix44 &amp;m) const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Matrix44::operator!= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_matrix44.html">Matrix44</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>m</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>比較オペレータ </p>
+<dl><dt><b>引数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>o]</em>&nbsp;</td><td>m: </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl><dt><b>戻り値:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>true</em>&nbsp;</td><td>: ≠ </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>false</em>&nbsp;</td><td>: ＝ </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="author"><dt><b>作者:</b></dt><dd>M.Morimoto </dd></dl>
+<dl class="date"><dt><b>日付:</b></dt><dd></dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ab05621f2e75857f6aa523d0e98ffe950"></a><!-- doxytag: member="Matrix44::operator()" ref="ab05621f2e75857f6aa523d0e98ffe950" args="(unsigned int row, unsigned int col) const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float Matrix44::operator() </td>
+          <td>(</td>
+          <td class="paramtype">unsigned int&nbsp;</td>
+          <td class="paramname"> <em>row</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&nbsp;</td>
+          <td class="paramname"> <em>col</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td> const<code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>行列成分取得(READ ONLY) </p>
+<dl><dt><b>引数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>i]</em>&nbsp;</td><td>row: 行 </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>i]</em>&nbsp;</td><td>col: 列 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl><dt><b>戻り値:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>参照</em>&nbsp;</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="author"><dt><b>作者:</b></dt><dd>M.Morimoto </dd></dl>
+<dl class="note"><dt><b>覚え書き:</b></dt><dd>mtx[row][column] </dd></dl>
+<dl class="date"><dt><b>日付:</b></dt><dd>2004/06/11 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a754e35fb4c9fa6cd8e3c5f23037897dd"></a><!-- doxytag: member="Matrix44::operator()" ref="a754e35fb4c9fa6cd8e3c5f23037897dd" args="(unsigned int row, unsigned int col)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float&amp; Matrix44::operator() </td>
+          <td>(</td>
+          <td class="paramtype">unsigned int&nbsp;</td>
+          <td class="paramname"> <em>row</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&nbsp;</td>
+          <td class="paramname"> <em>col</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>行列成分取得 </p>
+<dl><dt><b>引数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>i]</em>&nbsp;</td><td>row: 行 </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>i]</em>&nbsp;</td><td>col: 列 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl><dt><b>戻り値:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>参照</em>&nbsp;</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="author"><dt><b>作者:</b></dt><dd>M.Morimoto </dd></dl>
+<dl class="note"><dt><b>覚え書き:</b></dt><dd>mtx[row][column] </dd></dl>
+<dl class="date"><dt><b>日付:</b></dt><dd>2004/06/11 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a90b634233c87d78baf70092de0858547"></a><!-- doxytag: member="Matrix44::operator*" ref="a90b634233c87d78baf70092de0858547" args="(float s) const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="class_matrix44.html">Matrix44</a> Matrix44::operator* </td>
+          <td>(</td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>s</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>スケールオペレータ </p>
+<dl><dt><b>引数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>i]</em>&nbsp;</td><td>s: </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl><dt><b>戻り値:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>スケール結果</em>&nbsp;</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="author"><dt><b>作者:</b></dt><dd>M.Morimoto </dd></dl>
+<dl class="date"><dt><b>日付:</b></dt><dd></dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a9e28d1e2b283a9fe91729c5cdb7f554a"></a><!-- doxytag: member="Matrix44::operator*" ref="a9e28d1e2b283a9fe91729c5cdb7f554a" args="(const Matrix44 &amp;m) const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="class_matrix44.html">Matrix44</a> Matrix44::operator* </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_matrix44.html">Matrix44</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>m</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>積算オペレータ </p>
+<dl><dt><b>引数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>i]</em>&nbsp;</td><td>m: </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl><dt><b>戻り値:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>積算結果</em>&nbsp;</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="author"><dt><b>作者:</b></dt><dd>M.Morimoto </dd></dl>
+<dl class="date"><dt><b>日付:</b></dt><dd></dd></dl>
+
+<p><div class="dynheader">
+関数の呼び出しグラフ:</div>
+<div class="dynsection">
+<div class="center"><img src="class_matrix44_a9e28d1e2b283a9fe91729c5cdb7f554a_cgraph.png" border="0" usemap="#class_matrix44_a9e28d1e2b283a9fe91729c5cdb7f554a_cgraph_map" alt=""></div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ab0f754d070f64152ed2f1f5ab5368d7c"></a><!-- doxytag: member="Matrix44::operator*=" ref="ab0f754d070f64152ed2f1f5ab5368d7c" args="(float s)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_matrix44.html">Matrix44</a> &amp; Matrix44::operator*= </td>
+          <td>(</td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>s</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>スケール代入オペレータ </p>
+<dl><dt><b>引数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>i]</em>&nbsp;</td><td>s: </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl><dt><b>戻り値:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>参照</em>&nbsp;</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="author"><dt><b>作者:</b></dt><dd>M.Morimoto </dd></dl>
+<dl class="date"><dt><b>日付:</b></dt><dd></dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a2bc4927948cbfb7422d05e1d8f0e797a"></a><!-- doxytag: member="Matrix44::operator*=" ref="a2bc4927948cbfb7422d05e1d8f0e797a" args="(const Matrix44 &amp;m)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_matrix44.html">Matrix44</a> &amp; Matrix44::operator*= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_matrix44.html">Matrix44</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>m</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>積算代入オペレータ </p>
+<dl><dt><b>引数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>i]</em>&nbsp;</td><td>m: </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl><dt><b>戻り値:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>参照</em>&nbsp;</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="author"><dt><b>作者:</b></dt><dd>M.Morimoto </dd></dl>
+<dl class="date"><dt><b>日付:</b></dt><dd></dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a96a3a3c497abd4e56171d1079ba70dc6"></a><!-- doxytag: member="Matrix44::operator+" ref="a96a3a3c497abd4e56171d1079ba70dc6" args="(const Matrix44 &amp;m) const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="class_matrix44.html">Matrix44</a> Matrix44::operator+ </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_matrix44.html">Matrix44</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>m</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>加算オペレータ </p>
+<dl><dt><b>引数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>i]</em>&nbsp;</td><td>m: </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl><dt><b>戻り値:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>加算結果</em>&nbsp;</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="author"><dt><b>作者:</b></dt><dd>M.Morimoto </dd></dl>
+<dl class="date"><dt><b>日付:</b></dt><dd></dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a6b1c417aab9c4e0510448a9af557b9c7"></a><!-- doxytag: member="Matrix44::operator+=" ref="a6b1c417aab9c4e0510448a9af557b9c7" args="(const Matrix44 &amp;m)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_matrix44.html">Matrix44</a> &amp; Matrix44::operator+= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_matrix44.html">Matrix44</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>m</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>加算代入オペレータ </p>
+<dl><dt><b>引数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>i]</em>&nbsp;</td><td>m: </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl><dt><b>戻り値:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>参照</em>&nbsp;</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="author"><dt><b>作者:</b></dt><dd>M.Morimoto </dd></dl>
+<dl class="date"><dt><b>日付:</b></dt><dd></dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a4a3479cce84301149c135c0c59ed509a"></a><!-- doxytag: member="Matrix44::operator&#45;" ref="a4a3479cce84301149c135c0c59ed509a" args="(const Matrix44 &amp;m) const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="class_matrix44.html">Matrix44</a> Matrix44::operator- </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_matrix44.html">Matrix44</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>m</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>減算オペレータ </p>
+<dl><dt><b>引数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>i]</em>&nbsp;</td><td>m: </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl><dt><b>戻り値:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>減算結果</em>&nbsp;</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="author"><dt><b>作者:</b></dt><dd>M.Morimoto </dd></dl>
+<dl class="date"><dt><b>日付:</b></dt><dd></dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a9b2368d3e631edeeadb95d63a0a8f1a4"></a><!-- doxytag: member="Matrix44::operator&#45;=" ref="a9b2368d3e631edeeadb95d63a0a8f1a4" args="(const Matrix44 &amp;m)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_matrix44.html">Matrix44</a> &amp; Matrix44::operator-= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_matrix44.html">Matrix44</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>m</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>減算代入オペレータ </p>
+<dl><dt><b>引数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>i]</em>&nbsp;</td><td>m: </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl><dt><b>戻り値:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>参照</em>&nbsp;</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="author"><dt><b>作者:</b></dt><dd>M.Morimoto </dd></dl>
+<dl class="date"><dt><b>日付:</b></dt><dd></dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a3efb4de6889e1b12244bd4745e9f3795"></a><!-- doxytag: member="Matrix44::operator=" ref="a3efb4de6889e1b12244bd4745e9f3795" args="(const Matrix44 &amp;m)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_matrix44.html">Matrix44</a> &amp; Matrix44::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_matrix44.html">Matrix44</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>m</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>代入オペレータ </p>
+<dl><dt><b>引数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>i]</em>&nbsp;</td><td>m: </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl><dt><b>戻り値:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>参照</em>&nbsp;</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="author"><dt><b>作者:</b></dt><dd>M.Morimoto </dd></dl>
+<dl class="date"><dt><b>日付:</b></dt><dd></dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ae37604e57044080f7ac115eb85c80ed2"></a><!-- doxytag: member="Matrix44::operator==" ref="ae37604e57044080f7ac115eb85c80ed2" args="(const Matrix44 &amp;m) const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Matrix44::operator== </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_matrix44.html">Matrix44</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>m</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>比較オペレータ </p>
+<dl><dt><b>引数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>o]</em>&nbsp;</td><td>m: </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl><dt><b>戻り値:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>true</em>&nbsp;</td><td>: ＝ </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>false</em>&nbsp;</td><td>: ≠ </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="author"><dt><b>作者:</b></dt><dd>M.Morimoto </dd></dl>
+<dl class="date"><dt><b>日付:</b></dt><dd></dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ad67d74ce5f887c7c95d08cda92346c08"></a><!-- doxytag: member="Matrix44::row_vector3" ref="ad67d74ce5f887c7c95d08cda92346c08" args="(unsigned int row) const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="class_vector3.html">Vector3</a> Matrix44::row_vector3 </td>
+          <td>(</td>
+          <td class="paramtype">unsigned int&nbsp;</td>
+          <td class="paramname"> <em>row</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td> const<code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>行ベクトル取得(READ ONLY) </p>
+<dl><dt><b>引数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>i]</em>&nbsp;</td><td>row: 行 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl><dt><b>戻り値:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>参照</em>&nbsp;</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="author"><dt><b>作者:</b></dt><dd>M.Morimoto </dd></dl>
+<dl class="note"><dt><b>覚え書き:</b></dt><dd>mtx[row] </dd></dl>
+<dl class="date"><dt><b>日付:</b></dt><dd>2004/06/11 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ae611e3f1a71be9f3c0251ed03ad6a8e4"></a><!-- doxytag: member="Matrix44::row_vector3" ref="ae611e3f1a71be9f3c0251ed03ad6a8e4" args="(unsigned int row)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_vector3.html">Vector3</a>&amp; Matrix44::row_vector3 </td>
+          <td>(</td>
+          <td class="paramtype">unsigned int&nbsp;</td>
+          <td class="paramname"> <em>row</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>行ベクトル取得 </p>
+<dl><dt><b>引数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>i]</em>&nbsp;</td><td>row: 行 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl><dt><b>戻り値:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>参照</em>&nbsp;</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="author"><dt><b>作者:</b></dt><dd>M.Morimoto </dd></dl>
+<dl class="note"><dt><b>覚え書き:</b></dt><dd>mtx[row] </dd></dl>
+<dl class="date"><dt><b>日付:</b></dt><dd>2004/06/11 </dd></dl>
+
+<p><div class="dynheader">
+呼出しグラフ:</div>
+<div class="dynsection">
+<div class="center"><img src="class_matrix44_ae611e3f1a71be9f3c0251ed03ad6a8e4_icgraph.png" border="0" usemap="#class_matrix44_ae611e3f1a71be9f3c0251ed03ad6a8e4_icgraph_map" alt=""></div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a1b06c5b67711b0fa4b5935b6f2323f8e"></a><!-- doxytag: member="Matrix44::row_vector4" ref="a1b06c5b67711b0fa4b5935b6f2323f8e" args="(unsigned int row) const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="class_vector4.html">Vector4</a> Matrix44::row_vector4 </td>
+          <td>(</td>
+          <td class="paramtype">unsigned int&nbsp;</td>
+          <td class="paramname"> <em>row</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td> const<code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>行ベクトル取得[READ ONLY] </p>
+<dl><dt><b>引数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>i]</em>&nbsp;</td><td>row: 行 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl><dt><b>戻り値:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>参照</em>&nbsp;</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="author"><dt><b>作者:</b></dt><dd>M.Morimoto </dd></dl>
+<dl class="note"><dt><b>覚え書き:</b></dt><dd>mtx[row] </dd></dl>
+<dl class="date"><dt><b>日付:</b></dt><dd>2004/06/11 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a467c25e4300847217311f778b13abcc5"></a><!-- doxytag: member="Matrix44::row_vector4" ref="a467c25e4300847217311f778b13abcc5" args="(unsigned int row)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_vector4.html">Vector4</a>&amp; Matrix44::row_vector4 </td>
+          <td>(</td>
+          <td class="paramtype">unsigned int&nbsp;</td>
+          <td class="paramname"> <em>row</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>行ベクトル取得 </p>
+<dl><dt><b>引数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>i]</em>&nbsp;</td><td>row: 行 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl><dt><b>戻り値:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>参照</em>&nbsp;</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="author"><dt><b>作者:</b></dt><dd>M.Morimoto </dd></dl>
+<dl class="note"><dt><b>覚え書き:</b></dt><dd>mtx[row] </dd></dl>
+<dl class="date"><dt><b>日付:</b></dt><dd>2004/06/11 </dd></dl>
+
+</div>
+</div>
+<hr/><h2>フレンドと関連する関数</h2>
+<a class="anchor" id="adc5ac86fe7aaa62155a9bce25841b77e"></a><!-- doxytag: member="Matrix44::operator*" ref="adc5ac86fe7aaa62155a9bce25841b77e" args="(float s, const Matrix44 &amp;m)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="class_matrix44.html">Matrix44</a> operator* </td>
+          <td>(</td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>s</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_matrix44.html">Matrix44</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>m</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [friend]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>スケールオペレータ </p>
+<dl><dt><b>引数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>i]</em>&nbsp;</td><td>s: </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>i]</em>&nbsp;</td><td>m: </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl><dt><b>戻り値:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>スケール結果</em>&nbsp;</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="author"><dt><b>作者:</b></dt><dd>M.Morimoto </dd></dl>
+<dl class="date"><dt><b>日付:</b></dt><dd></dd></dl>
+
+</div>
+</div>
+<hr/><h2>変数</h2>
+<a class="anchor" id="aedfc554049ef454e297494af134d700a"></a><!-- doxytag: member="Matrix44::@9" ref="aedfc554049ef454e297494af134d700a" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">union { ... } </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="acc63826a8934b4f745ee89361afdc368"></a><!-- doxytag: member="Matrix44::_11" ref="acc63826a8934b4f745ee89361afdc368" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float <a class="el" href="class_matrix44.html#acc63826a8934b4f745ee89361afdc368">Matrix44::_11</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a90c228222f2d72764c50ff74cf2cc379"></a><!-- doxytag: member="Matrix44::_12" ref="a90c228222f2d72764c50ff74cf2cc379" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float <a class="el" href="class_matrix44.html#a90c228222f2d72764c50ff74cf2cc379">Matrix44::_12</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a16f39fdfc28ac62b2b692c2640162f5e"></a><!-- doxytag: member="Matrix44::_13" ref="a16f39fdfc28ac62b2b692c2640162f5e" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float <a class="el" href="class_matrix44.html#a16f39fdfc28ac62b2b692c2640162f5e">Matrix44::_13</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a09f46703a897ddfcaed7235e15697aad"></a><!-- doxytag: member="Matrix44::_14" ref="a09f46703a897ddfcaed7235e15697aad" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float <a class="el" href="class_matrix44.html#a09f46703a897ddfcaed7235e15697aad">Matrix44::_14</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a22948eafbce68cc4039e5ec4786a658e"></a><!-- doxytag: member="Matrix44::_21" ref="a22948eafbce68cc4039e5ec4786a658e" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float <a class="el" href="class_matrix44.html#a22948eafbce68cc4039e5ec4786a658e">Matrix44::_21</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="abe8391ed23d0f4f9553b88f5daaa41df"></a><!-- doxytag: member="Matrix44::_22" ref="abe8391ed23d0f4f9553b88f5daaa41df" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float <a class="el" href="class_matrix44.html#abe8391ed23d0f4f9553b88f5daaa41df">Matrix44::_22</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ae0a608fcaccfa1eab4b5f770b7b43d13"></a><!-- doxytag: member="Matrix44::_23" ref="ae0a608fcaccfa1eab4b5f770b7b43d13" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float <a class="el" href="class_matrix44.html#ae0a608fcaccfa1eab4b5f770b7b43d13">Matrix44::_23</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aa0665a92a9e44a12e93cc78a171ac2c0"></a><!-- doxytag: member="Matrix44::_24" ref="aa0665a92a9e44a12e93cc78a171ac2c0" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float <a class="el" href="class_matrix44.html#aa0665a92a9e44a12e93cc78a171ac2c0">Matrix44::_24</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ac2d73a105c59a1c02e237dad2e00bfc9"></a><!-- doxytag: member="Matrix44::_31" ref="ac2d73a105c59a1c02e237dad2e00bfc9" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float <a class="el" href="class_matrix44.html#ac2d73a105c59a1c02e237dad2e00bfc9">Matrix44::_31</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a38b5b235183fdf521d0a22b07b0fe786"></a><!-- doxytag: member="Matrix44::_32" ref="a38b5b235183fdf521d0a22b07b0fe786" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float <a class="el" href="class_matrix44.html#a38b5b235183fdf521d0a22b07b0fe786">Matrix44::_32</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="acb9a9f55082e3b22adc20b9548758f90"></a><!-- doxytag: member="Matrix44::_33" ref="acb9a9f55082e3b22adc20b9548758f90" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float <a class="el" href="class_matrix44.html#acb9a9f55082e3b22adc20b9548758f90">Matrix44::_33</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a04d8d123e1da99922f2ab28e5bb4c790"></a><!-- doxytag: member="Matrix44::_34" ref="a04d8d123e1da99922f2ab28e5bb4c790" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float <a class="el" href="class_matrix44.html#a04d8d123e1da99922f2ab28e5bb4c790">Matrix44::_34</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a27fc6daeb0ed31359797ebdf2983bbb0"></a><!-- doxytag: member="Matrix44::_41" ref="a27fc6daeb0ed31359797ebdf2983bbb0" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float <a class="el" href="class_matrix44.html#a27fc6daeb0ed31359797ebdf2983bbb0">Matrix44::_41</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ac36a4a39b4907f5dd90aa46e36719bd4"></a><!-- doxytag: member="Matrix44::_42" ref="ac36a4a39b4907f5dd90aa46e36719bd4" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float <a class="el" href="class_matrix44.html#ac36a4a39b4907f5dd90aa46e36719bd4">Matrix44::_42</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a98300064775db7796833bd36775917ae"></a><!-- doxytag: member="Matrix44::_43" ref="a98300064775db7796833bd36775917ae" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float <a class="el" href="class_matrix44.html#a98300064775db7796833bd36775917ae">Matrix44::_43</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a46fc2529ae5f40fafcfdedc258553178"></a><!-- doxytag: member="Matrix44::_44" ref="a46fc2529ae5f40fafcfdedc258553178" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float <a class="el" href="class_matrix44.html#a46fc2529ae5f40fafcfdedc258553178">Matrix44::_44</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a665e7e86c634aace64df7485d815af9b"></a><!-- doxytag: member="Matrix44::m1" ref="a665e7e86c634aace64df7485d815af9b" args="[16]" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float <a class="el" href="class_matrix44.html#a665e7e86c634aace64df7485d815af9b">Matrix44::m1</a>[16]</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="addead5ffc58dc0b04abaa8df4d681684"></a><!-- doxytag: member="Matrix44::m2" ref="addead5ffc58dc0b04abaa8df4d681684" args="[4][4]" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float <a class="el" href="class_matrix44.html#addead5ffc58dc0b04abaa8df4d681684">Matrix44::m2</a>[4][4]</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<hr/>このクラスの説明は次のファイルから生成されました:<ul>
+<li>Renderer/lib/math/<a class="el" href="matrix_8h_source.html">matrix.h</a></li>
+<li>Renderer/lib/math/<a class="el" href="matrix_8cpp.html">matrix.cpp</a></li>
+</ul>
+</div>
+<!--- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&nbsp;</span>全て</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&nbsp;</span>クラス</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&nbsp;</span>ネームスペース</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&nbsp;</span>ファイル</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&nbsp;</span>関数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&nbsp;</span>変数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&nbsp;</span>型定義</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&nbsp;</span>列挙型</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&nbsp;</span>列挙型の値</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&nbsp;</span>フレンド</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&nbsp;</span>マクロ定義</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<hr class="footer"/><address style="text-align: right;"><small>Rendererに対してThu May 20 10:12:11 2010に生成されました。&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.6.3 </small></address>
+</body>
+</html>

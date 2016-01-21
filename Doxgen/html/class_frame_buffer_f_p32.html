@@ -1,0 +1,250 @@
+<!-- This comment will put IE 6, 7 and 8 in quirks mode -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>Renderer: クラス FrameBufferFP32</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javaScript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body onload='searchBox.OnSelectItem(0);'>
+<!-- 作成： Doxygen 1.6.3 -->
+<script type="text/javascript"><!--
+var searchBox = new SearchBox("searchBox", "search",false,'検索');
+--></script>
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="index.html"><span>メインページ</span></a></li>
+      <li><a href="namespaces.html"><span>ネームスペース</span></a></li>
+      <li class="current"><a href="annotated.html"><span>クラス</span></a></li>
+      <li><a href="files.html"><span>ファイル</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <img id="MSearchSelect" src="search/search.png"
+             onmouseover="return searchBox.OnSearchSelectShow()"
+             onmouseout="return searchBox.OnSearchSelectHide()"
+             alt=""/>
+        <input type="text" id="MSearchField" value="検索" accesskey="S"
+             onfocus="searchBox.OnSearchFieldFocus(true)" 
+             onblur="searchBox.OnSearchFieldFocus(false)" 
+             onkeyup="searchBox.OnSearchFieldChange(event)"/>
+        <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div class="tabs">
+    <ul>
+      <li><a href="annotated.html"><span>構成</span></a></li>
+      <li><a href="hierarchy.html"><span>クラス階層</span></a></li>
+      <li><a href="functions.html"><span>構成メンバ</span></a></li>
+    </ul>
+  </div>
+</div>
+<div class="contents">
+<h1>クラス FrameBufferFP32</h1><!-- doxytag: class="FrameBufferFP32" --><!-- doxytag: inherits="FrameBuffer&lt; float, 3 &gt;" -->
+<p><code>#include &lt;<a class="el" href="framebuffer__fp32_8h_source.html">framebuffer_fp32.h</a>&gt;</code></p>
+
+<p><a class="el" href="class_frame_buffer.html">FrameBuffer&lt; float, 3 &gt;</a>を継承しています。</p>
+<div class="dynheader">
+FrameBufferFP32のコラボレーション図</div>
+<div class="dynsection">
+<div class="center"><img src="class_frame_buffer_f_p32__coll__graph.png" border="0" usemap="#_frame_buffer_f_p32_coll__map" alt="Collaboration graph"/></div>
+<map name="_frame_buffer_f_p32_coll__map" id="_frame_buffer_f_p32_coll__map">
+<area shape="rect" id="node2" href="class_frame_buffer.html" title="FrameBuffer\&lt; float, 3 \&gt;" alt="" coords="25,197,180,227"/><area shape="rect" id="node4" href="struct_frame_buffer_1_1_data.html" title="FrameBuffer\&lt; T, SIZE \&gt;::Data" alt="" coords="5,101,200,131"/></map>
+<center><span class="legend">[<a href="graph_legend.html">凡例</a>]</span></center></div>
+
+<p><a href="class_frame_buffer_f_p32-members.html">すべてのメンバ一覧</a></p>
+<table border="0" cellpadding="0" cellspacing="0">
+<tr><td colspan="2"><h2>Public メソッド</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_frame_buffer_f_p32.html#ad3640dfbd3049452e35291c19403e732">FrameBufferFP32</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_frame_buffer_f_p32.html#a26dc5a86feaf01d13cfa8c88801c9843">~FrameBufferFP32</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_frame_buffer_f_p32.html#a9689501b498029818c3ffaf87f418f52">Saturate</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_frame_buffer_f_p32.html#a0a98471b85678b4ed41f26d3b8298d76">GammaCorrection</a> (float gamma=2.2f)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_frame_buffer_f_p32.html#ab72f15291b9cc943dfb991d9aba7e490">WriteBmpFile</a> (const std::string &amp;filename)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_frame_buffer_f_p32.html#ae258f4f50802f415f4af44d2f7cac592">Exposure</a> (float k=1.0f)</td></tr>
+</table>
+<hr/><h2>コンストラクタとデストラクタ</h2>
+<a class="anchor" id="ad3640dfbd3049452e35291c19403e732"></a><!-- doxytag: member="FrameBufferFP32::FrameBufferFP32" ref="ad3640dfbd3049452e35291c19403e732" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">FrameBufferFP32::FrameBufferFP32 </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a26dc5a86feaf01d13cfa8c88801c9843"></a><!-- doxytag: member="FrameBufferFP32::~FrameBufferFP32" ref="a26dc5a86feaf01d13cfa8c88801c9843" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">FrameBufferFP32::~FrameBufferFP32 </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<hr/><h2>関数</h2>
+<a class="anchor" id="ae258f4f50802f415f4af44d2f7cac592"></a><!-- doxytag: member="FrameBufferFP32::Exposure" ref="ae258f4f50802f415f4af44d2f7cac592" args="(float k=1.0f)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FrameBufferFP32::Exposure </td>
+          <td>(</td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>k</em> = <code>1.0f</code></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p><div class="dynheader">
+関数の呼び出しグラフ:</div>
+<div class="dynsection">
+<div class="center"><img src="class_frame_buffer_f_p32_ae258f4f50802f415f4af44d2f7cac592_cgraph.png" border="0" usemap="#class_frame_buffer_f_p32_ae258f4f50802f415f4af44d2f7cac592_cgraph_map" alt=""></div>
+</div>
+</p>
+
+<p><div class="dynheader">
+呼出しグラフ:</div>
+<div class="dynsection">
+<div class="center"><img src="class_frame_buffer_f_p32_ae258f4f50802f415f4af44d2f7cac592_icgraph.png" border="0" usemap="#class_frame_buffer_f_p32_ae258f4f50802f415f4af44d2f7cac592_icgraph_map" alt=""></div>
+<map name="class_frame_buffer_f_p32_ae258f4f50802f415f4af44d2f7cac592_icgraph_map" id="class_frame_buffer_f_p32_ae258f4f50802f415f4af44d2f7cac592_icgraph">
+<area shape="rect" id="node3" href="main_8cpp.html#ac0f2228420376f4db7e1274f2b41667c" title="エントリー" alt="" coords="240,5,291,35"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a0a98471b85678b4ed41f26d3b8298d76"></a><!-- doxytag: member="FrameBufferFP32::GammaCorrection" ref="a0a98471b85678b4ed41f26d3b8298d76" args="(float gamma=2.2f)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FrameBufferFP32::GammaCorrection </td>
+          <td>(</td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>gamma</em> = <code>2.2f</code></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p><div class="dynheader">
+呼出しグラフ:</div>
+<div class="dynsection">
+<div class="center"><img src="class_frame_buffer_f_p32_a0a98471b85678b4ed41f26d3b8298d76_icgraph.png" border="0" usemap="#class_frame_buffer_f_p32_a0a98471b85678b4ed41f26d3b8298d76_icgraph_map" alt=""></div>
+<map name="class_frame_buffer_f_p32_a0a98471b85678b4ed41f26d3b8298d76_icgraph_map" id="class_frame_buffer_f_p32_a0a98471b85678b4ed41f26d3b8298d76_icgraph">
+<area shape="rect" id="node3" href="main_8cpp.html#ac0f2228420376f4db7e1274f2b41667c" title="エントリー" alt="" coords="291,5,341,35"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a9689501b498029818c3ffaf87f418f52"></a><!-- doxytag: member="FrameBufferFP32::Saturate" ref="a9689501b498029818c3ffaf87f418f52" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FrameBufferFP32::Saturate </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p><div class="dynheader">
+呼出しグラフ:</div>
+<div class="dynsection">
+<div class="center"><img src="class_frame_buffer_f_p32_a9689501b498029818c3ffaf87f418f52_icgraph.png" border="0" usemap="#class_frame_buffer_f_p32_a9689501b498029818c3ffaf87f418f52_icgraph_map" alt=""></div>
+<map name="class_frame_buffer_f_p32_a9689501b498029818c3ffaf87f418f52_icgraph_map" id="class_frame_buffer_f_p32_a9689501b498029818c3ffaf87f418f52_icgraph">
+<area shape="rect" id="node3" href="main_8cpp.html#ac0f2228420376f4db7e1274f2b41667c" title="エントリー" alt="" coords="235,5,285,35"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ab72f15291b9cc943dfb991d9aba7e490"></a><!-- doxytag: member="FrameBufferFP32::WriteBmpFile" ref="ab72f15291b9cc943dfb991d9aba7e490" args="(const std::string &amp;filename)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool FrameBufferFP32::WriteBmpFile </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&nbsp;</td>
+          <td class="paramname"> <em>filename</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p><div class="dynheader">
+関数の呼び出しグラフ:</div>
+<div class="dynsection">
+<div class="center"><img src="class_frame_buffer_f_p32_ab72f15291b9cc943dfb991d9aba7e490_cgraph.png" border="0" usemap="#class_frame_buffer_f_p32_ab72f15291b9cc943dfb991d9aba7e490_cgraph_map" alt=""></div>
+</div>
+</p>
+
+<p><div class="dynheader">
+呼出しグラフ:</div>
+<div class="dynsection">
+<div class="center"><img src="class_frame_buffer_f_p32_ab72f15291b9cc943dfb991d9aba7e490_icgraph.png" border="0" usemap="#class_frame_buffer_f_p32_ab72f15291b9cc943dfb991d9aba7e490_icgraph_map" alt=""></div>
+<map name="class_frame_buffer_f_p32_ab72f15291b9cc943dfb991d9aba7e490_icgraph_map" id="class_frame_buffer_f_p32_ab72f15291b9cc943dfb991d9aba7e490_icgraph">
+<area shape="rect" id="node3" href="main_8cpp.html#ac0f2228420376f4db7e1274f2b41667c" title="エントリー" alt="" coords="264,5,315,35"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<hr/>このクラスの説明は次のファイルから生成されました:<ul>
+<li>Renderer/<a class="el" href="framebuffer__fp32_8h_source.html">framebuffer_fp32.h</a></li>
+<li>Renderer/<a class="el" href="framebuffer__fp32_8cpp.html">framebuffer_fp32.cpp</a></li>
+</ul>
+</div>
+<!--- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&nbsp;</span>全て</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&nbsp;</span>クラス</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&nbsp;</span>ネームスペース</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&nbsp;</span>ファイル</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&nbsp;</span>関数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&nbsp;</span>変数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&nbsp;</span>型定義</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&nbsp;</span>列挙型</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&nbsp;</span>列挙型の値</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&nbsp;</span>フレンド</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&nbsp;</span>マクロ定義</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<hr class="footer"/><address style="text-align: right;"><small>Rendererに対してThu May 20 10:12:11 2010に生成されました。&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.6.3 </small></address>
+</body>
+</html>

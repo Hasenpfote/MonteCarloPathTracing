@@ -1,0 +1,219 @@
+<!-- This comment will put IE 6, 7 and 8 in quirks mode -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>Renderer: クラス KdTree</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javaScript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body onload='searchBox.OnSelectItem(0);'>
+<!-- 作成： Doxygen 1.6.3 -->
+<script type="text/javascript"><!--
+var searchBox = new SearchBox("searchBox", "search",false,'検索');
+--></script>
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="index.html"><span>メインページ</span></a></li>
+      <li><a href="namespaces.html"><span>ネームスペース</span></a></li>
+      <li class="current"><a href="annotated.html"><span>クラス</span></a></li>
+      <li><a href="files.html"><span>ファイル</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <img id="MSearchSelect" src="search/search.png"
+             onmouseover="return searchBox.OnSearchSelectShow()"
+             onmouseout="return searchBox.OnSearchSelectHide()"
+             alt=""/>
+        <input type="text" id="MSearchField" value="検索" accesskey="S"
+             onfocus="searchBox.OnSearchFieldFocus(true)" 
+             onblur="searchBox.OnSearchFieldFocus(false)" 
+             onkeyup="searchBox.OnSearchFieldChange(event)"/>
+        <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div class="tabs">
+    <ul>
+      <li><a href="annotated.html"><span>構成</span></a></li>
+      <li><a href="hierarchy.html"><span>クラス階層</span></a></li>
+      <li><a href="functions.html"><span>構成メンバ</span></a></li>
+    </ul>
+  </div>
+</div>
+<div class="contents">
+<h1>クラス KdTree</h1><!-- doxytag: class="KdTree" -->
+<p>kd 木  
+<a href="#_details">[詳細]</a></p>
+
+<p><code>#include &lt;<a class="el" href="kdtree_8h_source.html">kdtree.h</a>&gt;</code></p>
+<div class="dynheader">
+KdTreeのコラボレーション図</div>
+<div class="dynsection">
+<div class="center"><img src="class_kd_tree__coll__graph.png" border="0" usemap="#_kd_tree_coll__map" alt="Collaboration graph"/></div>
+<map name="_kd_tree_coll__map" id="_kd_tree_coll__map">
+<area shape="rect" id="node2" href="class_a_a_b_b.html" title="Axis Aligned Bounding Box." alt="" coords="19,459,77,488"/><area shape="rect" id="node4" href="class_vector3.html" title="3d vector" alt="" coords="5,328,72,357"/><area shape="rect" id="node6" href="class_kd_memory.html" title="kd 木用のメモリ管理クラス" alt="" coords="196,459,281,488"/><area shape="rect" id="node8" href="class_kd_tree_node.html" title="kd 木ノード" alt="" coords="96,328,189,357"/><area shape="rect" id="node10" href="class_object_list.html" title="オブジェクトリスト" alt="" coords="213,328,293,357"/><area shape="rect" id="node12" href="class_primitive.html" title="プリミティブ" alt="" coords="295,232,364,261"/><area shape="rect" id="node14" href="class_material.html" title="材質" alt="" coords="296,136,363,165"/><area shape="rect" id="node16" href="struct_color.html" title="色" alt="" coords="304,5,355,35"/><area shape="rect" id="node23" href="class_split_list.html" title="SplitList" alt="" coords="416,459,485,488"/><area shape="rect" id="node25" href="class_split_list_node.html" title="SplitListNode" alt="" coords="417,328,516,357"/></map>
+<center><span class="legend">[<a href="graph_legend.html">凡例</a>]</span></center></div>
+
+<p><a href="class_kd_tree-members.html">すべてのメンバ一覧</a></p>
+<table border="0" cellpadding="0" cellspacing="0">
+<tr><td colspan="2"><h2>構成</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">struct &nbsp;</td><td class="memItemRight" valign="bottom"><b>Work</b></td></tr>
+<tr><td colspan="2"><h2>Public メソッド</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_kd_tree.html#a0b1d6d9b16065162a2c09ddfb6c63e48">KdTree</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_kd_tree.html#ae9440a092ce2c216714e84d32bf041d2">~KdTree</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_kd_tree.html#a8c1f1e0be0d3afcdd6fb9d429dd95598">Build</a> (const <a class="el" href="primitive_8h.html#a1522f5fca718ff8a2c76d940ea279c33">PrimitiveList</a> &amp;list, const <a class="el" href="class_a_a_b_b.html">AABB</a> &amp;aabb, std::size_t depth)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_kd_tree.html#acddd76fb3e40c259c70a9c87fd27fca1">Traverse</a> (<a class="el" href="class_primitive.html">Primitive</a> **prim, <a class="el" href="struct_primitive_1_1_param.html">Primitive::Param</a> &amp;param, const <a class="el" href="class_ray.html">Ray</a> &amp;ray) const </td></tr>
+</table>
+<hr/><a name="_details"></a><h2>説明</h2>
+<p>kd 木 </p>
+<hr/><h2>コンストラクタとデストラクタ</h2>
+<a class="anchor" id="a0b1d6d9b16065162a2c09ddfb6c63e48"></a><!-- doxytag: member="KdTree::KdTree" ref="a0b1d6d9b16065162a2c09ddfb6c63e48" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">KdTree::KdTree </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ae9440a092ce2c216714e84d32bf041d2"></a><!-- doxytag: member="KdTree::~KdTree" ref="ae9440a092ce2c216714e84d32bf041d2" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">KdTree::~KdTree </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p><div class="dynheader">
+関数の呼び出しグラフ:</div>
+<div class="dynsection">
+<div class="center"><img src="class_kd_tree_ae9440a092ce2c216714e84d32bf041d2_cgraph.png" border="0" usemap="#class_kd_tree_ae9440a092ce2c216714e84d32bf041d2_cgraph_map" alt=""></div>
+</div>
+</p>
+
+</div>
+</div>
+<hr/><h2>関数</h2>
+<a class="anchor" id="a8c1f1e0be0d3afcdd6fb9d429dd95598"></a><!-- doxytag: member="KdTree::Build" ref="a8c1f1e0be0d3afcdd6fb9d429dd95598" args="(const PrimitiveList &amp;list, const AABB &amp;aabb, std::size_t depth)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KdTree::Build </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="primitive_8h.html#a1522f5fca718ff8a2c76d940ea279c33">PrimitiveList</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>list</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_a_a_b_b.html">AABB</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>aabb</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::size_t&nbsp;</td>
+          <td class="paramname"> <em>depth</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p><div class="dynheader">
+関数の呼び出しグラフ:</div>
+<div class="dynsection">
+<div class="center"><img src="class_kd_tree_a8c1f1e0be0d3afcdd6fb9d429dd95598_cgraph.png" border="0" usemap="#class_kd_tree_a8c1f1e0be0d3afcdd6fb9d429dd95598_cgraph_map" alt=""></div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="acddd76fb3e40c259c70a9c87fd27fca1"></a><!-- doxytag: member="KdTree::Traverse" ref="acddd76fb3e40c259c70a9c87fd27fca1" args="(Primitive **prim, Primitive::Param &amp;param, const Ray &amp;ray) const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool KdTree::Traverse </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_primitive.html">Primitive</a> **&nbsp;</td>
+          <td class="paramname"> <em>prim</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_primitive_1_1_param.html">Primitive::Param</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>param</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_ray.html">Ray</a> &amp;&nbsp;</td>
+          <td class="paramname"> <em>ray</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td> const</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p><div class="dynheader">
+関数の呼び出しグラフ:</div>
+<div class="dynsection">
+<div class="center"><img src="class_kd_tree_acddd76fb3e40c259c70a9c87fd27fca1_cgraph.png" border="0" usemap="#class_kd_tree_acddd76fb3e40c259c70a9c87fd27fca1_cgraph_map" alt=""></div>
+</div>
+</p>
+
+</div>
+</div>
+<hr/>このクラスの説明は次のファイルから生成されました:<ul>
+<li>Renderer/<a class="el" href="kdtree_8h_source.html">kdtree.h</a></li>
+<li>Renderer/<a class="el" href="kdtree_8cpp.html">kdtree.cpp</a></li>
+</ul>
+</div>
+<!--- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&nbsp;</span>全て</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&nbsp;</span>クラス</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&nbsp;</span>ネームスペース</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&nbsp;</span>ファイル</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&nbsp;</span>関数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&nbsp;</span>変数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&nbsp;</span>型定義</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&nbsp;</span>列挙型</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&nbsp;</span>列挙型の値</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&nbsp;</span>フレンド</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&nbsp;</span>マクロ定義</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<hr class="footer"/><address style="text-align: right;"><small>Rendererに対してThu May 20 10:12:11 2010に生成されました。&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.6.3 </small></address>
+</body>
+</html>

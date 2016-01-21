@@ -1,0 +1,10 @@
+<map id="G" name="G">
+<area shape="rect" id="node4" href="$struct__3ds_1_1_material.html" title="_3ds::Material" alt="" coords="346,341,450,371"/>
+<area shape="rect" id="node6" title="STL class." alt="" coords="305,181,385,211"/>
+<area shape="rect" id="node14" href="$struct__3ds_1_1_mesh.html" title="_3ds::Mesh" alt="" coords="176,341,266,371"/>
+<area shape="rect" id="node8" title="STL class." alt="" coords="262,5,428,35"/>
+<area shape="rect" id="node10" href="$struct__3ds_1_1_color.html" title="_3ds::Color" alt="" coords="409,181,497,211"/>
+<area shape="rect" id="node16" href="$struct__3ds_1_1_face.html" title="_3ds::Face" alt="" coords="81,181,166,211"/>
+<area shape="rect" id="node18" href="$class_vector3.html" title="3d vector" alt="" coords="6,5,73,35"/>
+<area shape="rect" id="node20" href="$struct__3ds_1_1_coord.html" title="_3ds::Coord" alt="" coords="190,181,281,211"/>
+</map>

@@ -1,0 +1,8 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$class_work_pile.html#a5e1040fe3aad18e46e78647baff6f09a" title="WorkPile::get_left_work" alt="" coords="181,5,339,35"/>
+<area shape="rect" id="node5" href="$class_camera.html#a25cf5e585ca32815e1a0c488fa83a58e" title="Camera::GetFrameBuffer" alt="" coords="177,59,343,88"/>
+<area shape="rect" id="node7" href="$class_frame_buffer.html#a41e580f01886c4cce863a2dcea0b855b" title="FrameBuffer::height" alt="" coords="193,112,327,141"/>
+<area shape="rect" id="node9" href="$class_work_pile.html#a87a09fcd0d898faea0930e10d7f98fcc" title="WorkPile::request" alt="" coords="197,165,323,195"/>
+<area shape="rect" id="node11" href="$class_work_pile.html#a0dc9ddba1fb798b0fa67a5d1ed80d6b3" title="WorkPile::start" alt="" coords="205,219,315,248"/>
+<area shape="rect" id="node13" href="$class_frame_buffer.html#acf3ed63cbf1343bb80d024a9130d0904" title="FrameBuffer::width" alt="" coords="195,272,325,301"/>
+</map>
